@@ -355,6 +355,7 @@ legend {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100px;
   z-index: 1000;
   background: #fff;
 }
@@ -365,34 +366,34 @@ legend {
 }
 #header .header__right {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-#logo {
-  position: relative;
-  z-index: 1100;
-  font-size: 25px;
+#header .logo img {
+  width: 130px;
 }
 
-.util__list {
+.header_logo .util__list {
   display: flex;
 }
-.util__list li {
+.header_logo .util__list li {
   display: flex;
 }
-.util__list .btn-g,
-.util__list a {
+.header_logo .util__list .btn-g,
+.header_logo .util__list a {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 70px;
 }
-.util__list .btn-g .material-icons-outlined,
-.util__list a .material-icons-outlined {
+.header_logo .util__list .btn-g .material-icons-outlined,
+.header_logo .util__list a .material-icons-outlined {
   font-size: 26px;
 }
-.util__list .btn-g::before,
-.util__list a::before {
+.header_logo .util__list .btn-g::before,
+.header_logo .util__list a::before {
   font-size: 20px;
   font-family: "Font Awesome 6 Free";
 }
@@ -458,4 +459,46 @@ legend {
 #footer {
   margin-bottom: 200px;
   border-top: 10px solid #000;
+}
+#footer .info_policy {
+  display: block;
+  font-size: 12px;
+  line-height: 30px;
+  color: gray;
+  text-align: center;
+}
+#footer .info_policy .link_policy {
+  position: relative;
+  padding: 10px 5px;
+}
+#footer .info_policy .link_policy:first-child::before {
+  display: none;
+}
+#footer .info_policy .link_policy::before {
+  position: absolute;
+  top: 18px;
+  left: -3px;
+  width: 2px;
+  height: 2px;
+  background-color: gray;
+  border-radius: 50%;
+  color: lightgrey;
+  margin-top: 1px;
+  border-radius: 50px;
+  content: "";
+}
+#footer .copyright {
+  text-align: center;
+}
+#footer .footer_info1 {
+  text-align: center;
+}
+#footer .footer_adr {
+  text-align: center;
+}
+#footer .footer_adr .footer_mail {
+  text-decoration: underline;
+}
+#footer .footer_info2 {
+  text-align: center;
 }/*# sourceMappingURL=comm.css.map */
