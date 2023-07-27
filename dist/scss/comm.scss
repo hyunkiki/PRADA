@@ -23,9 +23,14 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
   z-index: 1000;
   background: $w;
+  border-bottom: 2px solid #000;
+
+  .logo img {
+    padding-top: 10px;
+    width: 150px;
+  }
 
   // box-sizing: border-box;
   .inner {
@@ -36,15 +41,10 @@
 
   .header__right {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: center;
   }
 }
-
-#header .logo img {
-  width: 130px;
-}
-
 
 
 .header_logo .util__list {
@@ -63,7 +63,7 @@
     height: $headerHeight;
 
     .material-icons-outlined {
-      font-size: 26px;
+      font-size: 25px;
     }
 
     &::before {
@@ -159,113 +159,147 @@
   }
 }
 
-// // slide
-// .swiper {
-//   width: 100%;
-//   height: 100%;
-// }
-// .swiper-slide {
-//   height: 100vh;
-//   text-align: center;
-//   font-size: 1.2857rem;
-//   background: lightcoral;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background: rgba($b, 0.5);
-//   }
-//   img {
-//     display: block;
-//     width: 100%;
-//     height: 100%;
-//     object-fit: cover;
-//   }
-// }
+/*YOUTUBE VIDEO*/
 
-// // main
-// .section-g {
-//   padding-top: 50px;
-//   padding-bottom: 50px;
-//   .section-tit {
-//     font-size: 1.4286rem;
-//     color: $b;
-//   }
-//   .section-contents {
-//     margin-top: 20px;
-//   }
-// }
+.youtube {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  height: 700px;
+  background-color: #333;
+  overflow: hidden;
 
-// // 이미지 게시판 2단
-// .lst-thumb-two-column {
-//   display: flex;
-//   justify-content: space-between;
-//   flex-wrap: wrap;
-//   li {
-//     width: calc(50% - $spacingList / 2);
-//     margin-bottom: $spacingList;
-//     .thumb-shopping {
-//       position: relative;
-//       overflow: hidden;
-//       width: 100%;
-//       border-radius: 4px;
-//       &::before {
-//         content: "";
-//         display: block;
-//         height: 0;
-//         padding-top: 100%;
-//       }
-//       img {
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         right: 0;
-//         bottom: 0;
-//         width: 100%;
-//         height: 100%;
-//         object-fit: cover;
-//         object-position: 0 50%;
-//         transition: transform 0.3s;
-//       }
-//       &::after {
-//         content: "";
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         right: 0;
-//         bottom: 0;
-//         border-radius: inherit;
-//         border: 1px solid rgba($b, 0.06);
-//         background: rgba($b, 0.03);
-//       }
-//     }
-//   }
-//   a {
-//     &:hover {
-//       img {
-//         transform: scale(1.1);
-//       }
-//     }
-//   }
-//   .txt-shopping {
-//     margin-top: 10px;
-//     .txt-shopping__tit {
-//       display: block;
-//       margin-bottom: 5px;
-//       font-size: 1rem;
-//       color: $titDefult;
-//     }
-//     .txt-shopping__desc {
-//       font-size: 0.8571rem;
-//     }
-//   }
-// }
+  .youtube__area {
+    width: 1920px;
+    position: absolute;
+
+    /* 16비율 */
+    left: 50%;
+    margin-left: calc(1920px / -2);
+
+    /* 9비율 */
+    top: 50%;
+    margin-top: calc(1920px * 9 / 16 / -2);
+
+    &::before {
+      content: "";
+      display: block;
+      /* 16:9 영상 비율로 요소 크기 만들기! */
+      width: 100%;
+      height: 0;
+      padding-top: 56.25%;
+    }
+  }
+
+  .youtube__cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+#player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+// main
+.section-g {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .section-tit {
+    font-size: 1.4286rem;
+    color: $b;
+  }
+
+  .section-contents {
+    margin-top: 20px;
+  }
+}
+
+// 이미지 게시판 2단
+.lst-thumb-two-column {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  li {
+    width: calc(50% - $spacingList / 2);
+    margin-bottom: $spacingList;
+
+    .thumb-shopping {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      border-radius: 4px;
+
+      &::before {
+        content: "";
+        display: block;
+        height: 0;
+        padding-top: 100%;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 50%;
+        transition: transform 0.3s;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: inherit;
+        border: 1px solid rgba($b, 0.06);
+        background: rgba($b, 0.03);
+      }
+    }
+  }
+
+  a {
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .txt-shopping {
+    margin-top: 10px;
+
+    .txt-shopping__tit {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 1rem;
+      color: $titDefult;
+    }
+
+    .txt-shopping__desc {
+      font-size: 0.8571rem;
+    }
+  }
+}
 
 // footer
 // css
@@ -275,7 +309,37 @@
   margin-bottom: 200px;
   border-top: 10px solid $b;
 
+  .logo img {
+    margin-top: 10px;
+    width: 100px;
+  }
+
+  .footer-sns_icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .fb img {
+    width: 30px;
+    padding: 0 10px;
+    opacity: 0.3;
+  }
+
+  .ins img {
+    width: 30px;
+    padding: 0 10px;
+    opacity: 0.3;
+  }
+
+  .tw img {
+    width: 30px;
+    padding: 0 10px;
+    opacity: 0.3;
+  }
+
   .info_policy {
+    margin-top: 20px;
     display: block;
     font-size: 12px;
     line-height: 30px;
@@ -284,7 +348,8 @@
 
     .link_policy {
       position: relative;
-      padding: 10px 5px;
+      padding: 10px 8px;
+
 
       &:first-child {
         &::before {
@@ -308,23 +373,31 @@
     }
   }
 
+
   .copyright {
+    margin-top: 20px;
     text-align: center;
+    font-size: 12px;
+    color: #b4b4b4;
   }
 
-  .footer_info1 {
+  .footer_info {
     text-align: center;
+    font-size: 12px;
+    color: #b4b4b4;
   }
 
   .footer_adr {
+    margin-top: 20px;
     text-align: center;
+    font-size: 12px;
+    color: #b4b4b4;
 
     .footer_mail {
       text-decoration: underline;
+      font-size: 12px;
+      color: #b4b4b4;
     }
   }
 
-  .footer_info2 {
-    text-align: center;
-  }
 }

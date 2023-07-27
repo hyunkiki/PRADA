@@ -355,9 +355,13 @@ legend {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
   z-index: 1000;
   background: #fff;
+  border-bottom: 2px solid #000;
+}
+#header .logo img {
+  padding-top: 10px;
+  width: 150px;
 }
 #header .inner {
   display: flex;
@@ -366,12 +370,8 @@ legend {
 }
 #header .header__right {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: center;
-}
-
-#header .logo img {
-  width: 130px;
 }
 
 .header_logo .util__list {
@@ -390,7 +390,7 @@ legend {
 }
 .header_logo .util__list .btn-g .material-icons-outlined,
 .header_logo .util__list a .material-icons-outlined {
-  font-size: 26px;
+  font-size: 25px;
 }
 .header_logo .util__list .btn-g::before,
 .header_logo .util__list a::before {
@@ -456,11 +456,156 @@ legend {
   transition: all 0.3s;
 }
 
+/*YOUTUBE VIDEO*/
+.youtube {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  height: 700px;
+  background-color: #333;
+  overflow: hidden;
+}
+.youtube .youtube__area {
+  width: 1920px;
+  position: absolute;
+  /* 16비율 */
+  left: 50%;
+  margin-left: -960px;
+  /* 9비율 */
+  top: 50%;
+  margin-top: -540px;
+}
+.youtube .youtube__area::before {
+  content: "";
+  display: block;
+  /* 16:9 영상 비율로 요소 크기 만들기! */
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+.youtube .youtube__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section-g {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.section-g .section-tit {
+  font-size: 1.4286rem;
+  color: #000;
+}
+.section-g .section-contents {
+  margin-top: 20px;
+}
+
+.lst-thumb-two-column {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.lst-thumb-two-column li {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+.lst-thumb-two-column li .thumb-shopping {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 4px;
+}
+.lst-thumb-two-column li .thumb-shopping::before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-top: 100%;
+}
+.lst-thumb-two-column li .thumb-shopping img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 50%;
+     object-position: 0 50%;
+  transition: transform 0.3s;
+}
+.lst-thumb-two-column li .thumb-shopping::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(0, 0, 0, 0.03);
+}
+.lst-thumb-two-column a:hover img {
+  transform: scale(1.1);
+}
+.lst-thumb-two-column .txt-shopping {
+  margin-top: 10px;
+}
+.lst-thumb-two-column .txt-shopping .txt-shopping__tit {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #101010;
+}
+.lst-thumb-two-column .txt-shopping .txt-shopping__desc {
+  font-size: 0.8571rem;
+}
+
 #footer {
   margin-bottom: 200px;
   border-top: 10px solid #000;
 }
+#footer .logo img {
+  margin-top: 10px;
+  width: 100px;
+}
+#footer .footer-sns_icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+#footer .fb img {
+  width: 30px;
+  padding: 0 10px;
+  opacity: 0.3;
+}
+#footer .ins img {
+  width: 30px;
+  padding: 0 10px;
+  opacity: 0.3;
+}
+#footer .tw img {
+  width: 30px;
+  padding: 0 10px;
+  opacity: 0.3;
+}
 #footer .info_policy {
+  margin-top: 20px;
   display: block;
   font-size: 12px;
   line-height: 30px;
@@ -469,7 +614,7 @@ legend {
 }
 #footer .info_policy .link_policy {
   position: relative;
-  padding: 10px 5px;
+  padding: 10px 8px;
 }
 #footer .info_policy .link_policy:first-child::before {
   display: none;
@@ -488,17 +633,24 @@ legend {
   content: "";
 }
 #footer .copyright {
+  margin-top: 20px;
   text-align: center;
+  font-size: 12px;
+  color: #b4b4b4;
 }
-#footer .footer_info1 {
+#footer .footer_info {
   text-align: center;
+  font-size: 12px;
+  color: #b4b4b4;
 }
 #footer .footer_adr {
+  margin-top: 20px;
   text-align: center;
+  font-size: 12px;
+  color: #b4b4b4;
 }
 #footer .footer_adr .footer_mail {
   text-decoration: underline;
-}
-#footer .footer_info2 {
-  text-align: center;
+  font-size: 12px;
+  color: #b4b4b4;
 }/*# sourceMappingURL=comm.css.map */
