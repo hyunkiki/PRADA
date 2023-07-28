@@ -357,7 +357,7 @@ legend {
   width: 100%;
   z-index: 1000;
   background: #fff;
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #a0a0a0;
 }
 #header .logo img {
   padding-top: 10px;
@@ -374,30 +374,33 @@ legend {
   justify-content: center;
 }
 
-.header_logo .util__list {
+.header__right .util__list {
   display: flex;
 }
-.header_logo .util__list li {
+.header__right .util__list li {
   display: flex;
 }
-.header_logo .util__list .btn-g,
-.header_logo .util__list a {
+.header__right .util__list .btn-g,
+.header__right .util__list a {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 70px;
 }
-.header_logo .util__list .btn-g .material-icons-outlined,
-.header_logo .util__list a .material-icons-outlined {
+.header__right .util__list .btn-g .material-icons-outlined,
+.header__right .util__list a .material-icons-outlined {
   font-size: 25px;
 }
-.header_logo .util__list .btn-g::before,
-.header_logo .util__list a::before {
+.header__right .util__list .btn-g::before,
+.header__right .util__list a::before {
   font-size: 20px;
   font-family: "Font Awesome 6 Free";
 }
 
+.gnb-wrap {
+  margin-left: 7px;
+}
 .gnb-wrap .input-burger {
   position: absolute;
   top: 0;
@@ -502,16 +505,44 @@ legend {
   left: 0;
 }
 
-.section-g {
-  padding-top: 50px;
-  padding-bottom: 50px;
+#main img {
+  width: 100%;
 }
-.section-g .section-tit {
-  font-size: 1.4286rem;
-  color: #000;
+
+.section-contents {
+  margin-bottom: 100px;
 }
-.section-g .section-contents {
-  margin-top: 20px;
+.section-contents li {
+  margin-top: 180px;
+  position: relative;
+}
+.section-contents .img-tit1 {
+  position: absolute;
+  top: 290px;
+  left: 55px;
+  font-size: 55px;
+  font-family: "Staatliches", cursive;
+  color: #ffffff;
+}
+.section-contents .img-tit2 {
+  position: absolute;
+  top: 290px;
+  left: 85px;
+  font-size: 55px;
+  font-family: "Staatliches", cursive;
+  color: #ffffff;
+}
+.section-contents .img-tit3 {
+  position: absolute;
+  top: 290px;
+  left: 85px;
+  font-size: 55px;
+  text-align: center;
+  font-family: "Staatliches", cursive;
+  color: #ffffff;
+}
+.section-contents .img-txt-box {
+  display: block;
 }
 
 .lst-thumb-two-column {
