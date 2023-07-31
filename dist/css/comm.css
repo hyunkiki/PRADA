@@ -509,7 +509,7 @@ legend {
   margin-bottom: 100px;
 }
 .section-contents li {
-  margin-top: 180px;
+  margin-top: 100px;
   position: relative;
 }
 .section-contents .img-tit1 {
@@ -540,12 +540,12 @@ legend {
 .section-contents .img-txt-box .mini-tit {
   display: inline-block;
   margin-top: 20px;
-  font-size: 1.8rem;
+  font-size: 25px;
   font-weight: 900;
   line-height: 1;
 }
 .section-contents .img-txt-box .img-exp {
-  font-size: 1.2rem;
+  font-size: 16px;
   line-height: 45px;
 }
 .section-contents .btn-more {
@@ -561,6 +561,29 @@ legend {
   color: #fff;
   background: #000;
   border-radius: 5px;
+}
+.section-contents .img-tit4 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+}
+.section-contents .mini-tit2 {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 1;
+  color: #fff;
+}
+.section-contents .prada-camp {
+  padding: 10px;
+  background-color: #000;
+}
+.section-contents .btn-more1 {
+  margin-top: 40px;
+  padding: 5px;
+  color: #fff;
+  border-bottom: 2px solid #fff;
 }
 
 .lst-thumb-two-column {
