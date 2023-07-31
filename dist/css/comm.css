@@ -461,10 +461,6 @@ legend {
 
 /*YOUTUBE VIDEO*/
 .youtube {
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
   position: relative;
   height: 700px;
   background-color: #333;
@@ -518,31 +514,53 @@ legend {
 }
 .section-contents .img-tit1 {
   position: absolute;
-  top: 290px;
-  left: 55px;
+  top: 215px;
+  left: 28px;
   font-size: 55px;
   font-family: "Staatliches", cursive;
   color: #ffffff;
 }
 .section-contents .img-tit2 {
   position: absolute;
-  top: 290px;
-  left: 85px;
+  top: 215px;
+  left: 65px;
   font-size: 55px;
   font-family: "Staatliches", cursive;
   color: #ffffff;
 }
 .section-contents .img-tit3 {
   position: absolute;
-  top: 290px;
-  left: 85px;
+  top: 215px;
+  left: 55px;
   font-size: 55px;
   text-align: center;
   font-family: "Staatliches", cursive;
   color: #ffffff;
 }
-.section-contents .img-txt-box {
-  display: block;
+.section-contents .img-txt-box .mini-tit {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1;
+}
+.section-contents .img-txt-box .img-exp {
+  font-size: 1.2rem;
+  line-height: 45px;
+}
+.section-contents .btn-more {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+.section-contents .btn-pur {
+  margin: 5px 15px;
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  background: #000;
+  border-radius: 5px;
 }
 
 .lst-thumb-two-column {

@@ -164,10 +164,6 @@
 /*YOUTUBE VIDEO*/
 
 .youtube {
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
   position: relative;
   height: 700px;
   background-color: #333;
@@ -229,8 +225,8 @@
 
   .img-tit1 {
     position: absolute;
-    top: 290px;
-    left: 55px;
+    top: 215px;
+    left: 28px;
     font-size: 55px;
     font-family: 'Staatliches', cursive;
     color: #ffffff;
@@ -238,8 +234,8 @@
 
   .img-tit2 {
     position: absolute;
-    top: 290px;
-    left: 85px;
+    top: 215px;
+    left: 65px;
     font-size: 55px;
     font-family: 'Staatliches', cursive;
     color: #ffffff;
@@ -247,8 +243,8 @@
 
   .img-tit3 {
     position: absolute;
-    top: 290px;
-    left: 85px;
+    top: 215px;
+    left: 55px;
     font-size: 55px;
     text-align: center;
     font-family: 'Staatliches', cursive;
@@ -256,9 +252,36 @@
   }
 
   .img-txt-box {
-    display: block;
+    .mini-tit {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 1.8rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .img-exp {
+      font-size: 1.2rem;
+      line-height: 45px;
+    }
   }
 
+  .btn-more {
+
+    width: 100px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 5px;
+  }
+
+  .btn-pur {
+    margin: 5px 15px;
+    width: 100px;
+    height: 40px;
+    color: $w;
+    background: #000;
+    border-radius: 5px;
+  }
 }
 
 // 이미지 게시판 2단
