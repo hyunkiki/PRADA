@@ -1,5 +1,6 @@
 @charset "UFT-8";
 @import "variables", "mixin", "fonts", "reset", "main", "contents";
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 // comm.scss -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
@@ -93,8 +94,9 @@
     opacity: 0;
 
     &:checked {
+
       // input이 선택 됐을 때
-      & + label {
+      &+label {
         .bar {
           background: $b;
 
@@ -112,7 +114,7 @@
         }
       }
 
-      & ~ #gnb {
+      &~#gnb {
         right: 0;
       }
     }
@@ -258,125 +260,86 @@
     }
 
     .img-exp {
+      display: block;
       font-size: 16px;
       line-height: 45px;
     }
   }
 
+  .btn-group {
+    display: flex;
+    margin-top: 10px;
+  }
+
   .btn-more {
+    display: flex;
     width: 100px;
     height: 40px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #000;
     border-radius: 5px;
   }
 
   .btn-pur {
-    margin: 5px 15px;
+    display: flex;
     width: 100px;
     height: 40px;
     color: $w;
+    align-items: center;
+    justify-content: center;
     background: #000;
     border-radius: 5px;
   }
-  .img-tit4 {
-    color: $w;
-    font-size: 16px;
-    font-weight: 800;
+
+  .prada-gall {
+    position: relative;
+
+    .img-tit4 {
+      position: absolute;
+      top: 0;
+      left: 10px;
+      margin-top: 5px;
+      font-size: 25px;
+      font-family: "Staatliches", cursive;
+      color: $w;
+    }
+
+    .btn-pur2 {
+      position: absolute;
+      top: 45px;
+      left: 10px;
+      margin-top: 10px;
+      font-size: 25px;
+      font-family: "Staatliches", cursive;
+      color: $w;
+      border-bottom: 1px solid $w;
+    }
   }
-  .mini-tit2 {
-    display: inline-block;
-    margin-top: 20px;
-    font-size: 25px;
-    font-weight: 900;
-    line-height: 1;
-    color: $w;
-  }
+
   .prada-camp {
     padding: 10px;
-    background-color: $b;
+    width: 100%;
+    background-color: black;
   }
-  .btn-more1 {
-    margin-top: 40px;
-    padding: 5px;
+
+  .img-tit5 {
+    font-size: 16px;
     color: $w;
-    border-bottom: 2px solid $w;
+  }
+
+  .mini-tit3 {
+    font-size: 24px;
+    color: $w;
+  }
+
+  .btn-more1 {
+    font-size: 14px;
+    color: $w;
   }
 }
 
-// 이미지 게시판 2단
-
-.lst-thumb-two-column {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  li {
-    width: calc(50% - $spacingList / 2);
-    margin-bottom: $spacingList;
-
-    .thumb-shopping {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      border-radius: 4px;
-
-      &::before {
-        content: "";
-        display: block;
-        height: 0;
-        padding-top: 100%;
-      }
-
-      img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: 0 50%;
-        transition: transform 0.3s;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        border-radius: inherit;
-        border: 1px solid rgba($b, 0.06);
-        background: rgba($b, 0.03);
-      }
-    }
-  }
-
-  a {
-    &:hover {
-      img {
-        transform: scale(1.1);
-      }
-    }
-  }
-
-  .txt-shopping {
-    margin-top: 10px;
-
-    .txt-shopping__tit {
-      display: block;
-      margin-bottom: 5px;
-      font-size: 1rem;
-      color: $titDefult;
-    }
-
-    .txt-shopping__desc {
-      font-size: 0.8571rem;
-    }
-  }
-}
 
 // footer
 // css
@@ -392,7 +355,7 @@
   }
 
   .footer-sns_icons {
-    margin-top: 20px;
+    margin-top: -70px;
     display: flex;
     justify-content: center;
   }
