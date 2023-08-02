@@ -1,6 +1,6 @@
 @charset "UFT-8";
 @import "variables", "mixin", "fonts", "reset", "main", "contents";
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 // comm.scss -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
@@ -94,9 +94,8 @@
     opacity: 0;
 
     &:checked {
-
       // input이 선택 됐을 때
-      &+label {
+      & + label {
         .bar {
           background: $b;
 
@@ -114,7 +113,7 @@
         }
       }
 
-      &~#gnb {
+      & ~ #gnb {
         right: 0;
       }
     }
@@ -162,29 +161,35 @@
     bottom: 0;
     width: 100%;
     padding: 50px;
-    background: $w;
+    background: $gray-9;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.3s;
   }
 
-  .lst-menu {
+  .lst-categ {
     position: absolute;
     width: 100%;
-    top: 300px;
+    top: 145px;
     left: -1px;
     text-transform: uppercase;
     text-decoration: none;
     text-align: left;
 
-    li:first-child {
-      border-top: 1px solid #000;
+    .categ-item:first-child {
+      border-top: 1px solid $w;
     }
 
-    li {
+    .categ-item {
       padding: 20px 0;
-      border-bottom: 1px solid #000;
+      border-bottom: 1px solid $w;
+    }
+    a {
+      padding-left: 10px;
+      font-size: 15px;
+      font-weight: bold;
+      color: $w;
     }
   }
 }
@@ -358,17 +363,15 @@
   }
 
   .mini-tit3 {
+    margin-bottom: 20px;
     font-size: 24px;
     color: $w;
   }
-
   .btn-more1 {
-    font-size: 14px;
     color: $w;
     border-bottom: 1px solid #ffffff;
   }
 }
-
 
 // footer
 // css
