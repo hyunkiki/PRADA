@@ -448,17 +448,40 @@ legend {
   margin: 5px 0;
 }
 .gnb-wrap #gnb {
+  position: relative;
   position: fixed;
   top: 0;
   right: -100%;
   bottom: 0;
   width: 100%;
   padding: 50px;
-  background: #ffca00;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.3s;
+}
+.gnb-wrap #gnb img {
+  position: absolute;
+  top: 10px;
+  left: 110px;
+  width: 35%;
+}
+.gnb-wrap .lst-menu {
+  position: absolute;
+  width: 100%;
+  top: 300px;
+  left: -1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: left;
+}
+.gnb-wrap .lst-menu li:first-child {
+  border-top: 1px solid #000;
+}
+.gnb-wrap .lst-menu li {
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
 }
 
 /*YOUTUBE VIDEO*/
@@ -613,11 +636,12 @@ legend {
 .section-contents .btn-more1 {
   font-size: 14px;
   color: #fff;
+  border-bottom: 1px solid #ffffff;
 }
 
 #footer {
   margin-bottom: 200px;
-  border-top: 10px solid #000;
+  border-top: 1px solid #a0a0a0;
 }
 #footer .logo img {
   margin-top: 10px;
