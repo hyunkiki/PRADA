@@ -94,10 +94,11 @@
     opacity: 0;
 
     &:checked {
+
       // input이 선택 됐을 때
-      & + label {
+      &+label {
         .bar {
-          background: $b;
+          background: $w;
 
           &:nth-child(2) {
             transform: rotate(45deg) translate(5px, 5px);
@@ -113,7 +114,7 @@
         }
       }
 
-      & ~ #gnb {
+      &~#gnb {
         right: 0;
       }
     }
@@ -148,9 +149,9 @@
   #gnb {
     position: relative;
 
-    img {
+    .img-logo {
       position: absolute;
-      top: 10px;
+      top: 25px;
       left: 110px;
       width: 35%;
     }
@@ -161,7 +162,7 @@
     bottom: 0;
     width: 100%;
     padding: 50px;
-    background: $gray-9;
+    background:$b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,15 +183,29 @@
     }
 
     .categ-item {
-      padding: 20px 0;
       border-bottom: 1px solid $w;
     }
+
     a {
-      padding-left: 10px;
+      position: relative;
+      display: block;
+      padding: 20px;
+      width: 100%;
       font-size: 15px;
       font-weight: bold;
       color: $w;
+
+      &::after {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        content: "\f105";
+        font-family: 'Line Awesome Free';
+        font-weight: 900;
+      }
     }
+
+
   }
 }
 
@@ -367,6 +382,7 @@
     font-size: 24px;
     color: $w;
   }
+
   .btn-more1 {
     color: $w;
     border-bottom: 1px solid #ffffff;
