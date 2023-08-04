@@ -341,23 +341,67 @@ main .lst-contents {
   font-size: 24px;
   font-weight: 700;
 }
-main .lst-contents h3 {
-  margin-left: -5px;
-  display: inline-block;
-  font-size: 24px;
-}
-main .lst-contents h3::before {
-  content: "\f0a9";
-  font-size: 24px;
-  font-family: "Line Awesome Free";
-  font-weight: 900;
-}
 main .lst-contents .lst-tit {
+  text-align: center;
   padding: 20px;
   border-bottom: 1px solid #000;
 }
 main .lst-contents .slide-wrap {
   display: block;
+}
+main .lst-contents .section-contents .lst-shopping {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .lst-contents .section-contents .lst-shopping li {
+  margin-top: 50px;
+  width: calc(50% - 5px);
+}
+main .lst-contents .section-contents .lst-shopping .img-bigsize {
+  width: 100%;
+}
+main .lst-contents .section-contents .thumb-shopping {
+  position: relative;
+  width: 100%;
+}
+main .lst-contents .section-contents .thumb-shopping::before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-top: 100%;
+}
+main .lst-contents .section-contents .thumb-shopping img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+main .lst-contents .section-contents .thumb-shopping img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(0, 0, 0, 0.06);
+}
+main .lst-contents .section-contents .txt-shopping .txt-shopping-tit {
+  display: block;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: black;
+}
+main .lst-contents .section-contents .txt-shopping .txt-shopping-desc {
+  font-size: 12px;
 }
 
 .wrap {
@@ -516,6 +560,38 @@ main .lst-contents .slide-wrap {
   top: 20px;
   right: 20px;
   content: "\f105";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+}
+.gnb-wrap .lst-categ2 {
+  position: absolute;
+  width: 100%;
+  top: 400px;
+  left: -1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: left;
+}
+.gnb-wrap .lst-categ2 a {
+  position: relative;
+  display: block;
+  padding: 20px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+.gnb-wrap .lst-categ2 a.menu-wish::before {
+  margin-right: 10px;
+  content: "\f004";
+  font-size: 15px;
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+}
+.gnb-wrap .lst-categ2 a.menu-phone::before {
+  margin-right: 10px;
+  content: "\f095";
+  font-size: 15px;
   font-family: "Line Awesome Free";
   font-weight: 900;
 }
