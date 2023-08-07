@@ -352,12 +352,14 @@ main .lst-contents .lst-tit a {
 }
 main .lst-contents .slide-wrap {
   position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-bottom: 1px solid #a0a0a0;
 }
 main .lst-contents .slide-wrap .slide-sub-menu {
   position: static;
   display: flex;
   box-sizing: border-box;
-  border-bottom: 1px solid #a0a0a0;
 }
 main .lst-contents .slide-wrap .slide-sub-menu li {
   flex: none;
@@ -366,6 +368,12 @@ main .lst-contents .slide-wrap .slide-sub-menu li {
 }
 main .lst-contents .slide-wrap .slide-sub-menu li:first-child {
   padding-left: 15px;
+}
+main .lst-contents .slide-wrap .slide-sub-menu li .lst-all {
+  color: #000;
+}
+main .lst-contents .slide-wrap .slide-sub-menu li a {
+  color: #a0a0a0;
 }
 main .lst-contents .section-contents .lst-shopping {
   display: flex;
@@ -414,11 +422,12 @@ main .lst-contents .section-contents .thumb-shopping img::after {
 }
 main .lst-contents .section-contents .txt-shopping .txt-shopping-tit {
   display: block;
-  margin-bottom: 0;
+  margin-top: 5px;
   font-size: 14px;
   color: black;
 }
 main .lst-contents .section-contents .txt-shopping .txt-shopping-desc {
+  margin-top: 5px;
   font-size: 12px;
 }
 

@@ -8,24 +8,39 @@ main {
       text-align: center;
       padding: 15px;
       border-bottom: 1px solid #a0a0a0;
+
       a {
         font-size: 30px;
         font-family: "Staatliches", cursive;
       }
     }
+
     .slide-wrap {
       position: relative;
+      overflow-x: auto;
+      overflow-y: hidden;
+      border-bottom: 1px solid #a0a0a0;
+
       .slide-sub-menu {
         position: static;
         display: flex;
         box-sizing: border-box;
-        border-bottom: 1px solid #a0a0a0;
+
         li {
           flex: none;
           padding: 10px;
           font-size: 15px;
+
           &:first-child {
             padding-left: 15px;
+          }
+
+          .lst-all {
+            color: #000;
+          }
+
+          a {
+            color: #a0a0a0;
           }
         }
       }
@@ -86,12 +101,13 @@ main {
       .txt-shopping {
         .txt-shopping-tit {
           display: block;
-          margin-bottom: 0;
+          margin-top: 5px;
           font-size: 14px;
           color: black;
         }
 
         .txt-shopping-desc {
+          margin-top: 5px;
           font-size: 12px;
         }
       }
