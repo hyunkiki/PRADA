@@ -10,8 +10,8 @@ main {
       border-bottom: 1px solid #a0a0a0;
 
       a {
-        font-size: 30px;
-        font-family: "Staatliches", cursive;
+        font-size: 25px;
+        font-family: 'Rubik Mono One', sans-serif;
       }
     }
 
@@ -59,7 +59,13 @@ main {
 
         .img-bigsize {
           width: 100%;
+
+          img {
+            object-fit: cover;
+            object-position: 50% 0;
+          }
         }
+
       }
 
       .thumb-shopping {
@@ -102,7 +108,7 @@ main {
         .txt-shopping-tit {
           display: block;
           margin-top: 5px;
-          font-size: 14px;
+          font-size: 12px;
           color: black;
         }
 

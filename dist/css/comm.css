@@ -347,8 +347,8 @@ main .lst-contents .lst-tit {
   border-bottom: 1px solid #a0a0a0;
 }
 main .lst-contents .lst-tit a {
-  font-size: 30px;
-  font-family: "Staatliches", cursive;
+  font-size: 25px;
+  font-family: "Rubik Mono One", sans-serif;
 }
 main .lst-contents .slide-wrap {
   position: relative;
@@ -387,6 +387,12 @@ main .lst-contents .section-contents .lst-shopping li {
 main .lst-contents .section-contents .lst-shopping .img-bigsize {
   width: 100%;
 }
+main .lst-contents .section-contents .lst-shopping .img-bigsize img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 0;
+     object-position: 50% 0;
+}
 main .lst-contents .section-contents .thumb-shopping {
   position: relative;
   width: 100%;
@@ -423,7 +429,7 @@ main .lst-contents .section-contents .thumb-shopping img::after {
 main .lst-contents .section-contents .txt-shopping .txt-shopping-tit {
   display: block;
   margin-top: 5px;
-  font-size: 14px;
+  font-size: 12px;
   color: black;
 }
 main .lst-contents .section-contents .txt-shopping .txt-shopping-desc {
