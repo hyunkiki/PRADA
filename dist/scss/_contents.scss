@@ -11,7 +11,7 @@ main {
 
       a {
         font-size: 25px;
-        font-family: 'Rubik Mono One', sans-serif;
+        font-family: "Rubik Mono One", sans-serif;
       }
     }
 
@@ -67,7 +67,6 @@ main {
             object-position: 50% 0;
           }
         }
-
       }
 
       .thumb-shopping {
@@ -141,7 +140,7 @@ main {
 
           &::after {
             content: "\f078";
-            font-family: 'Line Awesome Free';
+            font-family: "Line Awesome Free";
             font-weight: 900;
             margin-left: 10px;
           }

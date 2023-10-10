@@ -508,6 +508,9 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 #detail_wrap .tags_wrap .tags span {
   color: #999;
 }
+#detail_wrap .thumb_wrap {
+  display: block;
+}
 #detail_wrap .thumb_wrap .item_tit {
   font-size: 16px;
   font-weight: 700;
@@ -516,9 +519,26 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 #detail_wrap .thumb_wrap .item_tit span {
   font-weight: 400;
 }
-#detail_wrap .thumb_wrap .item_tit .select_color li input {
-  width: 30px;
-  height: 30px;
+#detail_wrap .thumb_wrap .select_color li {
+  margin: 10px 20px;
+}
+#detail_wrap .thumb_wrap .select_color .radio_select {
+  width: 20px;
+  height: 20px;
+}
+#detail_wrap .thumb_wrap .select_color input[type=radio] {
+  accent-color: rgb(206, 152, 96);
+}
+#detail_wrap .pr_info .title {
+  margin: 10px 20px;
+  font-size: 20px;
+  font-weight: 900;
+}
+#detail_wrap .pr_info .price {
+  margin: 10px 20px;
+}
+#detail_wrap .pr_info .disprice {
+  font-size: 18px;
 }
 
 .wrap {

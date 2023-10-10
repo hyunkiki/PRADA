@@ -52,6 +52,7 @@
   }
 
   .thumb_wrap {
+    display: block;
     .item_tit {
       font-size: 16px;
       font-weight: 700;
@@ -60,15 +61,31 @@
       span {
         font-weight: 400;
       }
-
-      .select_color {
-        li {
-          input {
-            width: 30px;
-            height: 30px;
-          }
-        }
+    }
+    .select_color {
+      li {
+        margin: 10px 20px;
       }
+      .radio_select {
+        width: 20px;
+        height: 20px;
+      }
+      input[type="radio"] {
+        accent-color: rgb(206, 152, 96);
+      }
+    }
+  }
+  .pr_info {
+    .title {
+      margin: 10px 20px;
+      font-size: 20px;
+      font-weight: 900;
+    }
+    .price {
+      margin: 10px 20px;
+    }
+    .disprice {
+      font-size: 18px;
     }
   }
 }
