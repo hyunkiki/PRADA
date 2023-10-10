@@ -37,10 +37,12 @@ main {
 
           .lst-all {
             color: #000;
+            font-size: 16px;
           }
 
           a {
             color: #a0a0a0;
+            font-size: 16px;
           }
         }
       }
@@ -108,13 +110,41 @@ main {
         .txt-shopping-tit {
           display: block;
           margin-top: 5px;
-          font-size: 12px;
+          font-size: 14px;
           color: black;
         }
 
         .txt-shopping-desc {
           margin-top: 5px;
-          font-size: 12px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+
+      .btn_more_box {
+        width: 140px;
+        height: 40px;
+        border: 1px solid #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+
+        .btn_tit {
+          font-size: 14px;
+          text-align: center;
+
+          &::after {
+            content: "\f078";
+            font-family: 'Line Awesome Free';
+            font-weight: 900;
+            margin-left: 10px;
+          }
         }
       }
     }

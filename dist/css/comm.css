@@ -371,9 +371,11 @@ main .lst-contents .slide-wrap .slide-sub-menu li:first-child {
 }
 main .lst-contents .slide-wrap .slide-sub-menu li .lst-all {
   color: #000;
+  font-size: 16px;
 }
 main .lst-contents .slide-wrap .slide-sub-menu li a {
   color: #a0a0a0;
+  font-size: 16px;
 }
 main .lst-contents .section-contents .lst-shopping {
   display: flex;
@@ -429,12 +431,94 @@ main .lst-contents .section-contents .thumb-shopping img::after {
 main .lst-contents .section-contents .txt-shopping .txt-shopping-tit {
   display: block;
   margin-top: 5px;
-  font-size: 12px;
+  font-size: 14px;
   color: black;
 }
 main .lst-contents .section-contents .txt-shopping .txt-shopping-desc {
   margin-top: 5px;
-  font-size: 12px;
+  font-size: 14px;
+}
+main .lst-contents .btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+main .lst-contents .btn .btn_more_box {
+  width: 140px;
+  height: 40px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+main .lst-contents .btn .btn_more_box .btn_tit {
+  font-size: 14px;
+  text-align: center;
+}
+main .lst-contents .btn .btn_more_box .btn_tit::after {
+  content: "\f078";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  margin-left: 10px;
+}
+
+#detail_wrap body {
+  position: relative;
+  height: 100%;
+}
+#detail_wrap body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+#detail_wrap .swiper {
+  width: 100%;
+  height: 470px;
+}
+#detail_wrap .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#detail_wrap .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#detail_wrap .tags_wrap {
+  width: 100%;
+  height: 500px;
+}
+#detail_wrap .tags_wrap .tags {
+  display: block;
+  width: 55px;
+  height: 23px;
+  margin: 20px;
+  border: 1px solid #999;
+}
+#detail_wrap .tags_wrap .tags span {
+  color: #999;
+}
+#detail_wrap .thumb_wrap .item_tit {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 20px;
+}
+#detail_wrap .thumb_wrap .item_tit span {
+  font-weight: 400;
+}
+#detail_wrap .thumb_wrap .item_tit .select_color li input {
+  width: 30px;
+  height: 30px;
 }
 
 .wrap {
@@ -632,9 +716,10 @@ main .lst-contents .section-contents .txt-shopping .txt-shopping-desc {
 /*YOUTUBE VIDEO*/
 .youtube {
   position: relative;
-  height: 700px;
+  height: 770px;
   background-color: #333;
   overflow: hidden;
+  margin-top: 20px;
 }
 .youtube .youtube__area {
   width: 1920px;
@@ -643,7 +728,7 @@ main .lst-contents .section-contents .txt-shopping .txt-shopping-desc {
   left: 50%;
   margin-left: -960px;
   /* 9비율 */
-  top: 50%;
+  top: 70%;
   margin-top: -540px;
 }
 .youtube .youtube__area::before {
@@ -660,7 +745,6 @@ main .lst-contents .section-contents .txt-shopping .txt-shopping-desc {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 #player {
@@ -763,7 +847,7 @@ main .lst-contents .section-contents .txt-shopping .txt-shopping-desc {
   font-size: 25px;
   font-family: "Staatliches", cursive;
   color: #fff;
-  border-bottom: 1px solid #fff;
+  border: 1px solid #fff;
 }
 .section-contents .prada-camp {
   padding: 10px;
@@ -778,10 +862,11 @@ main .lst-contents .section-contents .txt-shopping .txt-shopping-desc {
   margin-bottom: 20px;
   font-size: 24px;
   color: #fff;
+  display: block;
 }
 .section-contents .btn-more1 {
   color: #fff;
-  border-bottom: 1px solid #ffffff;
+  border: 1px solid #fff;
 }
 
 #footer {

@@ -1,5 +1,5 @@
 @charset "UFT-8";
-@import "variables", "mixin", "fonts", "reset", "main", "contents";
+@import "variables", "mixin", "fonts", "reset", "main", "contents", "detail";
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 // comm.scss -
@@ -249,9 +249,10 @@
 
 .youtube {
   position: relative;
-  height: 700px;
+  height: 770px;
   background-color: #333;
   overflow: hidden;
+  margin-top: 20px;
 
   .youtube__area {
     width: 1920px;
@@ -262,7 +263,7 @@
     margin-left: calc(1920px / -2);
 
     /* 9비율 */
-    top: 50%;
+    top: 70%;
     margin-top: calc(1920px * 9 / 16 / -2);
 
     &::before {
@@ -281,7 +282,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    // background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -398,7 +399,7 @@
       font-size: 25px;
       font-family: "Staatliches", cursive;
       color: $w;
-      border-bottom: 1px solid $w;
+      border: 1px solid $w;
     }
   }
 
@@ -417,11 +418,13 @@
     margin-bottom: 20px;
     font-size: 24px;
     color: $w;
+    display: block;
+
   }
 
   .btn-more1 {
     color: $w;
-    border-bottom: 1px solid #ffffff;
+    border: 1px solid $w;
   }
 }
 
