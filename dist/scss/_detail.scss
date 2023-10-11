@@ -1,9 +1,11 @@
 #detail_wrap {
+  #main {
+    height: 300vh;
+  }
   body {
     position: relative;
     height: 100%;
   }
-
   body {
     background: #eee;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -78,14 +80,83 @@
   .pr_info {
     .title {
       margin: 10px 20px;
-      font-size: 20px;
+      font-size: 1.25rem;
       font-weight: 900;
     }
     .price {
       margin: 10px 20px;
     }
     .disprice {
-      font-size: 18px;
+      font-size: 1.125rem;
+    }
+    .size_info {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 10px;
+      .cloth_size_choice {
+        font-size: 1.25rem;
+      }
+      .cloth_size_guide {
+        font-size: 1rem;
+        font-weight: 600;
+        color: $gray-9;
+      }
+    }
+
+    .size_wrap {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    /* 숨겨진 라디오 버튼 숨김 */
+    input[type="radio"] {
+      display: none;
+    }
+
+    /* 라디오 버튼 레이블 스타일링 */
+    label {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #333;
+      border: 1px solid #000;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* 라디오 버튼가 선택된 경우의 스타일 */
+    input[type="radio"]:checked + label {
+      background-color: $b;
+      color: #fff;
+    }
+    .button_wrapper {
+      display: flex;
+      flex-direction: column;
+      .cart {
+        width: 90%;
+        height: 80px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 40px;
+        margin: 20px;
+      }
+      .wish_list {
+        width: 90%;
+        height: 80px;
+        border: 1px solid $b;
+        color: $b;
+        border-radius: 40px;
+        margin: 0 20px;
+        .wish_txt {
+          padding-right: 10px;
+        }
+        &::after {
+          content: "\f004";
+          font-family: "Line Awesome Free";
+          font-weight: 900;
+        }
+      }
     }
   }
 }
