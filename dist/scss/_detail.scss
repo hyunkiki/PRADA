@@ -2,10 +2,12 @@
   #main {
     height: 300vh;
   }
+
   body {
     position: relative;
     height: 100%;
   }
+
   body {
     background: #eee;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -55,6 +57,7 @@
 
   .thumb_wrap {
     display: block;
+
     .item_tit {
       font-size: 16px;
       font-weight: 700;
@@ -64,41 +67,60 @@
         font-weight: 400;
       }
     }
+
     .select_color {
       li {
         margin: 10px 20px;
       }
+
       .radio_select {
         width: 20px;
         height: 20px;
       }
+
       input[type="radio"] {
         accent-color: rgb(206, 152, 96);
       }
+
+      label {
+        font-size: 16px;
+      }
     }
   }
+
   .pr_info {
     .title {
       margin: 10px 20px;
-      font-size: 1.25rem;
-      font-weight: 900;
+      font-size: 30px;
+      font-weight: 800;
+
+      span {
+        font-size: 14px;
+        font-weight: 400;
+      }
     }
+
     .price {
       margin: 10px 20px;
     }
+
     .disprice {
-      font-size: 1.125rem;
+      font-size: 18px;
     }
+
     .size_info {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      margin-bottom: 10px;
+      margin: 10px 20px;
+
       .cloth_size_choice {
-        font-size: 1.25rem;
+        font-size: 20px;
+        font-weight: 700;
       }
+
       .cloth_size_guide {
-        font-size: 1rem;
+        font-size: 16px;
         font-weight: 600;
         color: $gray-9;
       }
@@ -106,7 +128,8 @@
 
     .size_wrap {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
+      margin: 10px 20px;
     }
 
     /* 숨겨진 라디오 버튼 숨김 */
@@ -123,34 +146,42 @@
       border: 1px solid #000;
       border-radius: 5px;
       cursor: pointer;
+      font-size: 16px;
     }
 
     /* 라디오 버튼가 선택된 경우의 스타일 */
-    input[type="radio"]:checked + label {
+    input[type="radio"]:checked+label {
       background-color: $b;
       color: #fff;
     }
+
     .button_wrapper {
       display: flex;
       flex-direction: column;
+
       .cart {
         width: 90%;
         height: 80px;
         background-color: #000;
         color: #fff;
         border-radius: 40px;
-        margin: 20px;
+        margin: 10px 20px;
+        font-size: 16px;
       }
+
       .wish_list {
         width: 90%;
         height: 80px;
         border: 1px solid $b;
         color: $b;
         border-radius: 40px;
-        margin: 0 20px;
+        margin: 10px 20px;
+        font-size: 16px;
+
         .wish_txt {
           padding-right: 10px;
         }
+
         &::after {
           content: "\f004";
           font-family: "Line Awesome Free";
@@ -158,5 +189,137 @@
         }
       }
     }
+
+    .description-preview {
+      p {
+        line-height: 30px;
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+
+      ul {
+        padding: 10px 40px;
+      }
+
+      li {
+        margin-bottom: 20px;
+        list-style-type: disc;
+      }
+
+      h3 {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+
+    .product_detail_info {
+      span {
+        font-size: 16px;
+        border-bottom: 1px solid $b;
+        margin: 10px 20px;
+        font-weight: 700;
+      }
+    }
+
+    // .footer-navigations-container {
+    //   margin-top: 30px;
+
+    //   .footer-navigation-wrapper {
+    //     width: 100%;
+    //     height: 100px;
+    //     border-top: 1px solid #333;
+
+    //     &:last-child {
+    //       border-bottom: 1px solid #333;
+    //     }
+
+    //     .footer-navigation-title {
+    //       // -webkit-box-align: center;
+    //       // -ms-flex-align: center;
+    //       // -webkit-box-pack: justify;
+    //       // -ms-flex-pack: justify;
+    //       align-items: center;
+    //       // display: -webkit-box;
+    //       // display: -ms-flexbox;
+    //       display: flex;
+    //       font-size: 16px;
+    //       font-weight: 700;
+    //       justify-content: space-between;
+    //       letter-spacing: .2px;
+    //       // line-height: 14px;
+    //       text-transform: uppercase;
+    //       padding: 30px 20px;
+    //       height: 100%;
+    //     }
+    //   }
+    // } 
+    // .wrapper {
+    //   width: 100%;
+    // }
+
+    // .panel-heading {
+    //   padding: 0;
+    //   border: 0;
+
+    //   a {
+    //     &:before {
+    //       // font-family: $font-family_1;
+    //       content: "\e114";
+    //       float: right;
+    //       transition: all 0.5s;
+    //     }
+    //   }
+    // }
+
+    // .panel-group {
+    //   .panel+.panel {
+    //     margin-top: 0;
+    //   }
+    // }
+
+    // .panel-title {
+    //   >a {
+    //     display: block;
+    //     padding: 15px;
+    //     color: #333;
+    //     font-size: 16px;
+    //     font-weight: bold;
+    //     text-transform: uppercase;
+    //     letter-spacing: 1px;
+    //     word-spacing: 3px;
+    //     text-decoration: none;
+    //     background: #fff;
+
+    //     &:active {
+    //       display: block;
+    //       padding: 15px;
+    //       color: #333;
+    //       font-size: 16px;
+    //       font-weight: bold;
+    //       text-transform: uppercase;
+    //       letter-spacing: 1px;
+    //       word-spacing: 3px;
+    //       text-decoration: none;
+    //       background: #fff;
+    //     }
+    //   }
+    // }
+
+    // .panel-heading.active {
+    //   a {
+    //     &:before {
+    //       -webkit-transform: rotate(180deg);
+    //       -moz-transform: rotate(180deg);
+    //       transform: rotate(180deg);
+    //     }
+    //   }
+    // }
+
+    // @media (max-width: 992px) {
+    //   .wrapper {
+    //     width: 100%;
+    //     margin-top: 40px;
+    //   }
+    // }
   }
 }
