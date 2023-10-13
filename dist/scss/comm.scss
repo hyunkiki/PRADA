@@ -94,9 +94,8 @@
     opacity: 0;
 
     &:checked {
-
       // input이 선택 됐을 때
-      &+label {
+      & + label {
         .bar {
           background: $w;
 
@@ -114,7 +113,7 @@
         }
       }
 
-      &~#gnb {
+      & ~ #gnb {
         right: 0;
       }
     }
@@ -162,7 +161,7 @@
     bottom: 0;
     width: 100%;
     padding: 50px;
-    background:$b;
+    background: $b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,7 +199,7 @@
         top: 20px;
         right: 20px;
         content: "\f105";
-        font-family: 'Line Awesome Free';
+        font-family: "Line Awesome Free";
         font-weight: 900;
       }
     }
@@ -215,7 +214,6 @@
     text-decoration: none;
     text-align: left;
 
-
     a {
       position: relative;
       display: block;
@@ -229,7 +227,7 @@
         margin-right: 10px;
         content: "\f004";
         font-size: 15px;
-        font-family: 'Line Awesome Free';
+        font-family: "Line Awesome Free";
         font-weight: 900;
       }
 
@@ -237,10 +235,9 @@
         margin-right: 10px;
         content: "\f095";
         font-size: 15px;
-        font-family: 'Line Awesome Free';
+        font-family: "Line Awesome Free";
         font-weight: 900;
       }
-
     }
   }
 }
@@ -395,11 +392,13 @@
       position: absolute;
       top: 45px;
       left: 10px;
+      width: 30%;
       margin-top: 10px;
       font-size: 25px;
       font-family: "Staatliches", cursive;
       color: $w;
       border: 1px solid $w;
+      text-align: center;
     }
   }
 
@@ -419,7 +418,6 @@
     font-size: 24px;
     color: $w;
     display: block;
-
   }
 
   .btn-more1 {

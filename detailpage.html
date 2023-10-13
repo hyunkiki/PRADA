@@ -1,303 +1,370 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRADA</title>
+    <meta
+      name="description"
+      content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="페이지 제목" />
+    <meta property="og:description" content="페이지 설명" />
+    <meta
+      property="og:image"
+      content="http://www.mysite.com/article/article1_featured_image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="페이지 제목" />
+    <meta name="twitter:description" content="페이지 설명" />
+    <meta
+      name="twitter:image"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta name="twitter:domain" content="사이트 명" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./dist/css/comm.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="./dist/js/include.js"></script>
+    <script defer src="./dist/js/comm.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PRADA</title>
-  <meta name="description" content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="페이지 제목" />
-  <meta property="og:description" content="페이지 설명" />
-  <meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg" />
-  <meta property="og:url" content="http://www.mysite.com/article/article1.html" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="페이지 제목" />
-  <meta name="twitter:description" content="페이지 설명" />
-  <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
-  <meta name="twitter:domain" content="사이트 명" />
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Staatliches&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <link rel="stylesheet"
-    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-  <link rel="stylesheet" href="./dist/css/comm.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script defer src="./dist/js/include.js"></script>
-  <script defer src="./dist/js/comm.js"></script>
-</head>
-
-
-<body>
-  <div id="u-skip">
-    <a href="#gnb"><span>주요메뉴 바로가기</span></a>
-    <a href="#main"><span>컨텐츠 바로가기</span></a>
-    <a href="#footer"><span>풋터 바로가기</span></a>
-  </div>
-  <div class="wrap" id="detail_wrap">
-    <!-- logo 왼쪽 type -->
-    <header data-include-path="./outline/header.html"></header>
-    <main id="main">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="thumb">
-              <img
-                src="https://www.prada.com/content/dam/pradabkg_products/U/UMG/UMG263/13J6F0040/UMG263_13J6_F0040_S_232_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
-                alt="detail_cloth">
+  <body>
+    <div id="u-skip">
+      <a href="#gnb"><span>주요메뉴 바로가기</span></a>
+      <a href="#main"><span>컨텐츠 바로가기</span></a>
+      <a href="#footer"><span>풋터 바로가기</span></a>
+    </div>
+    <div class="wrap" id="detail_wrap">
+      <!-- logo 왼쪽 type -->
+      <header data-include-path="./outline/header.html"></header>
+      <main id="main">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="thumb">
+                <img
+                  src="https://www.prada.com/content/dam/pradabkg_products/U/UMG/UMG263/13J6F0040/UMG263_13J6_F0040_S_232_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                  alt="detail_cloth"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="thumb">
+                <img
+                  src="https://www.prada.com/content/dam/pradabkg_products/U/UMG/UMG263/13J6F0040/UMG263_13J6_F0040_S_232_MDF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.600.600.jpg"
+                  alt="detail_cloth"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="thumb">
+                <img
+                  src="https://www.prada.com/content/dam/pradabkg_products/U/UMG/UMG263/13J6F0040/UMG263_13J6_F0040_S_232_MDD.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                  alt="detail_cloth"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="thumb">
+                <img
+                  src="https://www.prada.com/content/dam/pradabkg_products/U/UMG/UMG263/13J6F0040/UMG263_13J6_F0040_S_232_MDDA.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                  alt="detail_cloth"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="thumb">
+                <img
+                  src="https://www.prada.com/content/dam/pradabkg_products/U/UMG/UMG263/13J6F0040/UMG263_13J6_F0040_S_232_MDB.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                  alt="detail_cloth"
+                />
+              </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="thumb">
-              <img
-                src="https://www.prada.com/content/dam/pradabkg_products/U/UMG/UMG263/13J6F0040/UMG263_13J6_F0040_S_232_MDF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.600.600.jpg"
-                alt="detail_cloth">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="thumb">
-              <img
-                src="https://www.prada.com/content/dam/pradabkg_products/U/UMG/UMG263/13J6F0040/UMG263_13J6_F0040_S_232_MDD.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
-                alt="detail_cloth">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="thumb">
-              <img
-                src="https://www.prada.com/content/dam/pradabkg_products/U/UMG/UMG263/13J6F0040/UMG263_13J6_F0040_S_232_MDDA.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
-                alt="detail_cloth">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="thumb">
-              <img
-                src="https://www.prada.com/content/dam/pradabkg_products/U/UMG/UMG263/13J6F0040/UMG263_13J6_F0040_S_232_MDB.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
-                alt="detail_cloth">
-            </div>
-          </div>
+          <div class="swiper-scrollbar"></div>
         </div>
-        <div class="swiper-scrollbar"></div>
-      </div>
-      <section class="basic_info" view-section="basic-info">
-        <div class="tags_wrap">
-          <div class="tags">
-            <span>무료배송</span>
-          </div>
-          <div class="thumb_wrap">
-            <p class="item_tit">
-              컬러
-              <span Class="dispColor"></span>
-            </p>
-            <ul class="select_color">
-              <li>
-                <input type="radio" id="color" class="radio_select">
-                <label for="color">(1)CamelBrown</label>
-              </li>
-            </ul>
-          </div>
-          <section class="pr_option">
-            <div class="pr_info">
-              <h2 class="title"><span>FROM THE RUNWAY</span> <br>캐시미어 카디건</h2>
-              <div class="price">
-                <span class="won">
-                  <strong class="disprice">3,850,000</strong>
-                  원
-                </span>
-              </div>
-              <div class="size_info">
-                <h3 class="cloth_size_choice">사이즈선택</h3>
-                <a href="#" target="_blank" class="cloth_size_guide">사이즈안내</a>
-              </div>
-              <ul class="size_wrap">
+        <section class="basic_info" view-section="basic-info">
+          <div class="tags_wrap">
+            <div class="tags">
+              <span>무료배송</span>
+            </div>
+            <div class="thumb_wrap">
+              <p class="item_tit">
+                컬러
+                <span Class="dispColor"></span>
+              </p>
+              <ul class="select_color">
                 <li>
-                  <input type="radio" id="size" class="radio_select">
-                  <label for="size">44</label>
-                </li>
-                <li>
-                  <input type="radio" id="size" class="radio_select">
-                  <label for="size">48</label>
-                </li>
-                <li>
-                  <input type="radio" id="size" class="radio_select">
-                  <label for="size">52</label>
-                </li>
-                <li>
-                  <input type="radio" id="size" class="radio_select">
-                  <label for="size">56</label>
-                </li>
-                <li>
-                  <input type="radio" id="size" class="radio_select">
-                  <label for="size">60</label>
+                  <input type="radio" id="color" class="radio_select" />
+                  <label for="color">(1)CamelBrown</label>
                 </li>
               </ul>
-              <div class="button_wrapper">
-                <button type="button" class="cart" aria-label="장바구니">장바구니</button>
-                <button type="button" class="wish_list" aria-label="위시리스트">
-                  <span class="wish_txt">위시리스트</span>
-                </button>
-              </div>
-              <div class="description-preview">
-                <p>절제된 라인의 디자인으로 고급 캐시미어 카디건의 세련된 스타일을 완성합니다.
-                  전면 버튼 클로저가 있는 카디건으로, 립 조직 니트 트림이 특징입니다.
-                  아이코닉한 니트 트라이앵글이돋보입니다.</p>
-                <ul>
+            </div>
+            <section class="pr_option">
+              <div class="pr_info">
+                <h2 class="title">
+                  <span>FROM THE RUNWAY</span> <br />캐시미어 카디건
+                </h2>
+                <div class="price">
+                  <span class="won">
+                    <strong class="disprice">3,850,000</strong>
+                    원
+                  </span>
+                </div>
+                <div class="size_info">
+                  <h3 class="cloth_size_choice">사이즈선택</h3>
+                  <a href="#" target="_blank" class="cloth_size_guide"
+                    >사이즈안내</a
+                  >
+                </div>
+                <ul class="size_wrap">
                   <li>
-                    <h3 class="description_preview_color_description">현재 컬러: 카멜 브라운</h3>
+                    <input type="radio" id="size" class="radio_select" />
+                    <label for="size">44</label>
                   </li>
                   <li>
-                    <h3 class="description_preview_style_color">제품 코드: UMG263_13J6_F0040_S_232</h3>
+                    <input type="radio" id="size" class="radio_select" />
+                    <label for="size">48</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="size" class="radio_select" />
+                    <label for="size">52</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="size" class="radio_select" />
+                    <label for="size">56</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="size" class="radio_select" />
+                    <label for="size">60</label>
                   </li>
                 </ul>
-              </div>
-              <button type="button" class="product_detail_info">
-                <span>제품 상세 정보 더보기</span>
-              </button>
-              <div class="accordion_wrap">
-                <button class="accordion">
-                  <h3 class="accordion_tit"> 도와드릴까요? </h3>
-                  <i class="las la-chevron-down"></i>
-                </button>
-                <div class="panel">
-                  <ul class="nav_wrap">
-                    <li class="nav_item">
-                      <a href="#" class="tel">전화 문의 080-522-7199</a>
-                    </li>
-                    <li class="nav_item">
-                      <a href="#">문의하기</a>
-                    </li>
-                    <li class="nav_item">
-                      <a href="#">FAQ</a>
-                    </li>
-                    <li class="nav_item">
-                      <a href="#">추가정보</a>
-                    </li>
-                  </ul>
+                <div class="button_wrapper">
+                  <button type="button" class="cart" aria-label="장바구니">
+                    장바구니
+                  </button>
+                  <button
+                    type="button"
+                    class="wish_list"
+                    aria-label="위시리스트"
+                  >
+                    <span class="wish_txt">위시리스트</span>
+                  </button>
                 </div>
-                <button class="accordion">
-                  <h3 class="accordion_tit">무료배송 및 반품</h3>
-                  <i class="las la-chevron-down"></i>
-                </button>
-                <div class="panel">
-                  <p class="product_exp">
-                    모든 주문은 배송가능한 제품의 재고가 있을 경우에 한해
-                    생성되며 2~3일 영업일 내에 처리됩니다. <br>
-                    예상 배송완료 기간은 실제 배송일 이후 확인 가능합니다. <br>
-                    주문 후 고객님께 전달되는 운송장번호를 통해서 배송 상태를
-                    조회하실수있습니다. <br>
-                    제품 수령일로부터 14일 이내에 당사 지정 배송 업체를
-                    통해서 무상으로 반품하실 수 있습니다. <br>
-                    맟춤 제작된 상품은 주문 확인 후 30일 이내에 배송됩니다. <br>
-                    맟춤 제작된 제품은 맟춤 설정 시 선택한 스타일과 수령한
-                    제품이 다른 경우에만 반품할 수 있습니다. <br>
+                <div class="description-preview">
+                  <p>
+                    절제된 라인의 디자인으로 고급 캐시미어 카디건의 세련된
+                    스타일을 완성합니다. 전면 버튼 클로저가 있는 카디건으로, 립
+                    조직 니트 트림이 특징입니다. 아이코닉한 니트
+                    트라이앵글이돋보입니다.
                   </p>
-                </div>
-
-                <button class="accordion">
-                  <h3 class="accordion_tit">익스클루시브 서비스</h3>
-                  <i class="las la-chevron-down"></i>
-                </button>
-                <div class="panel">
-                  <ul class="nav_wrap">
-                    <li class="nav_item">
-                      <a href="#">프리다 서비스</a>
+                  <ul>
+                    <li>
+                      <h3 class="description_preview_color_description">
+                        현재 컬러: 카멜 브라운
+                      </h3>
                     </li>
-                    <li class="nav_item">
-                      <a href="#">주문 추적</a>
-                    </li>
-                    <li class="nav_item">
-                      <a href="#">반품</a>
+                    <li>
+                      <h3 class="description_preview_style_color">
+                        제품 코드: UMG263_13J6_F0040_S_232
+                      </h3>
                     </li>
                   </ul>
                 </div>
-                <button class="accordion">
-                  <h3 class="accordion_tit">회사</h3>
-                  <i class="las la-chevron-down"></i>
+                <button type="button" class="product_detail_info">
+                  <span>제품 상세 정보 더보기</span>
                 </button>
-                <div class="panel">
-                  <ul class="nav_wrap">
-                    <li class="nav_item">
-                      <a href="#">Fondazione Prada</a>
-                    </li>
-                    <li class="nav_item">
-                      <a href="#">Prada Group</a>
-                    </li>
-                    <li class="nav_item">
-                      <a href="#">Luna Rossa</a>
-                    </li>
-                    <li class="nav_item">
-                      <a href="#">사회적 책임</a>
-                    </li>
-                    <li class="nav_item">
-                      <a href="#">채용정보</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="meet_styling_wrap">
-                <h2 class="meet_styling_tit">스타일링 만나보기</h2>
-                <p class="meet_styling_intro">Instagram에 사진을 업로드하거나 @PRADA를 멘션해 나의 스타일을 선보일 기회를 노려 보세요.</p>
-                <button type="button" class="upload_now">
-                  <h3 class="upload_tit">사진을업로드하세요.</h3>
-                </button>
-              </div>
-              <div class="swiper mySwiper2">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img
-                      src="https://www.prada.com/content/dam/pradanux_products/U/UMC/UMC149/1JF4F0002/UMC149_1JF4_F0002_S_202_SLF.png/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
-                      alt="clothslide2" class="clothslide2_img">
+                <div class="accordion_wrap">
+                  <button class="accordion">
+                    <h3 class="accordion_tit">도와드릴까요?</h3>
+                    <i class="las la-chevron-down"></i>
+                  </button>
+                  <div class="panel">
+                    <ul class="nav_wrap">
+                      <li class="nav_item">
+                        <a href="#" class="tel">전화 문의 080-522-7199</a>
+                      </li>
+                      <li class="nav_item">
+                        <a href="#">문의하기</a>
+                      </li>
+                      <li class="nav_item">
+                        <a href="#">FAQ</a>
+                      </li>
+                      <li class="nav_item">
+                        <a href="#">추가정보</a>
+                      </li>
+                    </ul>
                   </div>
-                  <div class="swiper-slide">
-                    <img
-                      src=" https://www.prada.com/content/dam/pradabkg_products/U/UMB/UMB264/1ZLEF0008/UMB264_1ZLE_F0008_S_212_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
-                      alt="clothslide2" class="clothslide2_img">
+                  <button class="accordion">
+                    <h3 class="accordion_tit">무료배송 및 반품</h3>
+                    <i class="las la-chevron-down"></i>
+                  </button>
+                  <div class="panel">
+                    <p class="product_exp">
+                      모든 주문은 배송가능한 제품의 재고가 있을 경우에 한해
+                      생성되며 2~3일 영업일 내에 처리됩니다. <br />
+                      예상 배송완료 기간은 실제 배송일 이후 확인 가능합니다.
+                      <br />
+                      주문 후 고객님께 전달되는 운송장번호를 통해서 배송 상태를
+                      조회하실수있습니다. <br />
+                      제품 수령일로부터 14일 이내에 당사 지정 배송 업체를 통해서
+                      무상으로 반품하실 수 있습니다. <br />
+                      맟춤 제작된 상품은 주문 확인 후 30일 이내에 배송됩니다.
+                      <br />
+                      맟춤 제작된 제품은 맟춤 설정 시 선택한 스타일과 수령한
+                      제품이 다른 경우에만 반품할 수 있습니다. <br />
+                    </p>
                   </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="https://www.prada.com/content/dam/pradabkg_products/U/UMB/UMB481/11J6F0UB0/UMB481_11J6_F0UB0_S_231_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
-                      alt="clothslide2" class="clothslide2_img">
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="https://www.prada.com/content/dam/pradabkg_products/U/UMP/UMP67/1JF4F0002/UMP67_1JF4_F0002_S_202_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
-                      alt="clothslide2" class="clothslide2_img">
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="https://www.prada.com/content/dam/pradabkg_products/U/UMG/UMG193/12I7F0002/UMG193_12I7_F0002_S_231_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
-                      alt="clothslide2" class="clothslide2_img">
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="https://www.prada.com/content/dam/pradabkg_products/U/UMG/UMG026/1JF4F0002/UMG026_1JF4_F0002_S_202_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
-                      alt="clothslide2" class="clothslide2_img">
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="https://www.prada.com/content/dam/pradabkg_products/U/UMG/UMG170/11SVF0008/UMG170_11SV_F0008_S_221_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
-                      alt="clothslide2" class="clothslide2_img">
-                  </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </section>
-    </main>
-  </div>
-  <div class="section-contents">
-    <footer data-include-path="./outline/footer.html"></footer>
-  </div>
-</body>
 
+                  <button class="accordion">
+                    <h3 class="accordion_tit">익스클루시브 서비스</h3>
+                    <i class="las la-chevron-down"></i>
+                  </button>
+                  <div class="panel">
+                    <ul class="nav_wrap">
+                      <li class="nav_item">
+                        <a href="#">프리다 서비스</a>
+                      </li>
+                      <li class="nav_item">
+                        <a href="#">주문 추적</a>
+                      </li>
+                      <li class="nav_item">
+                        <a href="#">반품</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="accordion">
+                    <h3 class="accordion_tit">회사</h3>
+                    <i class="las la-chevron-down"></i>
+                  </button>
+                  <div class="panel">
+                    <ul class="nav_wrap">
+                      <li class="nav_item">
+                        <a href="#">Fondazione Prada</a>
+                      </li>
+                      <li class="nav_item">
+                        <a href="#">Prada Group</a>
+                      </li>
+                      <li class="nav_item">
+                        <a href="#">Luna Rossa</a>
+                      </li>
+                      <li class="nav_item">
+                        <a href="#">사회적 책임</a>
+                      </li>
+                      <li class="nav_item">
+                        <a href="#">채용정보</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="meet_styling_wrap">
+                  <h2 class="meet_styling_tit">스타일링 만나보기</h2>
+                  <p class="meet_styling_intro">
+                    Instagram에 사진을 업로드하거나 @PRADA를 멘션해 나의
+                    스타일을 선보일 기회를 노려 보세요.
+                  </p>
+                  <button type="button" class="upload_now">
+                    <h3 class="upload_tit">사진을업로드하세요.</h3>
+                  </button>
+                </div>
+                <h2>관련 항목</h2>
+                <div class="swiper mySwiper2">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        src="https://www.prada.com/content/dam/pradanux_products/U/UMC/UMC149/1JF4F0002/UMC149_1JF4_F0002_S_202_SLF.png/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                        alt="clothslide2"
+                        class="clothslide2_img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src=" https://www.prada.com/content/dam/pradabkg_products/U/UMB/UMB264/1ZLEF0008/UMB264_1ZLE_F0008_S_212_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                        alt="clothslide2"
+                        class="clothslide2_img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="https://www.prada.com/content/dam/pradabkg_products/U/UMB/UMB481/11J6F0UB0/UMB481_11J6_F0UB0_S_231_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                        alt="clothslide2"
+                        class="clothslide2_img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="https://www.prada.com/content/dam/pradabkg_products/U/UMP/UMP67/1JF4F0002/UMP67_1JF4_F0002_S_202_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                        alt="clothslide2"
+                        class="clothslide2_img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="https://www.prada.com/content/dam/pradabkg_products/U/UMG/UMG193/12I7F0002/UMG193_12I7_F0002_S_231_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                        alt="clothslide2"
+                        class="clothslide2_img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="https://www.prada.com/content/dam/pradabkg_products/U/UMG/UMG026/1JF4F0002/UMG026_1JF4_F0002_S_202_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                        alt="clothslide2"
+                        class="clothslide2_img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="https://www.prada.com/content/dam/pradabkg_products/U/UMG/UMG170/11SVF0008/UMG170_11SV_F0008_S_221_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                        alt="clothslide2"
+                        class="clothslide2_img"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="section-contents">
+      <footer data-include-path="./outline/footer.html"></footer>
+    </div>
+  </body>
 </html>

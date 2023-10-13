@@ -1056,11 +1056,13 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   position: absolute;
   top: 45px;
   left: 10px;
+  width: 30%;
   margin-top: 10px;
   font-size: 25px;
   font-family: "Staatliches", cursive;
   color: #fff;
   border: 1px solid #fff;
+  text-align: center;
 }
 .section-contents .prada-camp {
   padding: 10px;
