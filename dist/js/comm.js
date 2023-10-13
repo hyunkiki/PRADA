@@ -33,14 +33,30 @@ var swiper = new Swiper(".mySwiper", {
   }
 });
 
-// $(document).ready(function () {
+var swiper = new Swiper(".mySwiper2", {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  }
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  // },
+});
 
-//   $('.panel-collapse').on('show.bs.collapse', function () {
-//     $(this).siblings('.panel-heading').addClass('active');
-//   });
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-//   $('.panel-collapse').on('hide.bs.collapse', function () {
-//     $(this).siblings('.panel-heading').removeClass('active');
-//   });
-
-// });
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
