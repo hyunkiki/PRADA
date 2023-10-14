@@ -1,7 +1,7 @@
 // Youtube IFrame API를 비동기로 로드합니다.
-var tag = document.createElement('script');
+var tag = document.createElement("script");
 tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
+var firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 // onYouTubePlayerAPIReady 함수 이름은,
@@ -10,36 +10,36 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 // 그리고 함수는 전역(Global) 등록해야 합니다!
 function onYouTubePlayerAPIReady() {
   // <div id="player"></div>
-  new YT.Player('player', {
-    videoId: 'njFQaXr-YzA', // 최초 재생할 유튜브 영상 ID
+  new YT.Player("player", {
+    videoId: "njFQaXr-YzA", // 최초 재생할 유튜브 영상 ID
     playerVars: {
       autoplay: true, // 자동 재생 유무
       loop: true, // 반복 재생 유무
-      playlist: 'njFQaXr-YzA' // 반복 재생할 유튜브 영상 ID 목록
+      playlist: "njFQaXr-YzA", // 반복 재생할 유튜브 영상 ID 목록
     },
     events: {
       // 영상이 준비되었을 때,
       onReady: function (event) {
-        event.target.mute() // 음소거!
-      }
-    }
-  })
+        event.target.mute(); // 음소거!
+      },
+    },
+  });
 }
 
 var swiper = new Swiper(".mySwiper", {
   scrollbar: {
     el: ".swiper-scrollbar",
-    hide: true
-  }
+    hide: true,
+  },
 });
 
 var swiper = new Swiper(".mySwiper2", {
   slidesPerView: 2,
   spaceBetween: 30,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: true,
+  },
   // pagination: {
   //   el: ".swiper-pagination",
   //   clickable: true,
