@@ -1,0 +1,189 @@
+#cart_wrap {
+  position: relative;
+  .cart_buy_list_wrap {
+    padding: 20px;
+    width: 100%;
+    height: 33vh;
+    // border: 1px solid #000;
+    .toggle-area {
+      display: block;
+      padding: 6px 0 4px;
+      border-top: 1px solid #737680;
+      border-bottom: 1px solid #f1f2f3;
+      .icon {
+        &::after {
+          content: "\f056";
+          font-family: "Line Awesome Free";
+          font-weight: 900;
+          float: right;
+        }
+      }
+    }
+    .cart_img_wrap {
+      width: 80%;
+      .cart_img {
+        width: 100%;
+      }
+    }
+    .item-dec {
+      display: flex;
+      border-bottom: 1px solid #f1f2f3;
+      .item-detail {
+        width: 100%;
+        margin-left: 20px;
+        .item_name {
+          font-size: 16px;
+        }
+      }
+      .option_wrap {
+        margin-top: 10px;
+        .underline {
+          text-decoration: underline;
+        }
+      }
+      .product-quantity {
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+        align-items: center;
+        .select_wrap {
+          #quantity_select {
+            height: 30px;
+            width: 100px;
+            margin-left: 10px;
+          }
+        }
+      }
+      .print-message {
+        display: none;
+      }
+      .item-price {
+        margin-top: 10px;
+      }
+      .wish-btn-wrap {
+        margin-top: 10px;
+        .txt {
+          text-decoration: underline;
+        }
+      }
+      .item-delete-wrap {
+        .delete-btn {
+          &::after {
+            content: "\f2ed";
+            font-family: "Line Awesome Free";
+            font-weight: 900;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  .coupon_wrap {
+    padding: 20px;
+    width: 100%;
+    height: 20vh;
+    background: $b;
+    .coupon_tit {
+      color: $w;
+      text-align: center;
+    }
+    .promo-form {
+      max-width: 100%;
+      margin-top: 20px;
+      .code_wrap {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      #promoCode {
+        height: 43px;
+        width: 100%;
+      }
+      .input-promo {
+        width: 70%;
+      }
+      .submit-promo {
+        width: 30%;
+        margin-top: 1px;
+      }
+
+      .btn-submit {
+        color: #fff;
+        padding: 12px;
+        width: 100%;
+        background: red;
+      }
+      .input-textfield {
+        display: inline-block;
+        position: relative;
+      }
+    }
+    .row {
+      //   -webkit-box-sizing: border-box;
+      //   box-sizing: border-box;
+      //   display: -webkit-box;
+      //   display: -webkit-flex;
+      //   display: -ms-flexbox;
+      display: flex;
+      //   -webkit-box-orient: horizontal;
+      //   -webkit-box-direction: normal;
+      //   -webkit-flex-direction: row;
+      //   -ms-flex-direction: row;
+      flex-direction: row;
+      //   -webkit-flex-wrap: wrap;
+      //   -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      //   margin-left: -8px;
+      //   margin-right: -8px;
+      align-items: center;
+    }
+  }
+  .cart-order_wrap {
+    padding: 20px;
+    width: 100%;
+    height: 60vh;
+    background: #f1f2f3;
+    .cart_order_tit {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .list-item {
+      display: flex;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 20px;
+      justify-content: space-between;
+    }
+    .list-item.shipping-price {
+      margin-top: 40px;
+      margin-bottom: 32px;
+    }
+    .list-item.order-total-price {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+    .total-price.right-span {
+      color: red;
+    }
+    .button.primary {
+      background-color: red;
+      color: $w;
+    }
+    .button.width-max {
+      padding: 15px 0;
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      display: block;
+    }
+    .shipping_more_btn {
+      text-decoration: underline;
+      text-align: center;
+      display: block;
+      margin-top: 20px;
+    }
+    .cart-dec {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+}
