@@ -463,10 +463,6 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   margin-left: 10px;
 }
 
-#detail_wrap #main {
-  height: 568vh;
-  margin-bottom: 100px;
-}
 #detail_wrap body {
   position: relative;
   height: 100%;
@@ -496,10 +492,6 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   -o-object-fit: cover;
      object-fit: cover;
 }
-#detail_wrap .tags_wrap {
-  width: 100%;
-  height: 500px;
-}
 #detail_wrap .tags_wrap .tags {
   display: block;
   width: 55px;
@@ -528,11 +520,28 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   width: 20px;
   height: 20px;
 }
-#detail_wrap .thumb_wrap .select_color input[type=radio] {
-  accent-color: rgb(206, 152, 96);
-}
 #detail_wrap .thumb_wrap .select_color label {
+  display: flex;
+  gap: 10px;
   font-size: 16px;
+  border: 1px solid #fff;
+  padding: 4px;
+}
+#detail_wrap .thumb_wrap .select_color label::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+#detail_wrap .thumb_wrap .select_color input:checked + label {
+  border: 1px solid #000;
+}
+#detail_wrap .thumb_wrap .select_color .color1::before {
+  background: brown;
+}
+#detail_wrap .thumb_wrap .select_color .color2::before {
+  background: blue;
 }
 #detail_wrap .pr_info {
   /* 숨겨진 라디오 버튼 숨김 */
@@ -1072,20 +1081,19 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 #payment_wrap .order_wrap .apply_coupon_wrap {
   border-top: 5px solid #eee;
   height: 15vh;
-  padding: 10px;
+  padding: 20px;
 }
-#payment_wrap .order_wrap .apply_coupon_wrap h2 {
-  padding-left: 20px;
+#payment_wrap .order_wrap .apply_coupon_wrap .coupon_mini_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+#payment_wrap .order_wrap .apply_coupon_wrap .coupon_mini_wrap h2 {
   font-size: 16px;
 }
-#payment_wrap .order_wrap .apply_coupon_wrap .coupon_choice {
-  position: absolute;
-  right: 20px;
-  bottom: 86px;
-  font-size: 14px;
-  color: #767676;
+#payment_wrap .order_wrap .apply_coupon_wrap .coupon_mini_wrap .coupon_choice {
+  font-size: 16px;
 }
-#payment_wrap .order_wrap .apply_coupon_wrap .coupon_choice::after {
+#payment_wrap .order_wrap .apply_coupon_wrap .coupon_mini_wrap .coupon_choice::after {
   content: "\f105";
   font-family: "Line Awesome Free";
   font-weight: 900;
@@ -1093,15 +1101,128 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 #payment_wrap .order_wrap .apply_coupon_wrap li {
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 10px 0;
+}
+#payment_wrap .order_wrap .how_to_pay_wrap {
+  border-top: 5px solid #eee;
+  height: 45vh;
+  padding: 20px;
+}
+#payment_wrap .order_wrap .how_to_pay_wrap .pay_mini_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+#payment_wrap .order_wrap .how_to_pay_wrap .pay_mini_wrap .pay_method {
+  font-size: 16px;
+}
+#payment_wrap .order_wrap .how_to_pay_wrap .pay_mini_wrap .card_Benefits {
+  font-size: 16px;
+}
+#payment_wrap .order_wrap .how_to_pay_wrap .pay_mini_wrap .card_Benefits::after {
+  content: "\f128";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  color: #fff;
+  background: #767676;
+}
+#payment_wrap .order_wrap .how_to_pay_wrap .paymentlist {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+#payment_wrap .order_wrap .how_to_pay_wrap .paymentlist li {
+  position: relative;
+  width: 33.3%;
+  padding-bottom: 5px;
+}
+#payment_wrap .order_wrap .how_to_pay_wrap .paymentlist li .ss span {
+  background-position: center -480px;
+}
+#payment_wrap .order_wrap .how_to_pay_wrap .paymentlist li .kakao span {
+  background-position: center -240px;
+}
+#payment_wrap .order_wrap .how_to_pay_wrap .paymentlist li .toss span {
+  background-position: center -320px;
+}
+#payment_wrap .order_wrap .how_to_pay_wrap .paymentlist li .payco span {
+  background-position: center -640px;
+}
+#payment_wrap .order_wrap .how_to_pay_wrap .paymentlist li .naver span {
+  background-position: center -400px;
+}
+#payment_wrap .order_wrap .how_to_pay_wrap .paymentlist li .account span {
+  background-position: center -80px;
+}
+#payment_wrap .order_wrap .how_to_pay_wrap .paymentlist li .deposit span {
+  background-position: center -160px;
+}
+#payment_wrap .order_wrap .how_to_pay_wrap .paymentlist li .phone span {
+  background-position: center -560px;
+}
+#payment_wrap .order_wrap .how_to_pay_wrap .paymentlist li input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+#payment_wrap .order_wrap .how_to_pay_wrap .paymentlist li input:checked + span {
+  background-color: #f9f4ff;
+  border-color: #8e1fff;
+  font-weight: 700;
+}
+#payment_wrap .order_wrap .how_to_pay_wrap .paymentlist li label {
+  position: relative;
+  display: inline-block;
+  width: 95%;
+  height: 80px;
+}
+#payment_wrap .order_wrap .how_to_pay_wrap .paymentlist li label span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 45px;
+  text-align: center;
+  font-size: 14px;
+  color: #111;
+  border: 1px solid #e5e5e5;
+  background: url(../../images/ico_paywith.png) no-repeat center top/80px auto;
+}
+#payment_wrap .order_wrap .how_to_pay_wrap .paymentlist li label span em {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  padding: 0 5px;
+  max-width: 28vw;
+  line-height: 14px;
+  font-size: 9px;
+  color: #fff;
+  background: #767676;
+}
+#payment_wrap .order_wrap .payment-clap {
+  border-top: 5px solid #eee;
+  padding: 20px;
+}
+#payment_wrap .order_wrap .payment-clap .pay_info_tit {
+  font-size: 16px;
+}
+#payment_wrap .order_wrap .payment-clap .payment-total {
+  padding: 20px 0 0;
+  border-top: 1px solid #e5e5e5;
+}
+#payment_wrap .order_wrap .payment-clap li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
 }
 
 .wrap {
   padding-top: 70px;
 }
 
-.container {
-  padding: 0 4%;
+.inner {
+  padding: 0 20px;
 }
 
 .bg-gray {
@@ -1455,7 +1576,6 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   width: 100px;
 }
 #footer .footer-sns_icons {
-  margin-top: -70px;
   display: flex;
   justify-content: center;
 }

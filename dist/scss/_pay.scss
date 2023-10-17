@@ -1,20 +1,24 @@
 #payment_wrap {
   position: relative;
+
   .order_wrap {
     details {
       padding: 20px;
+
       summary {
         display: flex;
         align-items: center;
         height: 60px;
         font-size: 17px;
         font-weight: 700;
+
         &::after {
           content: "\f107";
           font-family: "Line Awesome Free";
           font-weight: 900;
         }
       }
+
       h2 {
         // position: absolute;
         // left: 20px;
@@ -25,6 +29,7 @@
         color: #111;
         font-weight: 700;
       }
+
       p {
         width: 70%;
         line-height: 20px;
@@ -32,6 +37,7 @@
         font-weight: 400;
         font-size: 12px;
         margin-left: auto;
+
         .goods {
           display: inline-block;
           max-width: 70%;
@@ -40,26 +46,32 @@
           text-overflow: ellipsis;
           font-size: 14px;
         }
+
         span {
           vertical-align: middle;
           font-size: 14px;
         }
       }
+
       .thumbs-img {
         width: 80%;
         float: left;
         margin: 0 16px 0 var(--gap);
+
         img {
           width: 100%;
           height: 100%;
         }
       }
     }
+
     details[open] summary:after {
       transform: rotate(-180deg);
     }
+
     .order-pd {
       display: flex;
+
       .pd-info {
         overflow: hidden;
         margin: 0 20px 0 16px;
@@ -68,8 +80,10 @@
         font-size: 13px;
         line-height: 18px;
         min-height: 116px;
+
         .pd-name {
           font-size: 14px;
+
           span {
             // display: block;
             color: #111;
@@ -82,15 +96,18 @@
             margin-right: 5px;
           }
         }
+
         .pd-option {
           margin-top: 20px;
           font-size: 16px;
         }
+
         .order-shipping {
           margin-top: 20px;
           color: $b;
           font-size: 14px;
         }
+
         .order-pd-price {
           margin-top: 20px;
           color: $b;
@@ -98,17 +115,21 @@
         }
       }
     }
+
     .delivery_warp {
       border-top: 5px solid #eee;
       height: 20vh;
+
       .delivery_info {
         padding: 0 20px;
         display: flex;
         justify-content: space-between;
         margin-top: 20px;
+
         h2 {
           font-size: 16px;
         }
+
         .delivery_btn {
           display: inline-block;
           text-align: center;
@@ -119,35 +140,176 @@
           color: white;
         }
       }
+
       .list-empty {
         text-align: center;
         padding: 38px 20px;
       }
     }
+
     .apply_coupon_wrap {
       border-top: 5px solid #eee;
       height: 15vh;
-      padding: 10px;
-      h2 {
-        padding-left: 20px;
+      padding: 20px;
+
+      .coupon_mini_wrap {
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+          font-size: 16px;
+        }
+
+        .coupon_choice {
+          font-size: 16px;
+
+          &::after {
+            content: "\f105";
+            font-family: "Line Awesome Free";
+            font-weight: 900;
+          }
+        }
+      }
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+      }
+    }
+
+    .how_to_pay_wrap {
+      border-top: 5px solid #eee;
+      height: 45vh;
+      padding: 20px;
+
+      .pay_mini_wrap {
+        display: flex;
+        justify-content: space-between;
+
+        .pay_method {
+          font-size: 16px;
+        }
+
+        .card_Benefits {
+          font-size: 16px;
+          &::after {
+            content: "\f128";
+            font-family: "Line Awesome Free";
+            font-weight: 900;
+            color: $w;
+            background: #767676;
+          }
+        }
+      }
+      .paymentlist {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        li {
+          position: relative;
+          width: 33.3%;
+          padding-bottom: 5px;
+          .ss {
+            span {
+              background-position: center -480px;
+            }
+          }
+          .kakao {
+            span {
+              background-position: center -240px;
+            }
+          }
+          .toss {
+            span {
+              background-position: center -320px;
+            }
+          }
+          .payco {
+            span {
+              background-position: center -640px;
+            }
+          }
+          .naver {
+            span {
+              background-position: center -400px;
+            }
+          }
+          .account {
+            span {
+              background-position: center -80px;
+            }
+          }
+          .deposit {
+            span {
+              background-position: center -160px;
+            }
+          }
+          .phone {
+            span {
+              background-position: center -560px;
+            }
+          }
+          input {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+            &:checked + span {
+              background-color: #f9f4ff;
+              border-color: #8e1fff;
+              font-weight: 700;
+            }
+          }
+
+          label {
+            position: relative;
+            display: inline-block;
+            width: 95%;
+            height: 80px;
+            span {
+              display: inline-block;
+              width: 100%;
+              height: 100%;
+              box-sizing: border-box;
+              padding-top: 45px;
+              text-align: center;
+              font-size: 14px;
+              color: #111;
+              border: 1px solid #e5e5e5;
+              background: url(../../images/ico_paywith.png) no-repeat center
+                top/80px auto;
+              em {
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: block;
+                padding: 0 5px;
+                max-width: 28vw;
+                line-height: 14px;
+                font-size: 9px;
+                color: #fff;
+                background: #767676;
+              }
+            }
+          }
+        }
+      }
+    }
+    .payment-clap {
+      border-top: 5px solid #eee;
+      padding: 20px;
+      .pay_info_tit {
         font-size: 16px;
       }
-      .coupon_choice {
-        position: absolute;
-        right: 20px;
-        bottom: 86px;
-        font-size: 14px;
-        color: #767676;
-        &::after {
-          content: "\f105";
-          font-family: "Line Awesome Free";
-          font-weight: 900;
-        }
+      .payment-total {
+        padding: 20px 0 0;
+        border-top: 1px solid #e5e5e5;
       }
       li {
         display: flex;
         justify-content: space-between;
-        padding: 10px 20px;
+        margin: 10px 0;
       }
     }
   }

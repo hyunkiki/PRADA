@@ -10,11 +10,9 @@
 .wrap {
   padding-top: 70px;
 }
-
-.container {
-  padding: 0 $bothMargin;
+.inner {
+  padding: 0 $spacingList;
 }
-
 .bg-gray {
   background: $gray-e;
 }
@@ -441,7 +439,7 @@
   }
 
   .footer-sns_icons {
-    margin-top: -70px;
+    // margin-top: -70px;
     display: flex;
     justify-content: center;
   }
