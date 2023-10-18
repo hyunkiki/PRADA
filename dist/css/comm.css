@@ -496,7 +496,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   display: block;
   width: 55px;
   height: 23px;
-  margin: 20px;
+  margin: 20px 0;
   border: 1px solid #999;
 }
 #detail_wrap .tags_wrap .tags span {
@@ -508,13 +508,12 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 #detail_wrap .thumb_wrap .item_tit {
   font-size: 16px;
   font-weight: 700;
-  padding: 0 20px;
 }
 #detail_wrap .thumb_wrap .item_tit span {
   font-weight: 400;
 }
 #detail_wrap .thumb_wrap .select_color li {
-  margin: 10px 20px;
+  margin: 10px 0;
 }
 #detail_wrap .thumb_wrap .select_color .radio_select {
   width: 20px;
@@ -534,14 +533,21 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   height: 30px;
   border-radius: 50%;
 }
-#detail_wrap .thumb_wrap .select_color input:checked + label {
-  border: 1px solid #000;
+#detail_wrap .thumb_wrap .select_color input:checked + .color1::before {
+  background: #bf8a3d;
+}
+#detail_wrap .thumb_wrap .select_color input:checked + .color2::before {
+  background: #000;
 }
 #detail_wrap .thumb_wrap .select_color .color1::before {
-  background: brown;
+  background: #fff;
+  border: 3px solid;
 }
 #detail_wrap .thumb_wrap .select_color .color2::before {
-  background: blue;
+  background: #fff;
+  border: 3px solid;
+  width: 30px;
+  height: 30px;
 }
 #detail_wrap .pr_info {
   /* 숨겨진 라디오 버튼 숨김 */
@@ -549,7 +555,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   /* 라디오 버튼가 선택된 경우의 스타일 */
 }
 #detail_wrap .pr_info .title {
-  margin: 10px 20px;
+  margin: 10px 0;
   font-size: 25px;
   font-weight: 800;
 }
@@ -558,7 +564,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   font-weight: 400;
 }
 #detail_wrap .pr_info .price {
-  margin: 10px 20px;
+  margin: 10px 0;
 }
 #detail_wrap .pr_info .disprice {
   font-size: 18px;
@@ -567,7 +573,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 10px 20px;
+  margin: 10px 0;
 }
 #detail_wrap .pr_info .size_info .cloth_size_choice {
   font-size: 20px;
@@ -581,7 +587,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 #detail_wrap .pr_info .size_wrap {
   display: flex;
   justify-content: space-between;
-  margin: 10px 20px;
+  margin: 10px 0;
 }
 #detail_wrap .pr_info input[type=radio] {
   display: none;
@@ -605,21 +611,21 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   flex-direction: column;
 }
 #detail_wrap .pr_info .button_wrapper .cart {
-  width: 90%;
+  width: 100%;
   height: 80px;
   background-color: #000;
   color: #fff;
   border-radius: 40px;
-  margin: 10px 20px;
+  margin: 10px 0;
   font-size: 16px;
 }
 #detail_wrap .pr_info .button_wrapper .wish_list {
-  width: 90%;
+  width: 100%;
   height: 80px;
   border: 1px solid #000;
   color: #000;
   border-radius: 40px;
-  margin: 10px 20px;
+  margin: 10px 0;
   font-size: 16px;
 }
 #detail_wrap .pr_info .button_wrapper .wish_list .wish_txt {
@@ -632,11 +638,11 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 }
 #detail_wrap .pr_info .description-preview p {
   line-height: 30px;
-  padding: 20px;
+  padding: 20px 0;
   font-size: 16px;
 }
 #detail_wrap .pr_info .description-preview ul {
-  padding: 10px 40px;
+  padding: 10px 20px;
 }
 #detail_wrap .pr_info .description-preview li {
   margin-bottom: 20px;
@@ -649,34 +655,30 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 #detail_wrap .pr_info .product_detail_info span {
   font-size: 16px;
   border-bottom: 1px solid #000;
-  margin: 10px 20px;
   font-weight: 700;
 }
 #detail_wrap .pr_info .view_image_wrap .product_info {
-  padding: 20px;
+  padding: 20px 0;
   font-size: 16px;
 }
 #detail_wrap .pr_info .view_image_wrap .model_img_tit {
-  padding: 0 20px 10px 20px;
+  margin-bottom: 20px;
   font-size: 16px;
 }
 #detail_wrap .pr_info .view_image_wrap .Product_img_tit {
-  padding: 10px 20px;
+  padding: 20px 0;
   font-size: 16px;
 }
 #detail_wrap .pr_info .view_image_wrap .model_img_exp {
-  padding-left: 20px;
-}
-#detail_wrap .pr_info .view_image_wrap .thumb {
-  width: 90%;
-  margin-top: 10px;
-  margin-left: 20px;
-}
-#detail_wrap .pr_info .view_image_wrap .thumb img {
+  font-size: 16px;
+  display: block;
   width: 100%;
 }
-#detail_wrap .pr_info .accordion_wrap {
-  margin-top: 40px;
+#detail_wrap .pr_info .view_image_wrap li {
+  margin-top: 10px;
+}
+#detail_wrap .pr_info .view_image_wrap img {
+  width: 100%;
 }
 #detail_wrap .pr_info .accordion_wrap .accordion {
   background-color: #fff;
@@ -735,7 +737,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   margin: 20px 0;
 }
 #detail_wrap .pr_info .meet_styling_wrap {
-  padding: 40px 20px;
+  padding: 40px 0;
 }
 #detail_wrap .pr_info .meet_styling_wrap .meet_styling_tit {
   font-size: 25px;
@@ -754,7 +756,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   font-size: 16px;
 }
 #detail_wrap .pr_info .related_list_tit {
-  padding: 40px 20px;
+  padding: 40px 0;
 }
 #detail_wrap .pr_info .swiper {
   width: 100%;
@@ -793,11 +795,6 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 
 #cart_wrap {
   position: relative;
-}
-#cart_wrap .cart_buy_list_wrap {
-  padding: 20px;
-  width: 100%;
-  height: 33vh;
 }
 #cart_wrap .cart_buy_list_wrap .toggle-area {
   display: block;
@@ -864,9 +861,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   font-size: 20px;
 }
 #cart_wrap .coupon_wrap {
-  padding: 20px;
-  width: 100%;
-  height: 20vh;
+  padding: 20px 0;
   background: #000;
 }
 #cart_wrap .coupon_wrap .coupon_tit {
@@ -909,9 +904,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   align-items: center;
 }
 #cart_wrap .cart-order_wrap {
-  padding: 20px;
-  width: 100%;
-  height: 60vh;
+  padding: 20px 0;
   background: #f1f2f3;
 }
 #cart_wrap .cart-order_wrap .cart_order_tit {
@@ -962,7 +955,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   position: relative;
 }
 #payment_wrap .order_wrap details {
-  padding: 20px;
+  padding: 20px 0;
 }
 #payment_wrap .order_wrap details summary {
   display: flex;
@@ -1013,12 +1006,15 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 #payment_wrap .order_wrap details[open] summary:after {
   transform: rotate(-180deg);
 }
+#payment_wrap .order_wrap ul {
+  margin-top: 20px;
+}
 #payment_wrap .order_wrap .order-pd {
   display: flex;
 }
 #payment_wrap .order_wrap .order-pd .pd-info {
   overflow: hidden;
-  margin: 0 20px 0 16px;
+  margin-left: 20px;
   color: #767676;
   min-height: 106px;
   font-size: 13px;
@@ -1054,7 +1050,6 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 }
 #payment_wrap .order_wrap .delivery_warp {
   border-top: 5px solid #eee;
-  height: 20vh;
 }
 #payment_wrap .order_wrap .delivery_warp .delivery_info {
   padding: 0 20px;
@@ -1076,12 +1071,11 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 }
 #payment_wrap .order_wrap .delivery_warp .list-empty {
   text-align: center;
-  padding: 38px 20px;
+  padding: 40px 0;
 }
 #payment_wrap .order_wrap .apply_coupon_wrap {
   border-top: 5px solid #eee;
-  height: 15vh;
-  padding: 20px;
+  padding: 20px 0px;
 }
 #payment_wrap .order_wrap .apply_coupon_wrap .coupon_mini_wrap {
   display: flex;
@@ -1105,8 +1099,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 }
 #payment_wrap .order_wrap .how_to_pay_wrap {
   border-top: 5px solid #eee;
-  height: 45vh;
-  padding: 20px;
+  padding: 20px 0;
 }
 #payment_wrap .order_wrap .how_to_pay_wrap .pay_mini_wrap {
   display: flex;
@@ -1202,7 +1195,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 }
 #payment_wrap .order_wrap .payment-clap {
   border-top: 5px solid #eee;
-  padding: 20px;
+  padding: 20px 0;
 }
 #payment_wrap .order_wrap .payment-clap .pay_info_tit {
   font-size: 16px;
@@ -1215,6 +1208,51 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
+}
+#payment_wrap .order_wrap .consent {
+  padding: 20px 0;
+  border-top: 5px solid #eee;
+}
+#payment_wrap .order_wrap .consent .pay_display {
+  font-size: 16px;
+}
+#payment_wrap .order_wrap .consent .buy_agree_check2 {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+#payment_wrap .order_wrap .consent .buy_agree_check2 a::after {
+  content: "\f105";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+}
+#payment_wrap .order_wrap .consent .additional {
+  padding: 20px 0;
+  border-top: 2px solid #eee;
+}
+#payment_wrap .order_wrap .consent .additional .buy_agree_check {
+  margin: 10px 0;
+}
+#payment_wrap .order_wrap .consent .additional a::after {
+  content: "\f105";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  float: right;
+}
+#payment_wrap .order_wrap .consent .pay_txt {
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 14px;
+  color: #111;
+  text-align: center;
+}
+#payment_wrap .order_wrap .consent .btn_primary {
+  font-size: 16px;
+  background: #000;
+  width: 100%;
+  height: 50px;
+  color: #fff;
 }
 
 .wrap {

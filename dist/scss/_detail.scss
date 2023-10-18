@@ -39,7 +39,7 @@
       display: block;
       width: 55px;
       height: 23px;
-      margin: 20px;
+      margin: 20px 0;
       border: 1px solid $gray-9;
 
       span {
@@ -54,7 +54,7 @@
     .item_tit {
       font-size: 16px;
       font-weight: 700;
-      padding: 0 20px;
+      // padding: 0 20px;
 
       span {
         font-weight: 400;
@@ -63,7 +63,7 @@
 
     .select_color {
       li {
-        margin: 10px 20px;
+        margin: 10px 0;
       }
 
       .radio_select {
@@ -87,18 +87,27 @@
       }
 
       // selected
-      input:checked + label {
-        border: 1px solid #000;
+      input:checked + .color1::before {
+        background: #bf8a3d;
+      }
+      input:checked + .color2::before {
+        background: $b;
       }
 
       .color1 {
         &::before {
-          background: brown;
+          background: #fff;
+          border: 3px solid;
+          // width: 30px;
+          // height: 30px;
         }
       }
       .color2 {
         &::before {
-          background: blue;
+          background: #fff;
+          border: 3px solid;
+          width: 30px;
+          height: 30px;
         }
       }
     }
@@ -106,7 +115,7 @@
 
   .pr_info {
     .title {
-      margin: 10px 20px;
+      margin: 10px 0;
       font-size: 25px;
       font-weight: 800;
 
@@ -117,7 +126,7 @@
     }
 
     .price {
-      margin: 10px 20px;
+      margin: 10px 0;
     }
 
     .disprice {
@@ -128,8 +137,7 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      margin: 10px 20px;
-
+      margin: 10px 0;
       .cloth_size_choice {
         font-size: 20px;
         font-weight: 700;
@@ -145,7 +153,7 @@
     .size_wrap {
       display: flex;
       justify-content: space-between;
-      margin: 10px 20px;
+      margin: 10px 0;
     }
 
     /* 숨겨진 라디오 버튼 숨김 */
@@ -176,22 +184,22 @@
       flex-direction: column;
 
       .cart {
-        width: 90%;
+        width: 100%;
         height: 80px;
         background-color: #000;
         color: #fff;
         border-radius: 40px;
-        margin: 10px 20px;
+        margin: 10px 0;
         font-size: 16px;
       }
 
       .wish_list {
-        width: 90%;
+        width: 100%;
         height: 80px;
         border: 1px solid $b;
         color: $b;
         border-radius: 40px;
-        margin: 10px 20px;
+        margin: 10px 0;
         font-size: 16px;
 
         .wish_txt {
@@ -209,12 +217,12 @@
     .description-preview {
       p {
         line-height: 30px;
-        padding: 20px;
+        padding: 20px 0;
         font-size: 16px;
       }
 
       ul {
-        padding: 10px 40px;
+        padding: 10px 20px;
       }
 
       li {
@@ -232,44 +240,41 @@
       span {
         font-size: 16px;
         border-bottom: 1px solid $b;
-        margin: 10px 20px;
+        // margin: 10px 20px;
         font-weight: 700;
       }
     }
 
     .view_image_wrap {
       .product_info {
-        padding: 20px;
+        padding: 20px 0;
         font-size: 16px;
       }
 
       .model_img_tit {
-        padding: 0 20px 10px 20px;
+        margin-bottom: 20px;
         font-size: 16px;
       }
 
       .Product_img_tit {
-        padding: 10px 20px;
+        padding: 20px 0;
         font-size: 16px;
       }
-
       .model_img_exp {
-        padding-left: 20px;
+        font-size: 16px;
+        display: block;
+        width: 100%;
       }
-
-      .thumb {
-        width: 90%;
+      li {
         margin-top: 10px;
-        margin-left: 20px;
-
-        img {
-          width: 100%;
-        }
+      }
+      img {
+        width: 100%;
       }
     }
 
     .accordion_wrap {
-      margin-top: 40px;
+      // margin-top: 40px;
 
       .accordion {
         background-color: $w;
@@ -342,7 +347,7 @@
     }
 
     .meet_styling_wrap {
-      padding: 40px 20px;
+      padding: 40px 0;
 
       .meet_styling_tit {
         font-size: 25px;
@@ -366,7 +371,7 @@
     }
 
     .related_list_tit {
-      padding: 40px 20px;
+      padding: 40px 0;
     }
 
     .swiper {
