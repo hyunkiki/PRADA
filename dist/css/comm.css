@@ -348,7 +348,7 @@ main .lst-contents .lst-tit {
 }
 main .lst-contents .lst-tit a {
   font-size: 25px;
-  font-family: "Rubik Mono One", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
 }
 main .lst-contents .slide-wrap {
   position: relative;
@@ -376,6 +376,9 @@ main .lst-contents .slide-wrap .slide-sub-menu li .lst-all {
 main .lst-contents .slide-wrap .slide-sub-menu li a {
   color: #a0a0a0;
   font-size: 16px;
+}
+main .lst-contents .section-contents {
+  margin: 0;
 }
 main .lst-contents .section-contents .lst-shopping {
   display: flex;
@@ -431,8 +434,9 @@ main .lst-contents .section-contents .thumb-shopping img::after {
 main .lst-contents .section-contents .txt-shopping .txt-shopping-tit {
   display: block;
   margin-top: 5px;
-  font-size: 14px;
-  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  height: 48px;
 }
 main .lst-contents .section-contents .txt-shopping .txt-shopping-desc {
   margin-top: 5px;
@@ -441,7 +445,7 @@ main .lst-contents .section-contents .txt-shopping .txt-shopping-desc {
 main .lst-contents .btn {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin: 50px 0;
 }
 main .lst-contents .btn .btn_more_box {
   width: 140px;
@@ -1564,6 +1568,9 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 .thumb_banner .main_pditem_info {
   margin-top: 5px;
 }
+.thumb_banner .main_pditem_info .item_name {
+  height: 42px;
+}
 .thumb_banner .thumbBanner_lst {
   display: flex;
   flex-wrap: wrap;
@@ -1701,7 +1708,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 }
 
 #footer {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   border-top: 1px solid #a0a0a0;
 }
 #footer .logo img {
@@ -1776,4 +1783,80 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   text-decoration: underline;
   font-size: 12px;
   color: #b4b4b4;
+}
+
+.mySwiper_main h2 {
+  font-size: 25px;
+  font-family: "Libre Franklin", sans-serif;
+  margin-bottom: 20px;
+}
+
+.slide-img-txt-box .slide_mini-tit {
+  display: block;
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 1;
+  width: 100%;
+  text-align: left;
+}
+.slide-img-txt-box .slide_img-exp {
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 10px;
+  height: 48px;
+}
+
+.swiper_btn-group {
+  display: flex;
+  margin-top: 10px;
+}
+
+.swiper-btn-more {
+  display: flex;
+  width: 100px;
+  height: 40px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.swiper-btn-pur {
+  display: flex;
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  border-radius: 5px;
+}
+
+.swiper {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-slide {
+  width: 80%;
+}
+.swiper-slide a .swiper_img {
+  width: 100%;
+  border-radius: 10px;
 }/*# sourceMappingURL=comm.css.map */

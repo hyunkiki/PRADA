@@ -75,3 +75,12 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+var swiper = new Swiper(".mySwiper_main", {
+  slidesPerView: "auto",
+  spaceBetween: 30,
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true
+  // }
+});

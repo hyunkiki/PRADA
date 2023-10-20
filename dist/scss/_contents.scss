@@ -11,7 +11,7 @@ main {
 
       a {
         font-size: 25px;
-        font-family: "Rubik Mono One", sans-serif;
+        font-family: "Libre Franklin", sans-serif;
       }
     }
 
@@ -49,6 +49,7 @@ main {
     }
 
     .section-contents {
+      margin: 0;
       .lst-shopping {
         display: flex;
         justify-content: space-between;
@@ -109,8 +110,10 @@ main {
         .txt-shopping-tit {
           display: block;
           margin-top: 5px;
-          font-size: 14px;
-          color: black;
+          font-size: 16px;
+          // color: black;
+          font-weight: 400;
+          height: 48px;
         }
 
         .txt-shopping-desc {
@@ -123,7 +126,7 @@ main {
     .btn {
       display: flex;
       justify-content: center;
-      margin-top: 50px;
+      margin: 50px 0;
 
       .btn_more_box {
         width: 140px;
