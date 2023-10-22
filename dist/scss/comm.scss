@@ -114,6 +114,7 @@
 
       & ~ #gnb {
         right: 0;
+        overflow-y: auto;
       }
     }
   }
@@ -167,47 +168,10 @@
     transition: all 0.3s;
   }
 
-  // .lst-categ {
-  //   position: absolute;
-  //   width: 100%;
-  //   top: 145px;
-  //   left: -1px;
-  //   text-transform: uppercase;
-  //   text-decoration: none;
-  //   text-align: left;
-
-  //   .categ-item:first-child {
-  //     border-top: 1px solid $w;
-  //   }
-
-  //   .categ-item {
-  //     border-bottom: 1px solid $w;
-  //   }
-
-  //   a {
-  //     position: relative;
-  //     display: block;
-  //     padding: 20px;
-  //     width: 100%;
-  //     font-size: 15px;
-  //     font-weight: bold;
-  //     color: $w;
-
-  //     &::after {
-  //       position: absolute;
-  //       top: 20px;
-  //       right: 20px;
-  //       content: "\f105";
-  //       font-family: "Line Awesome Free";
-  //       font-weight: 900;
-  //     }
-  //   }
-  // }
-
   .lst-categ2 {
     position: absolute;
     width: 100%;
-    bottom: 20px;
+    // bottom: 20px;
     left: -1px;
     text-transform: uppercase;
     text-decoration: none;
