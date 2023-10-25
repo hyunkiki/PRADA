@@ -1472,6 +1472,9 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   font-family: "Line Awesome Free";
   font-weight: 900;
 }
+.heder_accordion_wrap .panel .nav_item .twodepth_wrap {
+  display: none;
+}
 .heder_accordion_wrap .panel .nav_item:last-child {
   margin-bottom: 20px;
 }
@@ -1484,9 +1487,73 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   #header .header__right {
     display: flex;
     flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
   }
   .inner {
     padding: 0 55px;
+  }
+  .gnb-wrap {
+    position: relative;
+  }
+  .gnb-wrap .label-burger {
+    display: none;
+  }
+  .gnb-wrap #gnb {
+    position: static;
+    background: #fff;
+  }
+  .gnb-wrap #gnb .link-logo {
+    display: none;
+  }
+  .gnb-wrap #gnb .heder_accordion_wrap {
+    display: flex;
+    width: 50%;
+  }
+  .gnb-wrap #gnb .heder_accordion_wrap .header_accordion {
+    background: #fff;
+    color: #000;
+    white-space: nowrap;
+    border: none;
+  }
+  .gnb-wrap #gnb .heder_accordion_wrap .header_accordion:hover {
+    color: red;
+  }
+  .gnb-wrap #gnb .heder_accordion_wrap .header_accordion .las.la-chevron-down {
+    display: none;
+  }
+  .gnb-wrap #gnb .heder_accordion_wrap .panel {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #f1f1f1;
+    height: 510px;
+  }
+  .gnb-wrap #gnb .heder_accordion_wrap .panel a {
+    color: #000;
+  }
+  .gnb-wrap #gnb .heder_accordion_wrap .panel a::after {
+    display: none;
+  }
+  .gnb-wrap #gnb .heder_accordion_wrap .panel a:hover {
+    text-decoration: underline;
+  }
+  .gnb-wrap #gnb .heder_accordion_wrap .panel .nav_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 45px;
+  }
+  .gnb-wrap #gnb .heder_accordion_wrap .panel .nav_item .nav_tit {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .gnb-wrap #gnb .heder_accordion_wrap .panel .nav_item .twodepth_wrap {
+    display: block;
+  }
+  .gnb-wrap #gnb .lst-categ2 {
+    display: none;
   }
 }
 /*YOUTUBE VIDEO*/
