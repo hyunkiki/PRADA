@@ -339,16 +339,17 @@
           left: 0;
           right: 0;
           width: 100%;
-          background: #f1f1f1;
+          background: $w;
           height: 510px;
           // max-height: 650px !important;
           a {
-            color: $b;
+            color: #333;
             &::after {
               display: none;
             }
             &:hover {
-              text-decoration: underline;
+              // text-decoration: underline;
+              color: #000;
             }
           }
           .nav_wrap {
@@ -712,7 +713,7 @@
       }
       .img-tit2_shoes {
         position: absolute;
-        top: 20%;
+        top: 15%;
         left: 36%;
         font-size: 120px;
         font-family: "Staatliches", cursive;
@@ -770,7 +771,7 @@
     }
     .prada-camp {
       position: relative;
-      height: 90vh;
+      height: 100vh;
       .campaign_img {
         width: 30%;
         display: block;

@@ -1528,17 +1528,17 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
     left: 0;
     right: 0;
     width: 100%;
-    background: #f1f1f1;
+    background: #fff;
     height: 510px;
   }
   .gnb-wrap #gnb .heder_accordion_wrap .panel a {
-    color: #000;
+    color: #333;
   }
   .gnb-wrap #gnb .heder_accordion_wrap .panel a::after {
     display: none;
   }
   .gnb-wrap #gnb .heder_accordion_wrap .panel a:hover {
-    text-decoration: underline;
+    color: #000;
   }
   .gnb-wrap #gnb .heder_accordion_wrap .panel .nav_wrap {
     display: flex;
@@ -1861,7 +1861,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   }
   .wrap .section-collection .img-tit2_shoes {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 36%;
     font-size: 120px;
     font-family: "Staatliches", cursive;
@@ -1914,7 +1914,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   }
   .wrap .prada-camp {
     position: relative;
-    height: 90vh;
+    height: 100vh;
   }
   .wrap .prada-camp .campaign_img {
     width: 30%;
