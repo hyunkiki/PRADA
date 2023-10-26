@@ -63,26 +63,9 @@ for (i = 0; i < acc.length; i++) {
 
 var accHeader = document.getElementsByClassName("header_accordion");
 var i;
-
-// for (i = 0; i < accHeader.length; i++) {
-//   accHeader[i].addEventListener("click", function () {
-//     this.classList.toggle("active");
-//     var panel = this.nextElementSibling;
-//     if (panel.style.maxHeight) {
-//       panel.style.maxHeight = null;
-//     } else {
-//       panel.style.maxHeight = panel.scrollHeight + 200 + "px";
-//     }
-//   });
-// }
-$(function () {
-  $(".heder_accordion_wrap > li > a").click(function () {
-    //$(".panel").removeClass("active");
-    $(this)
-      .closest("li")
-      .addClass("active")
-      .siblings("li")
-      .removeClass("active");
+for (i = 0; i < accHeader.length; i++) {
+  accHeader[i].addEventListener("click", function () {
+    this.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
@@ -90,7 +73,24 @@ $(function () {
       panel.style.maxHeight = panel.scrollHeight + 200 + "px";
     }
   });
-});
+}
+
+// $(function () {
+//   $(".heder_accordion_wrap > li > a").click(function () {
+//     //$(".panel").removeClass("active");
+//     $(this)
+//       .closest("li")
+//       .addClass("active")
+//       .siblings("li")
+//       .removeClass("active");
+//     var panel = this.nextElementSibling;
+//     if (panel.style.maxHeight) {
+//       panel.style.maxHeight = null;
+//     } else {
+//       panel.style.maxHeight = panel.scrollHeight + 200 + "px";
+//     }
+//   });
+// });
 
 var swiper = new Swiper(".mySwiper_main", {
   slidesPerView: "auto",

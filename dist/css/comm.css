@@ -1508,7 +1508,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   }
   .gnb-wrap #gnb .heder_accordion_wrap {
     display: flex;
-    width: 50%;
+    width: 100%;
   }
   .gnb-wrap #gnb .heder_accordion_wrap .header_accordion {
     background: #fff;
@@ -1532,7 +1532,8 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
     height: 510px;
   }
   .gnb-wrap #gnb .heder_accordion_wrap .panel a {
-    color: #333;
+    color: gray;
+    margin-bottom: 10px;
   }
   .gnb-wrap #gnb .heder_accordion_wrap .panel a::after {
     display: none;
@@ -1545,9 +1546,21 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
     justify-content: space-between;
     padding: 0 45px;
   }
+  .gnb-wrap #gnb .heder_accordion_wrap .panel .nav_wrap3 {
+    display: flex;
+    padding: 0 45px;
+    width: 20%;
+    justify-content: space-between;
+  }
+  .gnb-wrap #gnb .heder_accordion_wrap .panel .nav_wrap4 {
+    display: flex;
+    padding: 0 45px;
+    flex-direction: column;
+  }
   .gnb-wrap #gnb .heder_accordion_wrap .panel .nav_item .nav_tit {
     font-size: 18px;
     font-weight: 700;
+    margin-bottom: 10px;
   }
   .gnb-wrap #gnb .heder_accordion_wrap .panel .nav_item .twodepth_wrap {
     display: block;
@@ -1815,6 +1828,93 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   border: 3px solid #fff;
 }
 
+.mySwiper_main h2 {
+  font-size: 25px;
+  font-family: "Libre Franklin", sans-serif;
+  margin-bottom: 20px;
+}
+
+.slide-img-txt-box .slide_mini-tit {
+  display: block;
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 1;
+  width: 100%;
+  text-align: left;
+}
+.slide-img-txt-box .slide_img-exp {
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 10px;
+  height: 48px;
+}
+
+.swiper_btn-group {
+  display: flex;
+  margin-top: 10px;
+}
+
+.swiper-btn-more {
+  display: flex;
+  width: 100px;
+  height: 40px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.swiper-btn-pur {
+  display: flex;
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  border-radius: 5px;
+}
+
+.swiper {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-slide {
+  width: 80%;
+}
+.swiper-slide a .img_box {
+  overflow: hidden;
+}
+.swiper-slide a .img_box .swiper_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+.swiper-slide a .img_box .swiper_img:hover {
+  transition: all 0.4s linear;
+  transform: scale(1.3);
+}
+
 @media screen and (min-width: 1024px) {
   .wrap {
     max-width: 1920px;
@@ -1963,6 +2063,9 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   margin-bottom: 100px;
   border-top: 1px solid #a0a0a0;
 }
+#footer .ft_inner {
+  padding: 0 20px;
+}
 #footer .logo img {
   margin-top: 10px;
   width: 100px;
@@ -1989,7 +2092,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 #footer .info_policy {
   margin-top: 20px;
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 30px;
   color: gray;
   text-align: center;
@@ -2017,98 +2120,37 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 #footer .copyright {
   margin-top: 20px;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   color: #b4b4b4;
 }
 #footer .footer_info {
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   color: #b4b4b4;
 }
 #footer .footer_adr {
   margin-top: 20px;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   color: #b4b4b4;
 }
 #footer .footer_adr .footer_mail {
   text-decoration: underline;
-  font-size: 12px;
+  font-size: 14px;
   color: #b4b4b4;
 }
 
-.mySwiper_main h2 {
-  font-size: 25px;
-  font-family: "Libre Franklin", sans-serif;
-  margin-bottom: 20px;
-}
-
-.slide-img-txt-box .slide_mini-tit {
-  display: block;
-  margin-top: 20px;
-  font-size: 25px;
-  font-weight: 900;
-  line-height: 1;
-  width: 100%;
-  text-align: left;
-}
-.slide-img-txt-box .slide_img-exp {
-  display: block;
-  font-size: 16px;
-  text-align: left;
-  margin-top: 10px;
-  height: 48px;
-}
-
-.swiper_btn-group {
-  display: flex;
-  margin-top: 10px;
-}
-
-.swiper-btn-more {
-  display: flex;
-  width: 100px;
-  height: 40px;
-  margin-right: 10px;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #000;
-  border-radius: 5px;
-}
-
-.swiper-btn-pur {
-  display: flex;
-  width: 100px;
-  height: 40px;
-  color: #fff;
-  align-items: center;
-  justify-content: center;
-  background: #000;
-  border-radius: 5px;
-}
-
-.swiper {
-  width: 100%;
-  margin-bottom: 80px;
-}
-
-.swiper-slide {
-  text-align: center;
-  background: #fff;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.swiper-slide {
-  width: 80%;
-}
-.swiper-slide a .swiper_img {
-  width: 100%;
-  border-radius: 10px;
+@media screen and (min-width: 1024px) {
+  #footer {
+    height: 30vh;
+  }
+  #footer .ft_inner {
+    padding: 0 55px;
+  }
+  #footer .info_policy {
+    float: left;
+  }
+  #footer .footer_info {
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=comm.css.map */
