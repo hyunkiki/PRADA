@@ -1289,9 +1289,11 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   width: 150px;
 }
 #header .inner {
+  position: relative;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  height: 100%;
+  align-items: center;
 }
 #header .header__right {
   display: flex;
@@ -1505,6 +1507,40 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   }
   .gnb-wrap #gnb .heder_accordion_wrap .panel .nav_item .twodepth_wrap {
     display: block;
+  }
+  .gnb-wrap #gnb .menu_box {
+    display: flex;
+  }
+  .gnb-wrap #gnb .menu_box .menu > .menu_lst {
+    display: inline-block;
+    margin: 0 35px;
+    position: relative;
+  }
+  .gnb-wrap #gnb .menu_box .menu > .menu_lst > a {
+    color: #000;
+    font-weight: 600;
+    display: block;
+    line-height: 80px;
+    font-size: 18px;
+  }
+  .gnb-wrap #gnb .menu_item {
+    position: absolute;
+    left: -15px;
+    top: 100%;
+    background: #000;
+    min-width: 200px;
+    box-sizing: border-box;
+    padding: 25px 22px;
+    display: none;
+    z-index: 10;
+  }
+  .gnb-wrap #gnb .menu_item li a {
+    display: block;
+    line-height: 32px;
+    color: #fff;
+    opacity: 0.6;
+    font-weight: 400;
+    font-size: 15px;
   }
   .gnb-wrap #gnb .lst-categ2 {
     display: none;
