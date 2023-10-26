@@ -1424,65 +1424,6 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   font-weight: 900;
 }
 
-.heder_accordion_wrap .header_accordion {
-  background-color: #000;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  color: #fff;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.heder_accordion_wrap .header_accordion:hover {
-  background-color: #000;
-}
-.heder_accordion_wrap .header_accordion .nav_accordion_tit {
-  font-size: 16px;
-}
-.heder_accordion_wrap .active {
-  background-color: #000;
-}
-.heder_accordion_wrap .active i.la-chevron-down {
-  transform: rotate(180deg);
-}
-.heder_accordion_wrap .panel {
-  padding: 0 18px;
-  background-color: #000;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-}
-.heder_accordion_wrap .panel .nav_item {
-  margin-top: 20px;
-}
-.heder_accordion_wrap .panel .nav_item a {
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-}
-.heder_accordion_wrap .panel .nav_item a::after {
-  content: "\f105";
-  font-family: "Line Awesome Free";
-  font-weight: 900;
-}
-.heder_accordion_wrap .panel .nav_item .twodepth_wrap {
-  display: none;
-}
-.heder_accordion_wrap .panel .nav_item:last-child {
-  margin-bottom: 20px;
-}
-.heder_accordion_wrap .panel .product_exp {
-  margin: 20px 0;
-  color: #fff;
-}
-
 @media screen and (min-width: 1024px) {
   #header .header__right {
     display: flex;
@@ -2141,16 +2082,35 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 }
 
 @media screen and (min-width: 1024px) {
-  #footer {
-    height: 30vh;
-  }
   #footer .ft_inner {
     padding: 0 55px;
   }
+  #footer .sns_icon {
+    width: 30%;
+  }
+  #footer .sns_icon .fb img {
+    width: 50px;
+  }
+  #footer .sns_icon .ins img {
+    width: 50px;
+  }
+  #footer .sns_icon .tw img {
+    width: 50px;
+  }
   #footer .info_policy {
-    float: left;
+    font-size: 16px;
   }
   #footer .footer_info {
-    margin-top: 20px;
+    width: 40%;
+    text-align: left;
+  }
+  #footer .footer_info .copyright {
+    font-size: 16px;
+  }
+  #footer .footer_info .ft_info1 {
+    font-size: 16px;
+  }
+  #footer .footer_info .footer_adr {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=comm.css.map */
