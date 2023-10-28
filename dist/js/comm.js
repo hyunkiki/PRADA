@@ -47,35 +47,35 @@ var swiper = new Swiper(".mySwiper2", {
 });
 
 $(function () {
-  //menu
-  $(".menu > .menu_lst").on("mouseenter focusin", function () {
+  //gnb
+  $(".gnb > li").on("mouseenter focusin", function () {
     $(this).addClass("active");
   });
-  $(".menu > .menu_lst").on("mouseleave focusout", function () {
+  $(".gnb > li").on("mouseleave focusout", function () {
     $(this).removeClass("active");
   });
 
-  // //lnb
-  // $(".lnb > li").on("mouseenter focusin", function () {
-  //   $(this).addClass("active");
-  // });
+  //lnb
+  $(".lnb > li").on("mouseenter focusin", function () {
+    $(this).addClass("active");
+  });
 
-  // $(".lnb > li").on("mouseleave focusout", function () {
-  //   $(this).removeClass("active");
-  // });
+  $(".lnb > li").on("mouseleave focusout", function () {
+    $(this).removeClass("active");
+  });
 
-  // var target = $(".animated");
+  var target = $(".animated");
 
-  // target.each(function (i, v) {
-  //   $(this).waypoint(
-  //     function () {
-  //       $(v).addClass("on");
-  //     },
-  //     {
-  //       offset: "100%",
-  //     }
-  //   );
-  // });
+  target.each(function (i, v) {
+    $(this).waypoint(
+      function () {
+        $(v).addClass("on");
+      },
+      {
+        offset: "100%",
+      }
+    );
+  });
 });
 // var acc = document.getElementsByClassName("accordion");
 // var i;
