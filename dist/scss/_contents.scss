@@ -152,3 +152,12 @@ main {
     }
   }
 }
+@media screen and (min-width: $breakpoint) {
+  main {
+    .lst-contents {
+      .lst-tit {
+        height: 100px;
+      }
+    }
+  }
+}
