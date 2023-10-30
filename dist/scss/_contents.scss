@@ -4,14 +4,27 @@ main {
     font-size: 24px;
     font-weight: 700;
 
-    .lst-tit {
+    .lst-tit-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: center;
       padding: 15px;
       border-bottom: 1px solid #a0a0a0;
 
-      a {
+      .lst_tit {
         font-size: 25px;
         font-family: "Libre Franklin", sans-serif;
+        &::after {
+          content: "\f0da";
+          font-family: "Line Awesome Free";
+          font-weight: 900;
+          margin: 0 10px;
+        }
+        .lst_item_tit {
+          font-size: 25px;
+          font-family: "Libre Franklin", sans-serif;
+        }
       }
     }
 

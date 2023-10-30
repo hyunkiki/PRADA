@@ -341,12 +341,25 @@ main .lst-contents {
   font-size: 24px;
   font-weight: 700;
 }
-main .lst-contents .lst-tit {
+main .lst-contents .lst-tit-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 15px;
   border-bottom: 1px solid #a0a0a0;
 }
-main .lst-contents .lst-tit a {
+main .lst-contents .lst-tit-wrap .lst_tit {
+  font-size: 25px;
+  font-family: "Libre Franklin", sans-serif;
+}
+main .lst-contents .lst-tit-wrap .lst_tit::after {
+  content: "\f0da";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  margin: 0 10px;
+}
+main .lst-contents .lst-tit-wrap .lst_tit .lst_item_tit {
   font-size: 25px;
   font-family: "Libre Franklin", sans-serif;
 }
@@ -1469,9 +1482,13 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   width: 40px;
   height: 70px;
 }
-.header__right .util__list .btn-g .material-icons-outlined,
-.header__right .util__list a .material-icons-outlined {
-  font-size: 25px;
+.header__right .util__list .btn-g .la-user,
+.header__right .util__list .btn-g .la-search,
+.header__right .util__list .btn-g .la-shopping-bag,
+.header__right .util__list a .la-user,
+.header__right .util__list a .la-search,
+.header__right .util__list a .la-shopping-bag {
+  font-size: 30px;
 }
 .header__right .util__list .btn-g::before,
 .header__right .util__list a::before {

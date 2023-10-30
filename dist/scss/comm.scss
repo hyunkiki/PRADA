@@ -220,8 +220,10 @@
     width: 40px;
     height: $headerHeight;
 
-    .material-icons-outlined {
-      font-size: 25px;
+    .la-user,
+    .la-search,
+    .la-shopping-bag {
+      font-size: 30px;
     }
 
     &::before {
