@@ -21,10 +21,10 @@ main {
           font-weight: 900;
           margin: 0 10px;
         }
-        .lst_item_tit {
-          font-size: 25px;
-          font-family: "Libre Franklin", sans-serif;
-        }
+      }
+      .lst_item_name {
+        font-size: 25px;
+        font-family: "Libre Franklin", sans-serif;
       }
     }
 
@@ -123,7 +123,7 @@ main {
         .txt-shopping-tit {
           display: block;
           margin-top: 5px;
-          font-size: 16px;
+          font-size: 14px;
           // color: black;
           font-weight: 400;
           height: 48px;
@@ -134,6 +134,9 @@ main {
           font-size: 14px;
         }
       }
+    }
+    #page_wrap {
+      display: none;
     }
 
     .btn {
@@ -168,8 +171,84 @@ main {
 @media screen and (min-width: $breakpoint) {
   main {
     .lst-contents {
-      .lst-tit {
-        height: 100px;
+      .lst-tit-wrap {
+        height: 200px;
+        .lst_tit {
+          font-size: 35px;
+          &::after {
+            margin: 0 30px;
+          }
+        }
+        .lst_item_name {
+          font-size: 35px;
+        }
+      }
+      .slide-wrap {
+        padding: 0 55px;
+        .slide-sub-menu {
+          // display: flex;
+          justify-content: space-between;
+          li {
+            a {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .section-contents {
+        display: flex;
+        justify-content: space-between;
+        .lst-shopping {
+          display: flex;
+          width: 80%;
+          li {
+            width: 24%;
+          }
+          .img-bigsize {
+            width: 24%;
+          }
+        }
+        .thumb-shopping {
+          width: 100%;
+        }
+        .txt-shopping {
+          .txt-shopping-tit {
+            white-space: nowrap;
+          }
+          .txt-shopping-desc {
+            font-size: 16px;
+          }
+        }
+      }
+      .btn {
+        display: none;
+      }
+      #page_wrap {
+        margin: 50px 0;
+        display: block;
+        .pager {
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          .pager-number {
+            display: block;
+            margin: 0 16px;
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: normal;
+          }
+        }
+        .la-angle-right {
+          font-size: 20px;
+        }
+        .la-arrow-right {
+          font-size: 20px;
+          margin-left: 10px;
+        }
       }
     }
   }

@@ -943,7 +943,7 @@
 
 // footer
 #footer {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   border-top: 1px solid #a0a0a0;
 
   .ft_inner {
@@ -1045,7 +1045,7 @@
       // display: flex;
     }
     .sns_icon {
-      width: 30%;
+      display: none;
       .fb img {
         width: 50px;
         // padding: 0 10px;
@@ -1066,7 +1066,8 @@
       font-size: 16px;
     }
     .footer_info {
-      width: 40%;
+      display: flex;
+      width: 100%;
       text-align: left;
       .copyright {
         font-size: 16px;
@@ -1076,6 +1077,9 @@
       }
       .footer_adr {
         font-size: 16px;
+      }
+      br {
+        display: none !important;
       }
     }
   }

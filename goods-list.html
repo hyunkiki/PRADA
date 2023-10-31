@@ -292,7 +292,7 @@
       <div class="lst-contents">
         <div class="lst-tit-wrap">
           <h2 class="lst_tit" href="#">MAN'S</h2>
-          <h3 class="lst_item_tit">레디투웨어</h3>
+          <h3 class="lst_item_name">레디투웨어</h3>
         </div>
         <div class="slide-wrap">
           <ul class="slide-sub-menu">
@@ -352,6 +352,79 @@
           <div class="inner">
             <h2 class="section-tit blind"></h2>
             <div class="section-contents">
+              <div class="lst_right">
+                <div class="man_checkbox">
+                  <span class="inputBox">
+                    <input type="checkbox" class="ip_chekbox blackBg" id="category1" name="category1" value="OW">
+                    <label for="category1">
+                      <strong>ONLY MAN</strong>
+                    </label>
+                  </span>
+                </div>
+                <div class="accordion" id="filterSize">
+                  <p class="accordionTit on"> 
+                    <a href="#">의류 사이즈</a>
+                  </p>
+                  <ul class="accordionList accordionList-border">
+                    <li>
+                      <input type="checkbox" class="ip_chk ip_chk-boxBg" id="size01" name="sizeCode" value="44">
+                      <label for="size01">
+                        <span>44</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="ip_chk ip_chk-boxBg" id="size02" name="sizeCode" value="48">
+                      <label for="size02">
+                        <span>48</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="ip_chk ip_chk-boxBg" id="size03" name="sizeCode" value="52">
+                      <label for="size03">
+                        <span>52</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="ip_chk ip_chk-boxBg" id="size04" name="sizeCode" value="56">
+                      <label for="size04">
+                        <span>56</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="ip_chk ip_chk-boxBg" id="size05" name="sizeCode" value="60">
+                      <label for="size05">
+                        <span>60</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="ip_chk ip_chk-boxBg" id="size06" name="sizeCode" value="64">
+                      <label for="size06">
+                        <span>64</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="accordion accordion-color filterColor moreList" id>
+                  <p class="accordionTit on"> 
+                    <a href="#">색상</a>
+                  </p>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <div class="accordion" id="filterPrice">
+                  <p class="accordionTit on"> 
+                    <a href="#">가격</a>
+                  </p>
+                </div>
+              </div>
               <ul class="lst-shopping">
                 <li>
                   <a href="#">
@@ -363,7 +436,6 @@
                     <div class="txt-shopping">
                       <strong class="txt-shopping-tit">캐시미어 가디건</strong>
                       <p class="txt-shopping-desc">₩ 3,800,000</p>
-
                     </div>
                   </a>
                 </li>
@@ -377,7 +449,6 @@
                     <div class="txt-shopping">
                       <strong class="txt-shopping-tit">스웨이드 재킷</strong>
                       <p class="txt-shopping-desc">₩ 7,850,000</p>
-
                     </div>
                   </a>
                 </li>
@@ -429,7 +500,7 @@
                     </div>
                     <div class="txt-shopping">
                       <strong class="txt-shopping-tit">
-                        싱글 브레스티드 모헤어 <br> 울 재킷
+                        싱글 브레스티드 모헤어 울 재킷
                       </strong>
                       <p class="txt-shopping-desc">₩ 5,550,000</p>
                     </div>
@@ -510,7 +581,7 @@
                         alt="옷1">
                     </div>
                     <div class="txt-shopping">
-                      <strong class="txt-shopping-tit">울 및 캐시미어 크루넥 <br> 스웨터</strong>
+                      <strong class="txt-shopping-tit">울 및 캐시미어 크루넥 스웨터</strong>
                       <p class="txt-shopping-desc">₩ 3,050,000</p>
                     </div>
                   </a>
@@ -594,7 +665,7 @@
                         alt="옷1">
                     </div>
                     <div class="txt-shopping">
-                      <strong class="txt-shopping-tit">나일론 디테일 스트레치 <br> 코튼 폴로 셔츠</strong>
+                      <strong class="txt-shopping-tit">나일론 디테일 스트레치 코튼 폴로 셔츠</strong>
                       <p class="txt-shopping-desc">₩ 1,430,000</p>
                     </div>
                   </a>
@@ -626,11 +697,25 @@
                   </a>
                 </li>
               </ul>
-              <a href="#" class="btn">
-                <div class="btn_more_box">
-                  <h2 class="btn_tit">제품 더보기</h2>
-                </div>
-              </a>
+            </div>
+            <a href="#" class="btn">
+              <div class="btn_more_box">
+                <h2 class="btn_tit">제품 더보기</h2>
+              </div>
+            </a>
+            <div id="page_wrap">
+              <div class="pager">
+                <strong class="pager-number">
+                  <span class="pager-current">1</span>
+                  <span class="pager-total">/ 5</span>
+                </strong>
+                <button type="button" onclick="pagiNation.pageMove(this);" class="button-icon">
+                  <i class="las la-angle-right"></i>
+                </button>
+                <button  type="button" onclick="pagiNation.pageMove(this);" class="button-icon">
+                  <i class="las la-arrow-right"></i>
+                </button>
+              </div>
             </div>
           </div>
         </section>
