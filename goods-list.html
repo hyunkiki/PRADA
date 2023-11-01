@@ -293,6 +293,7 @@
         <div class="lst-tit-wrap">
           <h2 class="lst_tit" href="#">MAN'S</h2>
           <h3 class="lst_item_name">레디투웨어</h3>
+          <button type="button" class="btn-filter">필터</button>
         </div>
         <div class="slide-wrap">
           <ul class="slide-sub-menu">
@@ -352,7 +353,7 @@
           <div class="inner">
             <h2 class="section-tit blind"></h2>
             <div class="section-contents">
-              <div class="lst_right">
+              <div class="lst_left">
                 <div class="man_checkbox">
                   <span class="inputBox">
                     <input type="checkbox" class="ip_chekbox blackBg" id="category1" name="category1" value="OW">
@@ -361,68 +362,156 @@
                     </label>
                   </span>
                 </div>
-                <div class="accordion" id="filterSize">
-                  <p class="accordionTit on"> 
-                    <a href="#">의류 사이즈</a>
-                  </p>
-                  <ul class="accordionList accordionList-border">
-                    <li>
-                      <input type="checkbox" class="ip_chk ip_chk-boxBg" id="size01" name="sizeCode" value="44">
-                      <label for="size01">
-                        <span>44</span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" class="ip_chk ip_chk-boxBg" id="size02" name="sizeCode" value="48">
-                      <label for="size02">
-                        <span>48</span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" class="ip_chk ip_chk-boxBg" id="size03" name="sizeCode" value="52">
-                      <label for="size03">
-                        <span>52</span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" class="ip_chk ip_chk-boxBg" id="size04" name="sizeCode" value="56">
-                      <label for="size04">
-                        <span>56</span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" class="ip_chk ip_chk-boxBg" id="size05" name="sizeCode" value="60">
-                      <label for="size05">
-                        <span>60</span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" class="ip_chk ip_chk-boxBg" id="size06" name="sizeCode" value="64">
-                      <label for="size06">
-                        <span>64</span>
-                      </label>
-                    </li>
-                  </ul>
-                </div>
-                <div class="accordion accordion-color filterColor moreList" id>
-                  <p class="accordionTit on"> 
-                    <a href="#">색상</a>
-                  </p>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </div>
-                <div class="accordion" id="filterPrice">
-                  <p class="accordionTit on"> 
-                    <a href="#">가격</a>
-                  </p>
+                <div class="accordion_wrap">
+                  <button class="accordionItem">
+                    <h3 class="accordion_tit">의류 사이즈</h3>
+                  </button>
+                  <div class="panel">
+                    <form action="">
+                    <ul class="accordionList accordionList-border">
+                      <li>
+                        <input type="radio" class="ip_chk ip_chk-boxBg" id="size01" name="sizeCode" value="44">
+                        <label for="size01">
+                          <span>44</span>
+                        </label>
+                      </li>
+                      <li>
+                        <input type="radio" class="ip_chk ip_chk-boxBg" id="size02" name="sizeCode" value="48">
+                        <label for="size02">
+                          <span>48</span>
+                        </label>
+                      </li>
+                      <li>
+                        <input type="radio" class="ip_chk ip_chk-boxBg" id="size03" name="sizeCode" value="52">
+                        <label for="size03">
+                          <span>52</span>
+                        </label>
+                      </li>
+                      <li>
+                        <input type="radio" class="ip_chk ip_chk-boxBg" id="size04" name="sizeCode" value="56">
+                        <label for="size04">
+                          <span>56</span>
+                        </label>
+                      </li>
+                      <li>
+                        <input type="radio" class="ip_chk ip_chk-boxBg" id="size05" name="sizeCode" value="60">
+                        <label for="size05">
+                          <span>60</span>
+                        </label>
+                      </li>
+                      <li>
+                        <input type="radio" class="ip_chk ip_chk-boxBg" id="size06" name="sizeCode" value="64">
+                        <label for="size06">
+                          <span>64</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </form>
+                  </div>
+                  <button class="accordionItem">
+                    <h3 class="accordion_tit">색상</h3>
+                  </button>
+                  <div class="panel">
+                    <ul class="accordion_color">
+                      <li>
+                        <span class="inputBox">
+                          <input type="checkbox" class="ip_chk ip_chk-color color01" id="color01" value="19">
+                          <label for="color01">
+                            <span style="background:#000"></span>
+                          </label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="inputBox">
+                          <input type="checkbox" class="ip_chk ip_chk-color color02" id="color02" value="10">
+                          <label for="color02">
+                            <span style="background:#fff"></span>
+                          </label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="inputBox">
+                          <input type="checkbox" class="ip_chk ip_chk-color color03" id="color03" value="15">
+                          <label for="color03">
+                            <span style="background:gray"></span>
+                          </label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="inputBox">
+                          <input type="checkbox" class="ip_chk ip_chk-color color04" id="color04" value="59">
+                          <label for="color04">
+                          <span style="background:navy"></span>
+                          </label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="inputBox">
+                          <input type="checkbox" class="ip_chk ip_chk-color color05" id="color05" value="85">
+                          <label for="color05">
+                            <span style="background:brown"></span>
+                          </label> 
+                        </span>
+                      </li>
+                      <li>
+                        <span class="inputBox">
+                          <input type="checkbox" class="ip_chk ip_chk-color color06" id="color06" value="39">
+                           <label for="color06">
+                          <span style="background:ivory"></span>
+                        </label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="inputBox">
+                          <input type="checkbox" class="ip_chk ip_chk-color color07" id="color07" value="50">
+                          <label for="color07">
+                            <span style="background:blue"></span>
+                          </label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="inputBox">
+                          <input type="checkbox" class="ip_chk ip_chk-color color08" id="color08" value="20">
+                          <label for="color08">
+                            <span style="background:red"></span>
+                          </label>
+                        </span>
+                      </li>                    
+                    </ul>
+                    <button type="button" class="btn_more_box2">더보기</button>
+                  </div> 
+                  <button class="accordionItem">
+                    <h3 class="accordion_tit">가격</h3>
+                  </button>
+                  <div class="panel">
+                    <ul class="price_wrap">
+                      <li class="_item">
+                     <div class="filter_price">
+                      <div class="filter_slider noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr">
+                      <div class="noUi-base">
+                        <div class="noUi-connects">
+                          <div class="noUi-connect"></div>
+                        </div>
+                        <div class="noUi-origin">
+                          <div class="noUi-handle noUi-handle-lower">
+                            <div class="noUi-touch-area"></div>
+                          </div> 
+                        </div>
+                        <div class="noUi-origin">
+                          <div class="noUi-handle noUi-handle-upper">
+                            <div class="noUi-touch-area"></div>
+                          </div> 
+                        </div>
+                      </div>
+                      </div>
+                      <div class="price_range">
+                        <span id="priceMin">1,000,000</span>
+                        <span id="priceMax">20,000,000</span>
+                      </div>
+                     </div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <ul class="lst-shopping">
