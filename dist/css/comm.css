@@ -608,6 +608,11 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   main .lst-contents .section-contents .lst_left .accordion_wrap .accordionItem:hover {
     background-color: #fff;
   }
+  main .lst-contents .section-contents .lst_left .accordion_wrap .accordionItem.active .accordion_tit::after {
+    content: "\f068";
+    font-family: "Line Awesome Free";
+    font-weight: 900;
+  }
   main .lst-contents .section-contents .lst_left .accordion_wrap .panel {
     background-color: #fff;
     max-height: 0;
@@ -2557,7 +2562,17 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   font-size: 14px;
   color: #b4b4b4;
 }
+#footer .footer_info .ft_info1 {
+  display: block;
+}
+#footer .footer_info .ft_info1_pc {
+  display: none;
+}
+#footer .footer_info .sns_icon_pc {
+  display: none;
+}
 #footer .footer_adr {
+  display: block;
   margin-top: 20px;
   text-align: center;
   font-size: 14px;
@@ -2573,36 +2588,47 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   #footer .ft_inner {
     padding: 0 55px;
   }
-  #footer .sns_icon {
+  #footer .ft_info_box {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #a0a0a0;
+  }
+  #footer .ft_info_box .sns_icon {
     display: none;
   }
-  #footer .sns_icon .fb img {
-    width: 50px;
-  }
-  #footer .sns_icon .ins img {
-    width: 50px;
-  }
-  #footer .sns_icon .tw img {
-    width: 50px;
-  }
-  #footer .info_policy {
+  #footer .ft_info_box .info_policy {
     font-size: 16px;
-  }
-  #footer .footer_info {
-    display: flex;
-    width: 100%;
+    width: 50%;
     text-align: left;
   }
-  #footer .footer_info .copyright {
+  #footer .ft_info_box .footer_info {
+    text-align: left;
+    font-size: 16px;
+    color: #b4b4b4;
+    width: 50%;
+    border-left: 1px solid #b4b4b4;
+    padding-left: 20px;
+  }
+  #footer .ft_info_box .footer_info .ft_info1 {
+    display: none;
+  }
+  #footer .ft_info_box .footer_info .ft_info1_pc {
+    display: block;
+  }
+  #footer .ft_info_box .footer_info .sns_icon_pc {
+    display: block;
+    margin-top: 20px;
+  }
+  #footer .ft_info_box .footer_info .sns_icon_pc .footer-sns_icons {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+  }
+  #footer .ft_info_box .copyright {
+    text-align: left;
     font-size: 16px;
   }
-  #footer .footer_info .ft_info1 {
-    font-size: 16px;
-  }
-  #footer .footer_info .footer_adr {
-    font-size: 16px;
-  }
-  #footer .footer_info br {
-    display: none !important;
+  #footer .ft_info_box .footer_adr {
+    display: none;
   }
 }/*# sourceMappingURL=comm.css.map */

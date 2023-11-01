@@ -300,6 +300,11 @@ main {
                 background-color: $w;
               }
             }
+            .accordionItem.active .accordion_tit::after {
+              content: "\f068";
+              font-family: "Line Awesome Free";
+              font-weight: 900;
+            }
 
             // .active {
             //   background-color: $w;
