@@ -1010,6 +1010,9 @@
         content: "";
       }
     }
+    .newsletter_container {
+      display: none;
+    }
   }
 
   .copyright {
@@ -1017,6 +1020,9 @@
     text-align: center;
     font-size: 14px;
     color: #b4b4b4;
+  }
+  .vat {
+    display: none;
   }
 
   .footer_info {
@@ -1058,6 +1064,7 @@
       display: flex;
       justify-content: space-between;
       border-top: 1px solid #a0a0a0;
+      border-bottom: 1px solid #a0a0a0;
       .sns_icon {
         display: none;
       }
@@ -1065,6 +1072,74 @@
         font-size: 16px;
         width: 50%;
         text-align: left;
+        .link_policy {
+          padding: 0;
+          margin-right: 10px;
+          &::before {
+            display: none;
+          }
+        }
+        .newsletter_container {
+          display: block;
+          margin-top: 20px;
+          .newsletter_tit {
+            color: #000;
+            font-size: 18px;
+            margin-bottom: 20px;
+            width: 20%;
+          }
+          .nlBox_inputWrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0.4375rem 0 0;
+            height: 35px;
+            width: 60%;
+            border-bottom: 1px solid
+              var(--newsletter-arrow-color, var(--generic-color, #000)) !important;
+            position: relative;
+            background-color: var(--box-newsletter-color, #fff);
+            .nlBox_input {
+              width: 100%;
+              border: 0;
+            }
+            .nlBox_btn {
+              width: 1.5rem;
+              height: 1.5rem;
+              line-height: 0.75rem;
+              cursor: pointer;
+            }
+            .nlBox_btnIcon {
+              display: block;
+              font-size: 24px;
+              color: var(
+                --newsletter-arrow-color,
+                var(--generic-color, #000)
+              ) !important;
+              position: relative;
+              transform: none;
+            }
+            .pr-icon-new-arrow-right-big {
+              &::before {
+                content: "\f0a9";
+                font-family: "Line Awesome Free";
+                font-weight: 900;
+              }
+            }
+          }
+          .nlBox_inputWrapperCheck {
+            margin-top: 20px;
+            .nlBox_checkbox {
+              width: 20px;
+              height: 20px;
+            }
+            .nlBox_checkbox_label {
+              a {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
       }
       .footer_info {
         text-align: left;
@@ -1072,7 +1147,7 @@
         color: #b4b4b4;
         width: 50%;
         border-left: 1px solid #b4b4b4;
-        padding-left: 20px;
+        padding: 20px 0 20px 20px;
         .ft_info1 {
           display: none;
         }
@@ -1081,18 +1156,38 @@
         }
         .sns_icon_pc {
           display: block;
-          margin-top: 20px;
           .footer-sns_icons {
             display: flex;
             width: 50%;
             justify-content: flex-start;
+            .fb img {
+              width: 40px;
+            }
+            .ins img {
+              width: 40px;
+            }
+            .tw img {
+              width: 40px;
+            }
           }
         }
       }
-      .copyright {
-        text-align: left;
-        font-size: 16px;
+      .copyright_box {
+        display: flex;
+        width: 40%;
+        margin-top: 20px;
+        justify-content: space-between;
+        .copyright {
+          text-align: left;
+          font-size: 16px;
+          margin-top: 0;
+        }
+        .vat {
+          font-size: 16px;
+          display: block;
+        }
       }
+
       .footer_adr {
         display: none;
       }

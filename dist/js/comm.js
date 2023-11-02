@@ -31,6 +31,10 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-scrollbar",
     hide: true,
   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 
 var swiper = new Swiper(".mySwiper2", {
@@ -39,6 +43,12 @@ var swiper = new Swiper(".mySwiper2", {
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: true,
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 3, //브라우저가 1024보다 클 때
+      spaceBetween: 50,
+    },
   },
   // pagination: {
   //   el: ".swiper-pagination",
