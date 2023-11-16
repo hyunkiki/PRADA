@@ -519,6 +519,9 @@
     margin-top: 5px;
     .item_name {
       height: 42px;
+      br {
+        display: block;
+      }
     }
   }
   .thumbBanner_lst {
@@ -773,7 +776,7 @@
         transition: transform 0.5s;
         &:hover {
           transition: all 0.4s linear;
-          transform: scale(1.3);
+          transform: scale(1.05);
         }
       }
     }
@@ -871,6 +874,13 @@
         width: 10%;
         margin: 0 auto;
         margin-top: 50px;
+      }
+      .main_pditem_info {
+        .item_name {
+          br {
+            display: none;
+          }
+        }
       }
     }
     .thumbBanner_lst {

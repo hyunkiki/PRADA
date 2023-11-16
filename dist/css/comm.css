@@ -2390,6 +2390,9 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 .thumb_banner .main_pditem_info .item_name {
   height: 42px;
 }
+.thumb_banner .main_pditem_info .item_name br {
+  display: block;
+}
 .thumb_banner .thumbBanner_lst {
   display: flex;
   flex-wrap: wrap;
@@ -2622,7 +2625,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 }
 .swiper-slide a .img_box .swiper_img:hover {
   transition: all 0.4s linear;
-  transform: scale(1.3);
+  transform: scale(1.05);
 }
 
 @media screen and (min-width: 1024px) {
@@ -2706,6 +2709,9 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
     width: 10%;
     margin: 0 auto;
     margin-top: 50px;
+  }
+  .wrap .thumb_banner .main_pditem_info .item_name br {
+    display: none;
   }
   .wrap .thumbBanner_lst {
     display: flex;
