@@ -953,16 +953,16 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   font-weight: 400;
 }
 #detail_wrap .pr_info1 .price {
-  margin: 10px 0;
+  margin-top: 10px;
 }
 #detail_wrap .pr_info1 .disprice {
   font-size: 18px;
 }
 #detail_wrap .pr_info1 .size_info {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 #detail_wrap .pr_info1 .size_info .cloth_size_choice {
   font-size: 20px;
@@ -972,6 +972,15 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   font-size: 16px;
   font-weight: 600;
   color: #999;
+}
+#detail_wrap .pr_info1 .product_box {
+  margin: 20px 0;
+}
+#detail_wrap .pr_info1 .size_box {
+  margin: 20px 0;
+}
+#detail_wrap .pr_info1 form {
+  margin: 10px 0;
 }
 #detail_wrap .pr_info1 .size_wrap {
   display: flex;
@@ -997,11 +1006,11 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 }
 #detail_wrap .pr_info1 .button_wrapper {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
 #detail_wrap .pr_info1 .button_wrapper .cart {
-  width: 100%;
-  height: 80px;
+  width: 45%;
+  height: 60px;
   background-color: #000;
   color: #fff;
   border-radius: 40px;
@@ -1009,8 +1018,8 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   font-size: 16px;
 }
 #detail_wrap .pr_info1 .button_wrapper .wish_list {
-  width: 100%;
-  height: 80px;
+  width: 45%;
+  height: 60px;
   border: 1px solid #000;
   color: #000;
   border-radius: 40px;
@@ -1026,12 +1035,11 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   font-weight: 900;
 }
 #detail_wrap .pr_info1 .description-preview p {
-  line-height: 30px;
-  padding: 20px 0;
+  margin: 20px 0;
   font-size: 16px;
 }
 #detail_wrap .pr_info1 .description-preview ul {
-  padding: 10px 20px;
+  padding: 0 0 20px 20px;
 }
 #detail_wrap .pr_info1 .description-preview li {
   margin-bottom: 20px;
@@ -1047,7 +1055,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   font-weight: 700;
 }
 #detail_wrap .pr_info1 .meet_styling_wrap {
-  padding: 30px 0;
+  padding: 20px 0;
   display: block;
 }
 #detail_wrap .pr_info1 .meet_styling_wrap .meet_styling_tit {
@@ -1120,6 +1128,9 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 #detail_wrap .pr_info1 .accordion_wrap .panel .nav_item:last-child {
   margin-bottom: 20px;
 }
+#detail_wrap .pr_info1 .accordion_wrap .panel .nav_item .addinfo_origin {
+  font-weight: 700;
+}
 #detail_wrap .pr_info1 .accordion_wrap .panel .product_exp {
   margin: 20px 0;
 }
@@ -1153,7 +1164,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   display: block;
 }
 #detail_wrap .pr_option2 .pr_info2 .view_image_wrap .product_info {
-  padding: 30px 0;
+  padding: 20px 0;
   font-size: 20px;
 }
 #detail_wrap .pr_option2 .pr_info2 .view_image_wrap .model_img_tit {
@@ -1168,6 +1179,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   font-size: 16px;
   display: block;
   width: 100%;
+  margin-bottom: 20px;
 }
 #detail_wrap .pr_option2 .pr_info2 .view_image_wrap li {
   margin-top: 10px;
@@ -1176,7 +1188,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   width: 100%;
 }
 #detail_wrap .pr_option2 .pr_info2 .related_list_tit {
-  padding: 30px 0;
+  padding: 20px 0;
   font-size: 20px;
 }
 #detail_wrap .pr_option2 .pr_info2 .swiper {
@@ -1448,6 +1460,9 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 #cart_wrap {
   position: relative;
 }
+#cart_wrap .cart_buy_list_wrap .main_inner {
+  padding: 20px;
+}
 #cart_wrap .cart_buy_list_wrap .toggle-area {
   display: block;
   padding: 6px 0 4px;
@@ -1513,7 +1528,6 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   font-size: 20px;
 }
 #cart_wrap .coupon_wrap {
-  padding: 20px 0;
   background: #000;
 }
 #cart_wrap .coupon_wrap .coupon_tit {
@@ -1556,7 +1570,6 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   align-items: center;
 }
 #cart_wrap .cart-order_wrap {
-  padding: 20px 0;
   background: #f1f2f3;
 }
 #cart_wrap .cart-order_wrap .cart_order_tit {
@@ -1571,8 +1584,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   justify-content: space-between;
 }
 #cart_wrap .cart-order_wrap .list-item.shipping-price {
-  margin-top: 40px;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 #cart_wrap .cart-order_wrap .list-item.order-total-price {
   font-size: 18px;
@@ -1647,7 +1659,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   font-size: 14px;
 }
 #payment_wrap .order_wrap details .thumbs-img {
-  width: 80%;
+  width: 60%;
   float: left;
   margin: 0 16px 0 var(--gap);
 }
@@ -1659,7 +1671,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   transform: rotate(-180deg);
 }
 #payment_wrap .order_wrap ul {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 #payment_wrap .order_wrap .order-pd {
   display: flex;
@@ -1687,16 +1699,16 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   margin-right: 5px;
 }
 #payment_wrap .order_wrap .order-pd .pd-info .pd-option {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 16px;
 }
 #payment_wrap .order_wrap .order-pd .pd-info .order-shipping {
-  margin-top: 20px;
+  margin-top: 10px;
   color: #000;
   font-size: 14px;
 }
 #payment_wrap .order_wrap .order-pd .pd-info .order-pd-price {
-  margin-top: 20px;
+  margin-top: 10px;
   color: #000;
   font-size: 18px;
 }
@@ -1747,7 +1759,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
 #payment_wrap .order_wrap .apply_coupon_wrap li {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 #payment_wrap .order_wrap .how_to_pay_wrap {
   border-top: 5px solid #eee;

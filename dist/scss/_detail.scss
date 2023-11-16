@@ -139,7 +139,7 @@
     }
 
     .price {
-      margin: 10px 0;
+      margin-top: 10px;
     }
 
     .disprice {
@@ -148,9 +148,9 @@
 
     .size_info {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
-      margin: 10px 0;
+      margin-bottom: 10px;
       .cloth_size_choice {
         font-size: 20px;
         font-weight: 700;
@@ -162,7 +162,15 @@
         color: $gray-9;
       }
     }
-
+    .product_box {
+      margin: 20px 0;
+    }
+    .size_box {
+      margin: 20px 0;
+    }
+    form {
+      margin: 10px 0;
+    }
     .size_wrap {
       display: flex;
       justify-content: space-between;
@@ -194,11 +202,12 @@
 
     .button_wrapper {
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
+      // flex-direction: column;
 
       .cart {
-        width: 100%;
-        height: 80px;
+        width: 45%;
+        height: 60px;
         background-color: #000;
         color: #fff;
         border-radius: 40px;
@@ -207,8 +216,8 @@
       }
 
       .wish_list {
-        width: 100%;
-        height: 80px;
+        width: 45%;
+        height: 60px;
         border: 1px solid $b;
         color: $b;
         border-radius: 40px;
@@ -229,13 +238,13 @@
 
     .description-preview {
       p {
-        line-height: 30px;
-        padding: 20px 0;
+        // line-height: 30px;
+        margin: 20px 0;
         font-size: 16px;
       }
 
       ul {
-        padding: 10px 20px;
+        padding: 0 0 20px 20px;
       }
 
       li {
@@ -260,7 +269,7 @@
     }
 
     .meet_styling_wrap {
-      padding: 30px 0;
+      padding: 20px 0;
       display: block;
 
       .meet_styling_tit {
@@ -349,6 +358,9 @@
           &:last-child {
             margin-bottom: 20px;
           }
+          .addinfo_origin {
+            font-weight: 700;
+          }
         }
 
         .product_exp {
@@ -389,7 +401,7 @@
       .view_image_wrap {
         display: block;
         .product_info {
-          padding: 30px 0;
+          padding: 20px 0;
           font-size: 20px;
         }
 
@@ -406,6 +418,7 @@
           font-size: 16px;
           display: block;
           width: 100%;
+          margin-bottom: 20px;
         }
         li {
           margin-top: 10px;
@@ -415,7 +428,7 @@
         }
       }
       .related_list_tit {
-        padding: 30px 0;
+        padding: 20px 0;
         font-size: 20px;
       }
 

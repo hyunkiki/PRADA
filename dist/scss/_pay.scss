@@ -47,7 +47,7 @@
       }
 
       .thumbs-img {
-        width: 80%;
+        width: 60%;
         float: left;
         margin: 0 16px 0 var(--gap);
 
@@ -62,7 +62,7 @@
       transform: rotate(-180deg);
     }
     ul {
-      margin-top: 20px;
+      margin-top: 10px;
     }
     .order-pd {
       display: flex;
@@ -93,18 +93,18 @@
         }
 
         .pd-option {
-          margin-top: 20px;
+          margin-top: 10px;
           font-size: 16px;
         }
 
         .order-shipping {
-          margin-top: 20px;
+          margin-top: 10px;
           color: $b;
           font-size: 14px;
         }
 
         .order-pd-price {
-          margin-top: 20px;
+          margin-top: 10px;
           color: $b;
           font-size: 18px;
         }
@@ -166,7 +166,7 @@
       li {
         display: flex;
         justify-content: space-between;
-        padding: 10px 0;
+        padding: 5px 0;
       }
     }
 
