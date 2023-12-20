@@ -1716,7 +1716,6 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   border-top: 5px solid #eee;
 }
 #payment_wrap .order_wrap .delivery_warp .delivery_info {
-  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
