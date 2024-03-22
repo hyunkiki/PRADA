@@ -1,70 +1,106 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRADA</title>
+    <meta
+      name="description"
+      content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="페이지 제목" />
+    <meta property="og:description" content="페이지 설명" />
+    <meta
+      property="og:image"
+      content="http://www.mysite.com/article/article1_featured_image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="페이지 제목" />
+    <meta name="twitter:description" content="페이지 설명" />
+    <meta
+      name="twitter:image"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta name="twitter:domain" content="사이트 명" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./dist/css/comm.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="./dist/js/include.js"></script>
+    <script defer src="./dist/js/comm.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PRADA</title>
-  <meta name="description" content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="페이지 제목" />
-  <meta property="og:description" content="페이지 설명" />
-  <meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg" />
-  <meta property="og:url" content="http://www.mysite.com/article/article1.html" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="페이지 제목" />
-  <meta name="twitter:description" content="페이지 설명" />
-  <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
-  <meta name="twitter:domain" content="사이트 명" />
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Staatliches&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <link rel="stylesheet"
-    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-  <link rel="stylesheet" href="./dist/css/comm.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script defer src="./dist/js/include.js"></script>
-  <script defer src="./dist/js/comm.js"></script>
-</head>
-
-<body>
-  <div id="u-skip">
-    <a href="#gnb"><span>주요메뉴 바로가기</span></a>
-    <a href="#main"><span>컨텐츠 바로가기</span></a>
-    <a href="#footer"><span>풋터 바로가기</span></a>
-  </div>
-  <div class="wrap">
-    <!-- logo 왼쪽 type -->
-    <header id="header">
-      <div class="inner">
-        <h1 class="logo">
-          <a href="./index.html">
-            <img src="./images/comm/PRADA.svg" alt="PRADA" />
-          </a>
-        </h1>
-        <div class="gnb_wrap">
-              <ul class="gnb">
-                <li>
-                  <a class="gnb_tit" href="#">WOMAN</a>
-                  <div class="gsnb">
+  <body>
+    <div id="u-skip">
+      <a href="#gnb"><span>주요메뉴 바로가기</span></a>
+      <a href="#main"><span>컨텐츠 바로가기</span></a>
+      <a href="#footer"><span>풋터 바로가기</span></a>
+    </div>
+    <div class="wrap">
+      <!-- logo 왼쪽 type -->
+      <header id="header">
+        <div class="inner">
+          <h1 class="logo">
+            <a href="./index.html">
+              <img src="./images/comm/PRADA.svg" alt="PRADA" />
+            </a>
+          </h1>
+          <div class="gnb_wrap">
+            <ul class="gnb">
+              <li>
+                <a class="gnb_tit" href="#">WOMAN</a>
+                <div class="gsnb">
                   <ul class="menu_item">
-                    <li><a class="first_tit" href="./goods-list.html">컬렉션</a></li>
+                    <li>
+                      <a class="first_tit" href="./goods-list.html">컬렉션</a>
+                    </li>
                     <li><a href="./goods-list.html">신상품</a></li>
                     <li><a href="./goods-list.html">여성 선물</a></li>
                     <li><a href="./goods-list.html">2023 가을/겨울</a></li>
                     <li><a href="./goods-list.html">AC Factory</a></li>
                   </ul>
                   <ul class="menu_item">
-                    <li><a class="first_tit" href="./goods-list.html">레디투웨어</a></li>
+                    <li>
+                      <a class="first_tit" href="./goods-list.html"
+                        >레디투웨어</a
+                      >
+                    </li>
                     <li><a href="./goods-list.html">전체보기</a></li>
                     <li><a href="./goods-list.html">재킷 및 코트</a></li>
                     <li><a href="./goods-list.html">셔츠 및 탑</a></li>
@@ -74,10 +110,14 @@
                     <li><a href="./goods-list.html">데님</a></li>
                     <li><a href="./goods-list.html">가죽의류</a></li>
                     <li><a href="./goods-list.html">파지마 및 언더웨어</a></li>
-                    <li><a href="./goods-list.html">티셔츠 및 스웨트셔츠</a></li>
+                    <li>
+                      <a href="./goods-list.html">티셔츠 및 스웨트셔츠</a>
+                    </li>
                   </ul>
                   <ul class="menu_item">
-                    <li><a class="first_tit" href="./goods-list.html">가방</a></li>
+                    <li>
+                      <a class="first_tit" href="./goods-list.html">가방</a>
+                    </li>
                     <li><a href="./goods-list.html">전체보기</a></li>
                     <li><a href="./goods-list.html">숄더백</a></li>
                     <li><a href="./goods-list.html">탑핸들</a></li>
@@ -87,7 +127,9 @@
                     <li><a href="./goods-list.html">브리프케이스</a></li>
                   </ul>
                   <ul class="menu_item">
-                    <li><a class="first_tit" href="./goods-list.html">슈즈</a></li>
+                    <li>
+                      <a class="first_tit" href="./goods-list.html">슈즈</a>
+                    </li>
                     <li><a href="./goods-list.html">전체보기</a></li>
                     <li><a href="./goods-list.html">로퍼</a></li>
                     <li><a href="./goods-list.html">레이스업</a></li>
@@ -98,51 +140,73 @@
                     <li><a href="./goods-list.html">샌들</a></li>
                   </ul>
                   <ul class="menu_item">
-                    <li><a class="first_tit" href="./goods-list.html">액세서리</a></li>
+                    <li>
+                      <a class="first_tit" href="./goods-list.html">액세서리</a>
+                    </li>
                     <li><a href="./goods-list.html">전체보기</a></li>
                     <li><a href="./goods-list.html">지갑 및 카드홀더</a></li>
-                    <li><a href="./goods-list.html">하이테크 액세서리 및 키체인</a></li>
+                    <li>
+                      <a href="./goods-list.html"
+                        >하이테크 액세서리 및 키체인</a
+                      >
+                    </li>
                     <li><a href="./goods-list.html">모자 및 장갑</a></li>
                     <li><a href="./goods-list.html">선글라스</a></li>
                     <li><a href="./goods-list.html">헤어 액세서리</a></li>
                     <li><a href="./goods-list.html">벨트</a></li>
                     <li><a href="./goods-list.html">실크 및 스카프</a></li>
                     <li><a href="./goods-list.html">향수</a></li>
-                    </ul>
+                  </ul>
                   <ul class="menu_item">
-                    <li><a class="first_tit" href="./goods-list.html">라이프스타일 액세서리</a></li>
+                    <li>
+                      <a class="first_tit" href="./goods-list.html"
+                        >라이프스타일 액세서리</a
+                      >
+                    </li>
                     <li><a href="./goods-list.html">전체보기</a></li>
                     <li><a href="./goods-list.html">반려동물 액세서리</a></li>
                     <li><a href="./goods-list.html">스포츠 및 레저</a></li>
-                    </ul>
+                  </ul>
                   <ul class="menu_item">
-                    <li><a class="first_tit" href="./goods-list.html">주얼리</a></li>
+                    <li>
+                      <a class="first_tit" href="./goods-list.html">주얼리</a>
+                    </li>
                     <li><a href="./goods-list.html">전체보기</a></li>
                     <li><a href="./goods-list.html">파인 주얼리 컬렉션</a></li>
                     <li><a href="./goods-list.html">실버 주얼리</a></li>
                     <li><a href="./goods-list.html">패션 주얼리</a></li>
-                    </ul>
+                  </ul>
                   <ul class="menu_item">
-                    <li><a class="first_tit" href="./goods-list.html">트래블</a></li>
+                    <li>
+                      <a class="first_tit" href="./goods-list.html">트래블</a>
+                    </li>
                     <li><a href="./goods-list.html">전체보기</a></li>
-                    <li><a href="./goods-list.html">파우치 및 트래블 액세서리</a></li>
+                    <li>
+                      <a href="./goods-list.html">파우치 및 트래블 액세서리</a>
+                    </li>
                     <li><a href="./goods-list.html">트래블 백</a></li>
                   </ul>
-                  </div>
-                </li>
-                <li>
-                   <a class="gnb_tit" href="#">MAN</a>
-                   <div class="gsnb">
-                    <ul class="menu_item">
-                    <li><a class="first_tit" href="./goods-list.html">컬렉션</a></li>
+                </div>
+              </li>
+              <li>
+                <a class="gnb_tit" href="#">MAN</a>
+                <div class="gsnb">
+                  <ul class="menu_item">
+                    <li>
+                      <a class="first_tit" href="./goods-list.html">컬렉션</a>
+                    </li>
                     <li><a href="./goods-list.html">신상품</a></li>
                     <li><a href="./goods-list.html">남성 선물</a></li>
                     <li><a href="./goods-list.html">2023 가을/겨울</a></li>
                     <li><a href="./goods-list.html">프라다 리네아 로사</a></li>
                     <li><a href="./goods-list.html">AC Factory</a></li>
                   </ul>
-                    <ul class="menu_item">
-                    <li><a class="first_tit" href="./goods-list.html">레디투웨어</a></li>
+                  <ul class="menu_item">
+                    <li>
+                      <a class="first_tit" href="./goods-list.html"
+                        >레디투웨어</a
+                      >
+                    </li>
                     <li><a href="./goods-list.html">전체보기</a></li>
                     <li><a href="./goods-list.html">재킷 및 코트</a></li>
                     <li><a href="./goods-list.html">니트웨어</a></li>
@@ -152,10 +216,14 @@
                     <li><a href="./goods-list.html">가죽의류</a></li>
                     <li><a href="./goods-list.html">슈트</a></li>
                     <li><a href="./goods-list.html">팬츠 및 버뮤다</a></li>
-                    <li><a href="./goods-list.html">조깅복 및 스웨트 셔츠</a></li>
+                    <li>
+                      <a href="./goods-list.html">조깅복 및 스웨트 셔츠</a>
+                    </li>
                   </ul>
-                    <ul class="menu_item">
-                    <li><a class="first_tit" href="./goods-list.html">가방</a></li>
+                  <ul class="menu_item">
+                    <li>
+                      <a class="first_tit" href="./goods-list.html">가방</a>
+                    </li>
                     <li><a href="./goods-list.html">전체보기</a></li>
                     <li><a href="./goods-list.html">메신저백</a></li>
                     <li><a href="./goods-list.html">백팩 및 벨트백</a></li>
@@ -163,8 +231,10 @@
                     <li><a href="./goods-list.html">브리프케이스</a></li>
                     <li><a href="./goods-list.html">클러치</a></li>
                   </ul>
-                    <ul class="menu_item">
-                    <li><a class="first_tit" href="./goods-list.html">슈즈</a></li>
+                  <ul class="menu_item">
+                    <li>
+                      <a class="first_tit" href="./goods-list.html">슈즈</a>
+                    </li>
                     <li><a href="./goods-list.html">전체보기</a></li>
                     <li><a href="./goods-list.html">스니커즈</a></li>
                     <li><a href="./goods-list.html">로퍼</a></li>
@@ -172,488 +242,617 @@
                     <li><a href="./goods-list.html">레이스업</a></li>
                     <li><a href="./goods-list.html">샌들</a></li>
                   </ul>
-                    <ul class="menu_item">
-                    <li><a class="first_tit" href="./goods-list.html">액세서리</a></li>
+                  <ul class="menu_item">
+                    <li>
+                      <a class="first_tit" href="./goods-list.html">액세서리</a>
+                    </li>
                     <li><a href="./goods-list.html">전체보기</a></li>
                     <li><a href="./goods-list.html">지갑 및 카드홀더</a></li>
-                    <li><a href="./goods-list.html">하이테크 액세서리 및 키체인</a></li>
+                    <li>
+                      <a href="./goods-list.html"
+                        >하이테크 액세서리 및 키체인</a
+                      >
+                    </li>
                     <li><a href="./goods-list.html">모자 및 장갑</a></li>
                     <li><a href="./goods-list.html">선글라스</a></li>
                     <li><a href="./goods-list.html">벨트</a></li>
                     <li><a href="./goods-list.html">맞춤형 벨트</a></li>
                     <li><a href="./goods-list.html">실크 및 스카프</a></li>
                     <li><a href="./goods-list.html">타이 및 보우타이</a></li>
-                    <li><a href="./goods-list.html">향수</a></li>     
+                    <li><a href="./goods-list.html">향수</a></li>
                   </ul>
-                    <ul class="menu_item">
-                    <li><a class="first_tit" href="./goods-list.html">라이프스타일 액세서리</a></li>
+                  <ul class="menu_item">
+                    <li>
+                      <a class="first_tit" href="./goods-list.html"
+                        >라이프스타일 액세서리</a
+                      >
+                    </li>
                     <li><a href="./goods-list.html">전체보기</a></li>
                     <li><a href="./goods-list.html">반려동물 액세서리</a></li>
                     <li><a href="./goods-list.html">스포츠 및 레저</a></li>
                   </ul>
-                    <ul class="menu_item">
-                    <li><a class="first_tit" href="./goods-list.html">주얼리</a></li>
+                  <ul class="menu_item">
+                    <li>
+                      <a class="first_tit" href="./goods-list.html">주얼리</a>
+                    </li>
                     <li><a href="./goods-list.html">전체보기</a></li>
                     <li><a href="./goods-list.html">파인 주얼리 컬렉션</a></li>
                     <li><a href="./goods-list.html">실버 주얼리</a></li>
                     <li><a href="./goods-list.html">패션 주얼리</a></li>
                   </ul>
-                    <ul class="menu_item">
-                    <li><a class="first_tit" href="./goods-list.html">트래블</a></li>
+                  <ul class="menu_item">
+                    <li>
+                      <a class="first_tit" href="./goods-list.html">트래블</a>
+                    </li>
                     <li><a href="./goods-list.html">전체보기</a></li>
                     <li><a href="./goods-list.html">트래블 백</a></li>
                     <li><a href="./goods-list.html">러기지 및 트롤리</a></li>
-                    <li><a href="./goods-list.html">파우치 및 트래블 액세서리</a></li>
+                    <li>
+                      <a href="./goods-list.html">파우치 및 트래블 액세서리</a>
+                    </li>
                   </ul>
-                  </div>
-                </li>
-                <li>
-                   <a class="gnb_tit" href="#">GIFT</a>
-                    <div class="gsnb gift">
-                    <ul class="menu_item">
-                   <li><a class="first_tit" href="./goods-list.html">여성 선물</a></li>
+                </div>
+              </li>
+              <li>
+                <a class="gnb_tit" href="#">GIFT</a>
+                <div class="gsnb gift">
+                  <ul class="menu_item">
+                    <li>
+                      <a class="first_tit" href="./goods-list.html"
+                        >여성 선물</a
+                      >
+                    </li>
                     <li><a href="./goods-list.html">소중한 선물</a></li>
                     <li><a href="./goods-list.html">새로운 에센셜</a></li>
                   </ul>
-                    <ul class="menu_item">
-                   <li><a class="first_tit" href="./goods-list.html">남성 선물</a></li>
+                  <ul class="menu_item">
+                    <li>
+                      <a class="first_tit" href="./goods-list.html"
+                        >남성 선물</a
+                      >
+                    </li>
                     <li><a href="./goods-list.html">소중한 선물</a></li>
                     <li><a href="./goods-list.html">새로운 에센셜</a></li>
                   </ul>
-                  </div>
-                </li>
-                <li>
-                   <a class="gnb_tit" href="#">LINEA ROSSA</a>
-                   <div class="gsnb linea">
-                    <ul class="menu_item">
-                    <li><a class="first_tit" href="./goods-list.html">남성 리네아 로사</a></li>
+                </div>
+              </li>
+              <li>
+                <a class="gnb_tit" href="#">LINEA ROSSA</a>
+                <div class="gsnb linea">
+                  <ul class="menu_item">
+                    <li>
+                      <a class="first_tit" href="./goods-list.html"
+                        >남성 리네아 로사</a
+                      >
+                    </li>
                     <li><a href="./goods-list.html">레디투웨어</a></li>
                     <li><a href="./goods-list.html">슈즈 </a></li>
                     <li><a href="./goods-list.html">가방 및 액세서리 </a></li>
                     <li><a href="./goods-list.html">선글라스 </a></li>
                   </ul>
-                  </div>
-                </li>
-              </ul>
-        </div>
-        <div class="header__right">
-          <div class="util">
-            <ul class="util__list">
-              <!-- a : 링크 연결 / button : 동작처리 -->
-              <!-- 링크 연결 없이 스크립트 처리 -->
-              <li>
-                <button type="button" class="btn-g btn-user">
-                  <i class="las la-user"></i>
-                  <!-- <span class="material-icons-outlined">
-                    account_circle
-                    </span> -->
-                  <span class="blind">사용자</span>
-                </button>
-                <button type="button" class="btn-g btn-search">
-                 <i class="las la-search"></i>
-                  <!-- <span class="material-icons-outlined"> search </span> -->
-                  <span class="blind">검색</span>
-                </button>
-                <button type="button" class="btn-g btn-cart" onclick="location.href='./cart.html'">
-                  <i class="las la-shopping-bag"></i>
-                  <!-- <span class="material-icons-outlined"> shopping_bag </span> -->
-                </button>
+                </div>
               </li>
             </ul>
           </div>
-          <button type="button" class="plain menu_btn"
-          onclick="$('#header').toggleClass('h_open');">
-          <span>메뉴 열기/닫기</span>
-        </button>   
-        <div class="all_menu">
-          <a href="#">
-          <img class="img_logo_white" src="./images/comm/prada_white.svg" alt="prada_white">
-         </a>
-          <ul class="menu">
-            <li><a href="./goods-list.html">WOMAN</a></li>
-            <li><a href="./goods-list.html">MAN</a></li>
-            <li><a href="./goods-list.html">GIFT</a></li>
-            <li><a href="./goods-list.html">LINEA ROSSA</a></li>
-          </ul>
-          <ul class="lst-categ2">
-            <li class="categ-item2">
-              <a href="#" class="menu-wish">위시리스트</a>
-            </li>
-            <li class="categ-item2">
-              <a href="#" class="menu-phone">문의하기</a>
-            </li>
-          </ul>
-        </div>
-       </div>
-      </div>
-    </header>
-    <main id="main">
-      <section class="container section-g section-collection">
-        <div class="main_inner">
-          <!--YOUTUBE VIDEO-->
-          <section class="youtube">
-            <h2>2023 가을/겨울</h2>
-            <a class="video_txt1" href="#">
-              <div class="woman_product">여성제품</div>
-            </a>
-            <a class="video_txt2" href="#">
-              <div class="man_product">남성제품</div>
-            </a>
-            <div class="youtube__area">
-              <div id="player"></div>
+          <div class="header__right">
+            <div class="util">
+              <ul class="util__list">
+                <!-- a : 링크 연결 / button : 동작처리 -->
+                <!-- 링크 연결 없이 스크립트 처리 -->
+                <li>
+                  <button type="button" class="btn-g btn-user">
+                    <i class="las la-user"></i>
+                    <!-- <span class="material-icons-outlined">
+                    account_circle
+                    </span> -->
+                    <span class="blind">사용자</span>
+                  </button>
+                  <button type="button" class="btn-g btn-search">
+                    <i class="las la-search"></i>
+                    <!-- <span class="material-icons-outlined"> search </span> -->
+                    <span class="blind">검색</span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn-g btn-cart"
+                    onclick="location.href='./cart.html'"
+                  >
+                    <i class="las la-shopping-bag"></i>
+                    <!-- <span class="material-icons-outlined"> shopping_bag </span> -->
+                  </button>
+                </li>
+              </ul>
             </div>
-            <div class="youtube__cover"></div>
-          </section>
-          <h2 class="section-event blind">collection</h2>
-          <section class="section-contents">
-            <ul>
-              <li>
-                <img class="banner_img" src="./images/collection/woman.png"
-                  alt="woman fashion" />
-                <h2 class="img-tit1">WOMAN WEARS</h2>
-                <div class="img-txt-box">
-                  <strong class="mini-tit"> WOMAN COLLECTION</strong>
-                  <p>
-                    <span class="img-exp">프라다만의 여자 옷들을 만나보세요.</span>
-                  </p>
-                  <div class="btn-group">
-                    <a href="#" class="btn-more">
-                      더 알아보기
-                    </a>
-                    <a href="#" class="btn-pur">구매하기</a>
+            <div class="container nav_container">
+              <input type="checkbox" class="checkbox" name="" id="" />
+              <div class="hamburger_lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div>
+              <div class="menu_items">
+                <a href="./index.html">
+                  <div class="thumb_logo">
+                    <img
+                      class="logo_img"
+                      src="./images/comm/PRADA.svg"
+                      alt="logo"
+                    />
                   </div>
-                </div>
-              </li>
-            </ul>  
-          </section>
-              <section class="thumb_banner">
-                <h3 class="thumbBanner_tit">Less, But Enough.</h3>
-                <p class="thumbBanner_desc"> 가볍지만 따뜻하게, 액티브 라이트다운</p>
-                <div class="thumbBanner_lst">
-                  <div class="thumbBanner_item">
-                    <a href="#">
-                      <div class="main_pditem_img">
-                        <img class="banner_image" src="https://www.prada.com/content/dam/pradabkg_products/S/SGB/SGB033/1RL7F0K74/SGB033_1RL7_F0K74_S_232_MDF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpghttps://www.prada.com/content/dam/pradabkg_products/S/SGB/SGB033/1RL7F0K74/SGB033_1RL7_F0K74_S_232_MDF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg" alt="warm">
-                      </div>
-                      <div class="main_pditem_info">
-                        <p class="item_name">크롭 코듀로이 다운 베스트</p>
-                        <div class="item_price">
+                </a>
+                <ul>
+                  <li><a class="categ_tit" href="#">WOMAN</a></li>
+                  <li><a class="categ_tit" href="#">MAN</a></li>
+                  <li><a class="categ_tit" href="#">GIFT</a></li>
+                  <li><a class="categ_tit" href="#">LINEA ROSSA</a></li>
+                </ul>
+                <ul class="lst_categ2">
+                  <li class="categ_item2">
+                    <a href="./cart.html" class="menu_wish"> 위시리스트 </a>
+                  </li>
+                  <li class="categ_item2">
+                    <a href="#" class="menu_phone"> 문의하기 </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main id="main">
+        <section class="container section-g section-collection">
+          <div class="main_inner">
+            <!--YOUTUBE VIDEO-->
+            <section class="youtube">
+              <h2>2023 가을/겨울</h2>
+              <a class="video_txt1" href="#">
+                <div class="woman_product">여성제품</div>
+              </a>
+              <a class="video_txt2" href="#">
+                <div class="man_product">남성제품</div>
+              </a>
+              <div class="youtube__area">
+                <div id="player"></div>
+              </div>
+              <div class="youtube__cover"></div>
+            </section>
+            <h2 class="section-event blind">collection</h2>
+            <section class="section-contents">
+              <ul>
+                <li>
+                  <img
+                    class="banner_img"
+                    src="./images/collection/woman.png"
+                    alt="woman fashion"
+                  />
+                  <h2 class="img-tit1">WOMAN WEARS</h2>
+                  <div class="img-txt-box">
+                    <strong class="mini-tit"> WOMAN COLLECTION</strong>
+                    <p>
+                      <span class="img-exp"
+                        >프라다만의 여자 옷들을 만나보세요.</span
+                      >
+                    </p>
+                    <div class="btn-group">
+                      <a href="#" class="btn-more"> 더 알아보기 </a>
+                      <a href="#" class="btn-pur">구매하기</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="thumb_banner">
+              <h3 class="thumbBanner_tit">Less, But Enough.</h3>
+              <p class="thumbBanner_desc">
+                가볍지만 따뜻하게, 액티브 라이트다운
+              </p>
+              <div class="thumbBanner_lst">
+                <div class="thumbBanner_item">
+                  <a href="#">
+                    <div class="main_pditem_img">
+                      <img
+                        class="banner_image"
+                        src="https://www.prada.com/content/dam/pradabkg_products/S/SGB/SGB033/1RL7F0K74/SGB033_1RL7_F0K74_S_232_MDF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpghttps://www.prada.com/content/dam/pradabkg_products/S/SGB/SGB033/1RL7F0K74/SGB033_1RL7_F0K74_S_232_MDF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                        alt="warm"
+                      />
+                    </div>
+                    <div class="main_pditem_info">
+                      <p class="item_name">크롭 코듀로이 다운 베스트</p>
+                      <div class="item_price">
                         <span class="normal_price">
                           <strong>3,050,000원</strong>
                         </span>
                       </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="thumbBanner_item">
-                    <a href="#">
-                      <div class="main_pditem_img">
-                        <img class="banner_image" src=" https://www.prada.com/content/dam/pradabkg_products/U/UJL/UJL15B/13I2F0627/UJL15B_13I2_F0627_S_232_MDDA.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg" alt="warm">
-                      </div>
-                      <div class="main_pditem_info">
-                        <p class="item_name">코튼 플리스 지퍼 재킷</p>
-                        <div class="item_price">
+                    </div>
+                  </a>
+                </div>
+                <div class="thumbBanner_item">
+                  <a href="#">
+                    <div class="main_pditem_img">
+                      <img
+                        class="banner_image"
+                        src=" https://www.prada.com/content/dam/pradabkg_products/U/UJL/UJL15B/13I2F0627/UJL15B_13I2_F0627_S_232_MDDA.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                        alt="warm"
+                      />
+                    </div>
+                    <div class="main_pditem_info">
+                      <p class="item_name">코튼 플리스 지퍼 재킷</p>
+                      <div class="item_price">
                         <span class="normal_price">
                           <strong>5,200,000원</strong>
                         </span>
                       </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="thumbBanner_item">
-                    <a href="#">
-                      <div class="main_pditem_img">
-                        <img class="banner_image" src="https://www.prada.com/content/dam/pradabkg_products/P/P24/P24G1V/1YMWF0040/P24G1V_1YMW_F0040_S_211_MDD.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg" alt="warm">
-                      </div>
-                      <div class="main_pditem_info">
-                        <p class="item_name">
-                          캐시미어 및 울 프라다 로고 <br> 크루넥 스웨터</p>
-                        <div class="item_price">
+                    </div>
+                  </a>
+                </div>
+                <div class="thumbBanner_item">
+                  <a href="#">
+                    <div class="main_pditem_img">
+                      <img
+                        class="banner_image"
+                        src="https://www.prada.com/content/dam/pradabkg_products/P/P24/P24G1V/1YMWF0040/P24G1V_1YMW_F0040_S_211_MDD.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                        alt="warm"
+                      />
+                    </div>
+                    <div class="main_pditem_info">
+                      <p class="item_name">
+                        캐시미어 및 울 프라다 로고 <br />
+                        크루넥 스웨터
+                      </p>
+                      <div class="item_price">
                         <span class="normal_price">
                           <strong>2,860,000원</strong>
                         </span>
                       </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="thumbBanner_item">
-                    <a href="#">
-                      <div class="main_pditem_img">
-                        <img class="banner_image" src="https://www.prada.com/content/dam/pradabkg_products/2/291/291774/11FCF0002/291774_11FC_F0002_S_222_MDF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg" alt="warm">
-                      </div>
-                      <div class="main_pditem_info">
-                        <p class="item_name">리나일론 후드 블루종 재킷</p>
-                        <div class="item_price">
+                    </div>
+                  </a>
+                </div>
+                <div class="thumbBanner_item">
+                  <a href="#">
+                    <div class="main_pditem_img">
+                      <img
+                        class="banner_image"
+                        src="https://www.prada.com/content/dam/pradabkg_products/2/291/291774/11FCF0002/291774_11FC_F0002_S_222_MDF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                        alt="warm"
+                      />
+                    </div>
+                    <div class="main_pditem_info">
+                      <p class="item_name">리나일론 후드 블루종 재킷</p>
+                      <div class="item_price">
                         <span class="normal_price">
                           <strong>3,550,000원</strong>
                         </span>
                       </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="btn_wrap">
-                  <a href="#">
-                    모두보기
+                    </div>
                   </a>
                 </div>
+              </div>
+              <div class="btn_wrap">
+                <a href="#"> 모두보기 </a>
+              </div>
             </section>
-              <section class="thumb_banner">
-                <h3 class="thumbBanner_tit">PRADA Boots</h3>
-                <p class="thumbBanner_desc">Boots meet warm</p>
-                <div class="thumbBanner_lst">
-                  <div class="thumbBanner_item">
-                    <a href="#">
-                      <div class="main_pditem_img">
-                        <img class="banner_image" src="https://www.prada.com/content/dam/pradabkg_products/1/1U2/1U258N/173F0002/1U258N_173_F0002_F_ZF20_SLR.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg" alt="boots">
-                      </div>
-                      <div class="main_pditem_info">
-                        <p class="item_name">시어링 부티</p>
-                        <div class="item_price">
+            <section class="thumb_banner">
+              <h3 class="thumbBanner_tit">PRADA Boots</h3>
+              <p class="thumbBanner_desc">Boots meet warm</p>
+              <div class="thumbBanner_lst">
+                <div class="thumbBanner_item">
+                  <a href="#">
+                    <div class="main_pditem_img">
+                      <img
+                        class="banner_image"
+                        src="https://www.prada.com/content/dam/pradabkg_products/1/1U2/1U258N/173F0002/1U258N_173_F0002_F_ZF20_SLR.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                        alt="boots"
+                      />
+                    </div>
+                    <div class="main_pditem_info">
+                      <p class="item_name">시어링 부티</p>
+                      <div class="item_price">
                         <span class="normal_price">
                           <strong>2,400,000원</strong>
                         </span>
                       </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="thumbBanner_item">
-                    <a href="#">
-                      <div class="main_pditem_img">
-                        <img class="banner_image" src="https://www.prada.com/content/dam/pradabkg_products/1/1T2/1T259N/3LGOF0002/1T259N_3LGO_F0002_F_020_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg" alt="boots">
-                      </div>
-                      <div class="main_pditem_info">
-                        <p class="item_name">나일론 패브릭 부티</p>
-                        <div class="item_price">
+                    </div>
+                  </a>
+                </div>
+                <div class="thumbBanner_item">
+                  <a href="#">
+                    <div class="main_pditem_img">
+                      <img
+                        class="banner_image"
+                        src="https://www.prada.com/content/dam/pradabkg_products/1/1T2/1T259N/3LGOF0002/1T259N_3LGO_F0002_F_020_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                        alt="boots"
+                      />
+                    </div>
+                    <div class="main_pditem_info">
+                      <p class="item_name">나일론 패브릭 부티</p>
+                      <div class="item_price">
                         <span class="normal_price">
                           <strong>1,650,000원</strong>
                         </span>
                       </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="thumbBanner_item">
-                    <a href="#">
-                      <div class="main_pditem_img">
-                        <img class="banner_image" src=" https://www.prada.com/content/dam/pradabkg_products/1/1W2/1W241N/3LFUF0002/1W241N_3LFU_F0002_F_085_SLR.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg" alt="boots">
-                      </div>
-                      <div class="main_pditem_info">
-                        <p class="item_name">가죽 및 리나일론 부츠</p>
-                        <div class="item_price">
+                    </div>
+                  </a>
+                </div>
+                <div class="thumbBanner_item">
+                  <a href="#">
+                    <div class="main_pditem_img">
+                      <img
+                        class="banner_image"
+                        src=" https://www.prada.com/content/dam/pradabkg_products/1/1W2/1W241N/3LFUF0002/1W241N_3LFU_F0002_F_085_SLR.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                        alt="boots"
+                      />
+                    </div>
+                    <div class="main_pditem_info">
+                      <p class="item_name">가죽 및 리나일론 부츠</p>
+                      <div class="item_price">
                         <span class="normal_price">
                           <strong>2,600,000</strong>
                         </span>
                       </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="thumbBanner_item">
-                    <a href="#">
-                      <div class="main_pditem_img">
-                        <img class="banner_image" src="https://www.prada.com/content/dam/pradabkg_products/1/1T9/1T933M/3LFVF0002/1T933M_3LFV_F0002_F_B055_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg" alt="boots">
-                      </div>
-                      <div class="main_pditem_info">
-                        <p class="item_name">모놀리스 나일론 <br> 개버딘 부츠</p>
-                        <div class="item_price">
+                    </div>
+                  </a>
+                </div>
+                <div class="thumbBanner_item">
+                  <a href="#">
+                    <div class="main_pditem_img">
+                      <img
+                        class="banner_image"
+                        src="https://www.prada.com/content/dam/pradabkg_products/1/1T9/1T933M/3LFVF0002/1T933M_3LFV_F0002_F_B055_SLS.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                        alt="boots"
+                      />
+                    </div>
+                    <div class="main_pditem_info">
+                      <p class="item_name">
+                        모놀리스 나일론 <br />
+                        개버딘 부츠
+                      </p>
+                      <div class="item_price">
                         <span class="normal_price">
                           <strong>1,950,000원</strong>
                         </span>
                       </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="btn_wrap">
-                  <a href="#">
-                    모두보기
+                    </div>
                   </a>
                 </div>
+              </div>
+              <div class="btn_wrap">
+                <a href="#"> 모두보기 </a>
+              </div>
             </section>
             <section class="section-contents">
               <ul>
-              <li>
-                <a href="#">
-                  <img  class="banner_img"  src="./images/collection/man.png"
-                    alt="man fashion" />
-                </a>
-                <h2 class="img-tit2">MAN WEARS</h2>
-                <div class="img-txt-box">
-                  <strong class="mini-tit"> MAN COLLECTION</strong>
-                  <p>
-                    <span class="img-exp">프라다만의 남자 옷들을 만나보세요.</span>
-                  </p>
-                  <div class="btn-group">
-                    <a href="#" class="btn-more">더 알아보기</a>
-                    <a href="#" class="btn-pur">구매하기</a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <a href="#">
-                  <img  class="banner_img"  src="./images/collection/bag_collection.png" alt="BAG" />
-                </a>
-                <h2 class="img-tit2_bag">
-                  BAG <br>
-                  COLLECTION
-                </h2>
-                <div class="img-txt-box">
-                  <strong class="mini-tit"> BAG COLLECTION </strong>
-                  <p>
-                    <span class="img-exp">프라다만의 가방들을 만나보세요.</span>
-                  </p>
-                  <div class="btn-group">
-                    <a href="#" class="btn-more">더 알아보기</a>
-                    <a href="#" class="btn-pur">구매하기</a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <a href="#">
-                  <img  class="banner_img"  src="./images/collection/shoes.png" alt="shoe" />
-                </a>
-                <h2 class="img-tit2_shoes">
-                  SHOES <br>
-                  COLLECTION
-                </h2>
-                <div class="img-txt-box">
-                  <strong class="mini-tit"> SHOES COLLECTION </strong>
-                  <p>
-                    <span class="img-exp">프라다만의 신발들을 만나보세요.</span>
-                  </p>
-                  <div class="btn-group">
-                    <a href="#" class="btn-more">더 알아보기</a>
-                    <a href="#" class="btn-pur">구매하기</a>
-                  </div>
-                </div>
-              </li>
-             
-              <li>
-                <div class="prada-gall">
-                  <a href="#">
-                    <img  class="banner_img-gallary"  src="./images/collection/gallaria.png"
-                      alt="prada gall" />
-                    <h2 class="img-tit4">PRADA GALLERIA</h2>
-                  </a>
-                  <a href="#" class="btn-pur2">
-                    BUY
-                  </a>
-                  </p>
-                </div>
-              </li>
-              <li>
-                <div class="prada-camp">
+                <li>
                   <a href="#">
                     <img
-                    class="campaign_img"
-                      src="https://www.fashiongonerogue.com/wp-content/uploads/2023/01/Prada-Lunar-New-Year-2023-Campaign01.jpg"
-                      alt="2023 Campaign" />
+                      class="banner_img"
+                      src="./images/collection/man.png"
+                      alt="man fashion"
+                    />
                   </a>
-                  <div class="img-tit5">Du Juan, Chun Xia Front Prada Lunar</div>
-                  <div class="img-txt-box2">
-                    <strong class="mini-tit3"> New years 2023 Campaign </strong>
+                  <h2 class="img-tit2">MAN WEARS</h2>
+                  <div class="img-txt-box">
+                    <strong class="mini-tit"> MAN COLLECTION</strong>
                     <p>
-                      <a href="#" class="btn-more1">
-                        살펴보기
-                      </a>
+                      <span class="img-exp"
+                        >프라다만의 남자 옷들을 만나보세요.</span
+                      >
                     </p>
+                    <div class="btn-group">
+                      <a href="#" class="btn-more">더 알아보기</a>
+                      <a href="#" class="btn-pur">구매하기</a>
+                    </div>
                   </div>
-                </div>
-              </li>
-            </ul>
-          </section>
-          <section class="swiper mySwiper_main">
-            <h2>PRADASPHERE NOW</h2>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"> 
-                <a href="#">
-                  <div class="img_box">
-                  <img class="swiper_img" src="./images/pradasphere/pradasphere_shanghai.png" alt="pradasphere_shanghai">
-                </div>
-                </a>     
-                <div class="slide-img-txt-box">
-                  <strong class="slide_mini-tit">PRADASPHERE II</strong>
-                  <p>
-                    <span class="slide_img-exp">PRADASPHERE II 소식을 만나보세요.</span>
-                  </p>
-                  <div class="swiper_btn-group">
-                    <a href="#" class="swiper-btn-more">더 알아보기</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="banner_img"
+                      src="./images/collection/bag_collection.png"
+                      alt="BAG"
+                    />
+                  </a>
+                  <h2 class="img-tit2_bag">
+                    BAG <br />
+                    COLLECTION
+                  </h2>
+                  <div class="img-txt-box">
+                    <strong class="mini-tit"> BAG COLLECTION </strong>
+                    <p>
+                      <span class="img-exp"
+                        >프라다만의 가방들을 만나보세요.</span
+                      >
+                    </p>
+                    <div class="btn-group">
+                      <a href="#" class="btn-more">더 알아보기</a>
+                      <a href="#" class="btn-pur">구매하기</a>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">
-                  <div class="img_box">
-                  <img class="swiper_img" src="./images/pradasphere/Axiom.png" alt="Axiom">
-                </div>
-                </a>    
-                <div class="slide-img-txt-box">
-                  <strong class="slide_mini-tit">Prada x Axiom</strong>
-                  <p>
-                    <span class="slide_img-exp">Prada x Axiom의 소식을 만나보세요.</span>
-                  </p>
-                  <div class="swiper_btn-group">
-                    <a href="#" class="swiper-btn-more">더 알아보기</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="banner_img"
+                      src="./images/collection/shoes.png"
+                      alt="shoe"
+                    />
+                  </a>
+                  <h2 class="img-tit2_shoes">
+                    SHOES <br />
+                    COLLECTION
+                  </h2>
+                  <div class="img-txt-box">
+                    <strong class="mini-tit"> SHOES COLLECTION </strong>
+                    <p>
+                      <span class="img-exp"
+                        >프라다만의 신발들을 만나보세요.</span
+                      >
+                    </p>
+                    <div class="btn-group">
+                      <a href="#" class="btn-more">더 알아보기</a>
+                      <a href="#" class="btn-pur">구매하기</a>
+                    </div>
+                  </div>
+                </li>
 
+                <li>
+                  <div class="prada-gall">
+                    <a href="#">
+                      <img
+                        class="banner_img-gallary"
+                        src="./images/collection/gallaria.png"
+                        alt="prada gall"
+                      />
+                      <h2 class="img-tit4">PRADA GALLERIA</h2>
+                    </a>
+                    <a href="#" class="btn-pur2"> BUY </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="prada-camp">
+                    <a href="#">
+                      <img
+                        class="campaign_img"
+                        src="https://www.fashiongonerogue.com/wp-content/uploads/2023/01/Prada-Lunar-New-Year-2023-Campaign01.jpg"
+                        alt="2023 Campaign"
+                      />
+                    </a>
+                    <div class="img-tit5">
+                      Du Juan, Chun Xia Front Prada Lunar
+                    </div>
+                    <div class="img-txt-box2">
+                      <strong class="mini-tit3">
+                        New years 2023 Campaign
+                      </strong>
+                      <p>
+                        <a href="#" class="btn-more1"> 살펴보기 </a>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="swiper mySwiper_main">
+              <h2>PRADASPHERE NOW</h2>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="img_box">
+                      <img
+                        class="swiper_img"
+                        src="./images/pradasphere/pradasphere_shanghai.png"
+                        alt="pradasphere_shanghai"
+                      />
+                    </div>
+                  </a>
+                  <div class="slide-img-txt-box">
+                    <strong class="slide_mini-tit">PRADASPHERE II</strong>
+                    <p>
+                      <span class="slide_img-exp"
+                        >PRADASPHERE II 소식을 만나보세요.</span
+                      >
+                    </p>
+                    <div class="swiper_btn-group">
+                      <a href="#" class="swiper-btn-more">더 알아보기</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="img_box">
+                      <img
+                        class="swiper_img"
+                        src="./images/pradasphere/Axiom.png"
+                        alt="Axiom"
+                      />
+                    </div>
+                  </a>
+                  <div class="slide-img-txt-box">
+                    <strong class="slide_mini-tit">Prada x Axiom</strong>
+                    <p>
+                      <span class="slide_img-exp"
+                        >Prada x Axiom의 소식을 만나보세요.</span
+                      >
+                    </p>
+                    <div class="swiper_btn-group">
+                      <a href="#" class="swiper-btn-more">더 알아보기</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="img_box">
+                      <img
+                        class="swiper_img"
+                        src="./images/pradasphere/ss24_womanswear.png"
+                        alt="ss24_womanswear"
+                      />
+                    </div>
+                  </a>
+                  <div class="slide-img-txt-box">
+                    <strong class="slide_mini-tit">SS24 Womanswear</strong>
+                    <p>
+                      <span class="slide_img-exp"
+                        >SS24 Womanswear의 소식을 <br />
+                        만나보세요</span
+                      >
+                    </p>
+                    <div class="swiper_btn-group">
+                      <a href="#" class="swiper-btn-more">더 알아보기</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="img_box">
+                      <img
+                        class="swiper_img"
+                        src="./images/pradasphere/prada_mode_seoul.png"
+                        alt="prada_mode_seoul"
+                      />
+                    </div>
+                  </a>
+                  <div class="slide-img-txt-box">
+                    <strong class="slide_mini-tit">Prada Mode Seoul</strong>
+                    <p>
+                      <span class="slide_img-exp"
+                        >Prada Mode Seoul의 소식을 <br />
+                        만나보세요.</span
+                      >
+                    </p>
+                    <div class="swiper_btn-group">
+                      <a href="#" class="swiper-btn-more">더 알아보기</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="img_box">
+                      <img
+                        class="swiper_img"
+                        src="./images/pradasphere/PradaFW23 pop-ups_at_Harrods.png"
+                        alt="PradaFW23_pop-ups_at_Harrods"
+                      />
+                    </div>
+                  </a>
+                  <div class="slide-img-txt-box">
+                    <strong class="slide_mini-tit">Pop-ups at Harrods</strong>
+                    <p>
+                      <span class="slide_img-exp"
+                        >PradaFW23 pop-ups at Harrods의 <br />
+                        소식을 만나보세요.</span
+                      >
+                    </p>
+                    <div class="swiper_btn-group">
+                      <a href="#" class="swiper-btn-more">더 알아보기</a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <a href="#">
-                  <div class="img_box">
-                  <img class="swiper_img" src="./images/pradasphere/ss24_womanswear.png" alt="ss24_womanswear">
-                </div>
-                </a>    
-                <div class="slide-img-txt-box">
-                  <strong class="slide_mini-tit">SS24 Womanswear</strong>
-                  <p>
-                    <span class="slide_img-exp">SS24 Womanswear의  소식을  <br> 만나보세요</span>
-                  </p>
-                  <div class="swiper_btn-group">
-                    <a href="#" class="swiper-btn-more">더 알아보기</a>
-
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">
-                  <div class="img_box">
-                  <img class="swiper_img" src="./images/pradasphere/prada_mode_seoul.png" alt="prada_mode_seoul">
-                </div>
-                </a>    
-                <div class="slide-img-txt-box">
-                  <strong class="slide_mini-tit">Prada Mode Seoul</strong>
-                  <p>
-                    <span class="slide_img-exp">Prada Mode Seoul의 소식을  <br>  만나보세요.</span>
-                  </p>
-                  <div class="swiper_btn-group">
-                    <a href="#" class="swiper-btn-more">더 알아보기</a>
-             
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">
-                  <div class="img_box">
-                  <img class="swiper_img" src="./images/pradasphere/PradaFW23 pop-ups_at_Harrods.png" alt="PradaFW23_pop-ups_at_Harrods">
-                </div>
-                </a>    
-                <div class="slide-img-txt-box">
-                <strong class="slide_mini-tit">Pop-ups at Harrods</strong>
-                <p>
-                  <span class="slide_img-exp">PradaFW23 pop-ups at Harrods의 <br> 소식을 만나보세요.</span>
-                </p>
-                <div class="swiper_btn-group">
-                  <a href="#" class="swiper-btn-more">더 알아보기</a>
-
-                </div>
-              </div></div>
-            </div>
-          </section>
-        </div>
+            </section>
+          </div>
         </section>
       </main>
-        </div>
+    </div>
     <footer data-include-path="./outline/footer.html"></footer>
-</body>
-
+  </body>
 </html>

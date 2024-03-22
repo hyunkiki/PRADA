@@ -1989,38 +1989,6 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   align-items: center;
   justify-content: center;
 }
-#header .lst-categ2 {
-  position: absolute;
-  bottom: 5px;
-  left: 50%;
-  text-align: left;
-  transform: translate(-50%, -50%);
-}
-#header .lst-categ2 .categ-item2 {
-  margin-bottom: 10px;
-}
-#header .lst-categ2 .categ-item2 .menu-wish {
-  color: #fff;
-  font-size: 16px;
-}
-#header .lst-categ2 .categ-item2 .menu-wish::before {
-  content: "\f07a";
-  font-family: "Line Awesome Free";
-  font-weight: 900;
-  margin-right: 10px;
-  font-size: 20px;
-}
-#header .lst-categ2 .categ-item2 .menu-phone {
-  color: #fff;
-  font-size: 16px;
-}
-#header .lst-categ2 .categ-item2 .menu-phone::before {
-  content: "\f095";
-  font-family: "Line Awesome Free";
-  font-weight: 900;
-  margin-right: 10px;
-  font-size: 20px;
-}
 #header .gnb_wrap {
   display: none;
 }
@@ -2039,7 +2007,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   left: 0;
   top: 50%;
   width: 30px;
-  height: 2px;
+  height: 3px;
   margin-top: -1px;
   background: #000;
   border-radius: 2px;
@@ -2048,7 +2016,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   display: block;
   content: "";
   width: 100%;
-  height: 2px;
+  height: 3px;
   position: absolute;
   top: -8px;
   background: #000;
@@ -2064,7 +2032,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   display: block;
   content: "";
   width: 100%;
-  height: 2px;
+  height: 3px;
   position: absolute;
   background: #000;
   border-radius: 2px;
@@ -2076,74 +2044,13 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   margin-bottom: -8px;
 }
 
-.h_open .menu_btn span {
-  background: transparent !important;
-}
-.h_open .menu_btn span::before {
-  margin-top: 8px;
-  background: #fff;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-}
-.h_open .menu_btn span::after {
-  margin-bottom: 0;
-  background: #fff;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-}
-.h_open .all_menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.plain {
-  border: 0;
-  border-radius: 0;
-  outline: 0;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-color: transparent;
-}
-
-.all_menu {
-  display: none;
-  background: #000;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-}
-.all_menu .img_logo_white {
-  width: 40%;
-  position: absolute;
-  top: 3%;
-  left: 30%;
-}
-.all_menu .menu li a {
-  display: block;
-  font-size: 40px;
-  line-height: 80px;
-  color: #fff;
-  font-weight: bold;
-  opacity: 1;
-}
-
 .header__right .util__list {
   display: flex;
+  margin-right: 40px;
 }
 .header__right .util__list li {
   display: flex;
+  align-items: center;
 }
 .header__right .util__list .btn-g,
 .header__right .util__list a {
@@ -2166,61 +2073,116 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   font-size: 20px;
   font-family: "Font Awesome 6 Free";
 }
-
-.nav_wrap {
-  margin-left: 7px;
-}
-.nav_wrap #nav {
-  position: relative;
-  position: fixed;
-  top: 0;
-  right: -100%;
-  bottom: 0;
-  width: 100%;
-  background: #000;
-  transition: all 0.3s;
-}
-.nav_wrap #nav .link-logo {
-  display: block;
-  width: 130px;
-  margin: 0 auto;
-  height: 10%;
-}
-.nav_wrap #nav .img-logo {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.nav_wrap .lst-categ2 {
+.header__right .nav_container .checkbox {
   position: absolute;
-  width: 100%;
-  left: -1px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: left;
-}
-.nav_wrap .lst-categ2 a {
-  position: relative;
   display: block;
-  padding: 20px;
+  height: 35px;
+  width: 35px;
+  top: 20px;
+  right: 20px;
+  z-index: 15;
+  opacity: 0;
+  cursor: pointer;
+}
+.header__right .nav_container .hamburger_lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 34%;
+  right: 6%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header__right .nav_container .hamburger_lines .line {
+  display: block;
+  height: 4px;
   width: 100%;
-  font-size: 15px;
+  border-radius: 10px;
+  background: #0e2431;
+}
+.header__right .nav_container .hamburger_lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+.header__right .nav_container .hamburger_lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+.header__right .nav_container .hamburger_lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+.header__right .nav_container .menu_items {
+  height: 100vh;
+  width: 100%;
+  transform: translate(150%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: transform 0.8s ease-in-out;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  z-index: 5;
+  background: #fff;
+}
+.header__right .nav_container .menu_items .thumb_logo {
+  width: 50%;
+  margin: 0 auto;
+}
+.header__right .nav_container .menu_items .thumb_logo .logo_img {
+  width: 100%;
+}
+.header__right .nav_container .menu_items .categ_tit {
+  display: block;
+  font-size: 40px;
+  line-height: 80px;
   font-weight: bold;
-  color: #fff;
+  opacity: 1;
 }
-.nav_wrap .lst-categ2 a.menu-wish::before {
-  margin-right: 10px;
-  content: "\f004";
-  font-size: 15px;
+.header__right .nav_container .menu_items .lst_categ2 {
+  text-align: left;
+  margin: 0 auto;
+}
+.header__right .nav_container .menu_items .lst_categ2 .categ_item2 {
+  margin-bottom: 10px;
+}
+.header__right .nav_container .menu_items .lst_categ2 .categ_item2 .menu_wish {
+  font-size: 16px;
+  line-height: 20px;
+}
+.header__right .nav_container .menu_items .lst_categ2 .categ_item2 .menu_wish::before {
+  content: "\f07a";
   font-family: "Line Awesome Free";
   font-weight: 900;
-}
-.nav_wrap .lst-categ2 a.menu-phone::before {
   margin-right: 10px;
+  font-size: 20px;
+}
+.header__right .nav_container .menu_items .lst_categ2 .categ_item2 .menu_phone {
+  font-size: 16px;
+  line-height: 20px;
+}
+.header__right .nav_container .menu_items .lst_categ2 .categ_item2 .menu_phone::before {
   content: "\f095";
-  font-size: 15px;
   font-family: "Line Awesome Free";
   font-weight: 900;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.header__right .nav_container input[type=checkbox]:checked ~ .menu_items {
+  transform: translateX(0);
+}
+.header__right .nav_container input[type=checkbox]:checked ~ .hamburger_lines .line1 {
+  transform: rotate(45deg);
+}
+.header__right .nav_container input[type=checkbox]:checked ~ .hamburger_lines .line2 {
+  transform: scaleY(0);
+}
+.header__right .nav_container input[type=checkbox]:checked ~ .hamburger_lines .line3 {
+  transform: rotate(-45deg);
 }
 
 @media screen and (min-width: 1024px) {
@@ -2300,23 +2262,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   .inner {
     padding: 0 55px;
   }
-  .nav_wrap {
-    position: relative;
-  }
-  .nav_wrap .label-burger {
-    display: none;
-  }
-  .nav_wrap #nav {
-    position: static;
-    background: #fff;
-  }
-  .nav_wrap #nav .link-logo {
-    display: none;
-  }
-  .all_menu {
-    display: none;
-  }
-  .lst-categ2 {
+  .nav_container {
     display: none;
   }
 }
