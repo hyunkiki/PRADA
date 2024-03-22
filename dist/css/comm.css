@@ -2142,6 +2142,10 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   line-height: 80px;
   font-weight: bold;
   opacity: 1;
+  color: rgba(0, 0, 0, 0.3);
+}
+.header__right .nav_container .menu_items .categ_tit:hover {
+  color: #000;
 }
 .header__right .nav_container .menu_items .lst_categ2 {
   text-align: left;

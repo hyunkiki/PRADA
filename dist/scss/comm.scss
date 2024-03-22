@@ -214,6 +214,10 @@
         line-height: 80px;
         font-weight: bold;
         opacity: 1;
+        color: rgb(0, 0, 0, 0.3);
+        &:hover {
+          color: #000;
+        }
       }
       .lst_categ2 {
         text-align: left;
