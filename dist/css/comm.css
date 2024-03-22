@@ -2192,6 +2192,9 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
     width: 100%;
     justify-content: space-between;
   }
+  #header .header__right .util__list {
+    margin-right: 0;
+  }
   #header .gnb_wrap {
     display: block;
   }

@@ -267,6 +267,9 @@
       flex-direction: row-reverse;
       width: 100%;
       justify-content: space-between;
+      .util__list {
+        margin-right: 0;
+      }
     }
     .gnb_wrap {
       display: block;
@@ -344,7 +347,6 @@
   .menu_btn {
     display: none;
   }
-
   .inner {
     padding: 0 55px;
   }
