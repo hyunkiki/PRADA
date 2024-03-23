@@ -208,17 +208,26 @@
           width: 100%;
         }
       }
-      .categ_tit {
-        display: block;
-        font-size: 40px;
-        line-height: 80px;
-        font-weight: bold;
-        opacity: 1;
-        color: rgb(0, 0, 0, 0.3);
-        &:hover {
-          color: #000;
+      .item_wrap {
+        .categ_tit {
+          font-size: 35px;
+          line-height: 70px;
+          font-weight: bold;
+          opacity: 1;
+          cursor: pointer;
+          color: rgb(0, 0, 0, 0.3);
+          &:hover {
+            color: #000;
+          }
+        }
+        .categ_lst {
+          line-height: 1.8em;
+          .small_categ_tit {
+            font-size: 16px;
+          }
         }
       }
+
       .lst_categ2 {
         text-align: left;
         margin: 0 auto;

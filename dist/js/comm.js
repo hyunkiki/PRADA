@@ -117,6 +117,19 @@ for (i = 0; i < accitm.length; i++) {
   });
 }
 
+$(function () {
+  var subMenu = $(".item_wrap").find(".categ_box"); //이 줄은 item_wrap 클래스 내부에 있는 .categ_box 클래스를 찾아 subMenu 변수에 할당합니다.
+
+  subMenu.hide(); //subMenu 변수에 저장된 요소들을 숨깁니다. 즉, 페이지가 로드될 때 .categ_box 요소들이 숨겨집니다.
+
+  $(".item_wrap .categ_tit").on("click", function () {
+    var currentSubMenu = $(this).next(".categ_box"); //: 클릭한 .categ_tit 요소의 다음 형제 요소인 .categ_box를 선택하여 currentSubMenu 변수에 저장합니다.
+    $(".item_wrap .categ_box").not(currentSubMenu).slideUp(500); // 클릭한 .categ_tit 요소의 다음 형제 요소인 .categ_box를 제외한 다른 모든 .categ_box 요소들을 위로 슬라이드 업시킵니다.(다른 categ_tit 요소를 클릭할 때 이전에 열렸던 categ_box 요소를 숨깁니다.)
+
+    currentSubMenu.slideDown(500); // 클릭한 .categ_tit 요소의 다음 형제 요소인 .categ_box를 아래로 슬라이드 다운시킵니다.
+  }); //.item_wrap 클래스 내부의 .categ_tit 클래스를 클릭할 때마다 함수가 실행됩니다.
+});
+
 // var accHeader = document.getElementsByClassName("header_accordion");
 // var i;
 // for (i = 0; i < accHeader.length; i++) {
