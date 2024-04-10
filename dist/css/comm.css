@@ -893,7 +893,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   font-family: "Line Awesome Free";
   font-weight: 900;
   position: absolute;
-  bottom: 23%;
+  bottom: 21%;
   right: 4%;
   font-size: 35px;
   color: #999;
@@ -1271,7 +1271,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
     font-weight: 900;
     position: absolute;
     top: 14%;
-    right: 7%;
+    right: 3%;
     font-size: 35px;
     color: #999;
   }
