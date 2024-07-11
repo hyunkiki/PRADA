@@ -2983,7 +2983,7 @@ main .lst-contents .btn .btn_more_box .btn_tit::after {
   }
   #footer .ft_info_box .copyright_box {
     display: flex;
-    width: 40%;
+    width: 45%;
     margin-top: 20px;
     justify-content: space-between;
   }
